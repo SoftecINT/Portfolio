@@ -1,0 +1,430 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+
+/*mouse scroll btn*/
+.mouse-btn {
+    margin-top: 67.67vh;
+    height: 2.78vh;  /* Assuming height of 30px is converted to vh based on the same viewport height */
+}
+
+p {
+    margin-left: -55px;
+  }
+  @-webkit-keyframes ani-mouse {
+      0% {
+      opacity: 1;
+      top: 29%;
+      }
+      15% {
+      opacity: 1;
+      top: 50%;
+      }
+      50% {
+      opacity: 0;
+      top: 50%;
+      }
+      100% {
+      opacity: 0;
+      top: 29%;
+      }
+  }
+  @-moz-keyframes ani-mouse {
+      0% {
+      opacity: 1;
+      top: 29%;
+      }
+      15% {
+      opacity: 1;
+      top: 50%;
+      }
+      50% {
+      opacity: 0;
+      top: 50%;
+      }
+      100% {
+      opacity: 0;
+      top: 29%;
+      }
+  }
+  @keyframes ani-mouse {
+      0% {
+      opacity: 1;
+      top: 29%;
+      }
+      15% {
+      opacity: 1;
+      top: 50%;
+      }
+      50% {
+      opacity: 0;
+      top: 50%;
+      }
+      100% {
+      opacity: 0;
+      top: 29%;
+      }
+  }
+   .scroll-btn {
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      text-align: center;
+  }
+  .scroll-btn > * {
+      display: inline-block;
+      line-height: 18px;
+      font-size: 13px;
+      font-weight: normal;
+      color: #7f8c8d;
+      color: #ffffff;
+      font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      letter-spacing: 2px;
+  }
+  .scroll-btn > *:hover,
+  .scroll-btn > *:focus,
+  .scroll-btn > *.active {
+      color: #ffffff;
+  }
+  .scroll-btn > *:hover,
+  .scroll-btn > *:focus,
+  .scroll-btn > *:active,
+  .scroll-btn > *.active {
+      opacity: 0.8;
+      filter: alpha(opacity=80);
+  }
+  .scroll-btn .mouse {
+      position: relative;
+      display: block;
+      width: 35px;
+      height: 55px;
+      margin: 0 auto 20px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      border: 3px solid white;
+      border-radius: 23px;
+  }
+  .scroll-btn .mouse > * {
+      position: absolute;
+      display: block;
+      top: 29%;
+      left: 50%;
+      width: 8px;
+      height: 8px;
+      margin: -4px 0 0 -4px;
+      background: white;
+      border-radius: 50%;
+      -webkit-animation: ani-mouse 2.5s linear infinite;
+      -moz-animation: ani-mouse 2.5s linear infinite;
+      animation: ani-mouse 2.5s linear infinite;
+  }  
+
+
+
+/*mouse button end*/
+
+
+
+
+#zoom-in {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    overflow: hidden;
+}
+#zoom-out {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+#zoom-in img {
+    width: 100%;
+    max-width: 500px;
+}
+/* #zoom-out h2 {
+    font-size: 10vw;
+    color: white;
+    margin: 0;
+} 
+ */
+
+/* homepage */
+*{
+margin: 0;
+padding: 0;
+}
+.HomeSection{
+height: 100%;
+width: 100%;
+background-color: black;
+position: absolute;
+z-index: 100;
+font-family: "League Spartan";
+overflow: hidden;
+justify-content: center;
+align-items: center;
+}
+.Home{
+height: 100vh;
+width: 100vw;
+}
+.Circles{
+position: relative;
+}
+.C1{
+position: absolute;
+background-color: rgba(206, 71, 48, 0.8);
+width: 65vw;
+height: 65vw;
+top: -50vw;
+left: -40vw;
+opacity: 0.8;
+filter: blur(200px);
+border-radius: 50%;
+z-index: -1;
+animation: Cir 2s 0.2s infinite ease;
+}
+@keyframes Cir {
+0%{
+    top: -50vw;
+}
+50%{
+    top: -45vw;
+}
+100%{
+    top: -50vw;
+}
+}
+.C2{
+position: absolute;
+background: linear-gradient(0.71deg, #399FAE -400%, rgba(0, 0, 0, 0) 100.51%);
+border-radius: 50%;
+width: 45vw;
+height: 45vw;
+top: -22vw;
+left: 59vw;
+z-index: 1;
+overflow: hidden;
+}
+.C3{
+position: absolute;
+width: 40vw;
+height: 40vw;
+top: 1vw;
+left: 55vw;
+gap: 0px;
+background: radial-gradient(50% 50% at 50% 50%, #A7226F -40%, rgba(0, 0, 0, 0) 100%);
+opacity: 0.7;
+z-index: 2;
+}
+.C4{
+position: absolute;
+width: 33vw;
+height: 33vw;
+top: 7vw;
+left: 46vw;
+gap: 0px;
+opacity: 0.2px;
+background: linear-gradient(0.71deg, #CE4730 -150%, rgba(0, 0, 0, 0) 90.51%);
+z-index: -1;
+border-radius: 50%;
+}
+.DF{
+position: absolute;
+z-index: 3;
+display: flex;
+margin: 10.4vw 5vw;
+width: 90%;
+transition: all 0.3s ease;
+}
+.BookT{
+width: 50%;
+}
+.BookT h1{
+color: white;
+line-height: 1.1;
+text-shadow: 0 0 4px white;
+font-size: 4.8vw;
+font-weight: 500;
+}
+.BookT button{
+margin-top: 1.5vw;
+padding: 1.1vw 3vw;
+border-radius: 40px;
+border: none;
+background-color: #DF3821;
+color: white;
+font-size: 1vw;
+font-weight: 500;
+display: flex;
+align-items: center;
+transition: all 0.3s ease;
+}
+.BookT button svg{
+padding-right: 5px;
+}
+.OurS{
+position: absolute;
+right: 5.8vw;
+top: -3vw;
+}
+.OurS li{
+padding: 1.3vw 0;
+font-size: 3.3vw;
+text-transform: uppercase;
+font-weight: 700;
+color: #C39AE2;
+list-style: none;
+z-index: 100;
+transition: all 0.3s ease;
+}
+.OurS h2{
+font-size: 0.8vw;
+font-weight: 700;
+letter-spacing: 2.5px;
+color: rgba(57, 159, 174, 1);
+text-transform: uppercase;
+transition: all 0.3s ease;
+}
+.OurS .LD{
+border-bottom: 1px solid white;
+}
+.Vec{
+position: absolute;
+top: 9.4vw;
+left: 9vw;
+transition: 0.1s ease;
+}
+
+@media screen and (max-width: 830px) {
+.Vec{
+top: 9vw;
+}
+}
+@media screen and (max-width: 660px) {
+.Vec{
+top: 8.8vw;
+}
+}
+@media screen and (max-width: 768px) {
+.DF{
+margin: 8vw 10vw;
+}
+.Vec {
+top: 17.5vw;
+left: 19vw;
+}
+.Vec svg{
+width: 28vw;
+}
+.DF{
+flex-direction: column;
+}
+.OurS{
+position: static;
+margin-top: 40px;
+}
+.BookT{
+width: 100%;
+}
+.BookT h1{
+font-size: 9vw;
+}
+.BookT button{
+padding: 2vw 3vw;
+border-radius: 40px;
+border: none;
+background-color: #DF3821;
+color: white;
+font-size: 2vw;
+font-weight: 500;
+display: flex;
+align-items: center;
+}
+.BookT button svg{
+padding-right: 5px;
+width:  2vw;
+}
+.OurS h2{
+font-size: 2vw;
+}
+.OurS li{
+font-size: 6vw;
+padding: 3vw 0;
+}
+.OurS .LD{
+border-bottom: 1px solid white;
+width: 55%;
+}
+}
+@media screen and (max-width: 530px) {
+.HomeSection{
+height: 100%;
+width: 100%;
+background-color: black;
+position: absolute;
+z-index: 100;
+font-family: "League Spartan";
+overflow: hidden;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.Vec {
+top: 17.1vw;
+left: 19vw;
+}
+.Vec svg{
+width: 28vw;
+}
+.DF{
+flex-direction: column;
+}
+.OurS{
+position: static;
+margin-top: 30px;
+}
+.BookT{
+width: 100%;
+}
+.BookT h1{
+font-size: 9vw;
+}
+.BookT button{
+padding: 3vw 6vw;
+border-radius: 40px;
+border: none;
+background-color: #DF3821;
+color: white;
+font-size: 3vw;
+font-weight: 500;
+display: flex;
+align-items: center;
+}
+.BookT button svg{
+padding-right: 5px;
+width:  3vw;
+}
+.OurS h2{
+font-size: 2vw;
+}
+.OurS li{
+font-size: 7vw;
+padding: 3vw 0;
+}
+.OurS .LD{
+border-bottom: 1px solid white;
+width: 65%;
+}
+}

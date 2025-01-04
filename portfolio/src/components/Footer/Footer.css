@@ -1,0 +1,196 @@
+
+.footer_component {
+  background-color: var(--background-color--background-primary);
+  color: var(--text-color--text-alternate);
+  border-radius: 2.5rem;
+}
+
+.footer {
+  background-color: var(--background-color--background-alternate);
+  padding: 3rem 2.25rem;
+}
+
+.footer.is-contact {
+  background-color: var(--background-color--background-primary);
+  padding-bottom: 7rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.padding-footer {
+  padding: 8rem 4.5rem 4rem;
+}
+
+.footer_content-grid {
+  grid-column-gap: 4rem;
+  grid-row-gap: 4rem;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+
+.footer_text-span {
+  color: #fff0;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--text-color--text-alternate);
+}
+
+.footer_content {
+  grid-column-gap: 12.5rem;
+  grid-row-gap: 12.5rem;
+  flex-direction: column;
+  display: flex;
+}
+
+.footer_copyright {
+  grid-column-gap: 3rem;
+  grid-row-gap: 3rem;
+  border: 1px solid var(--border-color--border-primary);
+  color: var(--text-color--text-alternate);
+  border-radius: 4rem;
+  justify-content: space-between;
+  padding: 2rem;
+  font-size: .875rem;
+  display: flex;
+}
+
+.footer_brand {
+  color: var(--white);
+  display: block;
+}
+
+.footer_logo {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 18rem;
+  display: flex;
+}
+
+.footer_contact-list {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.footer_contact-list-item.is-cta {
+  margin-top: 2.25rem;
+  margin-bottom: 0;
+  display: flex;
+}
+
+.footer_contact-link {
+  color: var(--white);
+  font-family: degular-display, sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+}
+
+.link-line {
+  background-color: var(--white);
+  border-radius: 1rem;
+  width: 0%;
+  height: .125rem;
+}
+
+.location_heading {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.location_heading.is-tilburg {
+  -webkit-text-fill-color: transparent;
+  background-image: radial-gradient(circle at 80% 0, #ffe3dd, #ff5286 50%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.location_heading.is-veghel {
+  -webkit-text-fill-color: transparent;
+  background-image: radial-gradient(circle at 100% 0, #f6ff94 30%, #3ec9b8);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.location_heading.is-eindhoven {
+  -webkit-text-fill-color: transparent;
+  background-image: radial-gradient(circle at 80% 0, #a0d7f6, #db74ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.location_separator {
+  background-color: var(--white);
+  border-radius: 1rem;
+  width: 100%;
+  height: 1px;
+  margin-top: .75rem;
+  margin-bottom: 1rem;
+}
+
+.location_image-wrapper {
+  aspect-ratio: 1;
+  border-radius: 2rem;
+  width: 13rem;
+  height: 13rem;
+  display: none;
+  position: absolute;
+  inset: -14rem auto auto 0%;
+  overflow: hidden;
+  transform: rotate(10deg);
+}
+
+.location_image-wrapper.is-veghel {
+  transform: rotate(-10deg);
+}
+
+.footer_copyright_webflow {
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  align-items: center;
+  font-weight: 600;
+  display: flex;
+}
+
+.footer_copyright-links {
+  grid-column-gap: 2.5rem;
+  grid-row-gap: 2.5rem;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.footer_copyright_partner {
+  grid-column-gap: .25rem;
+  grid-row-gap: .25rem;
+  perspective: 1rem;
+  perspective-origin: 25%;
+  -webkit-text-fill-color: transparent;
+  background-image: radial-gradient(circle at 0 0, #db75ff, #f79696);
+  -webkit-background-clip: text;
+  background-clip: text;
+  align-items: flex-start;
+  display: flex;
+}
+
+.footer_enterprise-icon {
+  color: #db75ff;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.footer_copyright-link {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.footer_copyright-link:hover {
+  text-decoration: underline;
+}
+
+.footer_heading {
+  max-width: 90ch;
+}
+

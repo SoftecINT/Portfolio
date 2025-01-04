@@ -1,0 +1,217 @@
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .our-blog{
+            height: 100vh;
+            width: 100vw;
+            background-color:#F2F2F2;
+
+        }
+        .container{
+            height: 90%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .heading{
+            height: 40%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 1vw;
+            /* background-color: #2009b6; */
+
+        }
+        .heading h1{
+            font-size: 5vw;
+            
+        }
+        .heading p{
+            font-size: 1vw;
+            color: #888888;
+            
+        }
+        .heading div a{
+            font-size: 1.1vw;
+            color:#FD0202;
+            text-decoration: none;
+            
+        }
+        .cards{
+            height: 60%;
+            width:100%;
+            display: flex;
+            flex-direction: row;
+            justify-content:center;
+            align-items: center;
+            /* background-color: #1ece36; */
+            gap: 2vw;
+            
+            
+        }
+        .cards .card{
+            height: 80%;
+            width: 20%;
+            display: flex;
+            flex-direction:column;
+        }
+        .card .img-div{
+            height: 70%;
+            width: 100%;
+            /* background-color: #fff; */
+
+        }
+        .card .img-div img{
+            width: 100%;
+            object-fit: cover;
+            height: 100%;
+            
+
+            
+        }
+
+        .card .content{
+            height: 30%;
+            width: 100%;
+            /* background-color: #eb2727; */
+            display: flex;
+            flex-direction: column;
+            align-items:flex-start;
+            
+        }
+        .card .content h2{
+            font-size: 1.4vw;
+            width: 70%;
+            padding: .9vw 0vw;
+            
+        }
+        .card .content h6{
+            font-size: .8vw;
+            font-weight: 100;
+        }
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .our-blog{
+            
+           padding: 0vw 2vw;
+
+        }
+            .container{
+            flex-direction: column;
+            gap: 2vw;
+        }
+        .heading{
+            
+            gap: 2vw;
+            /* background-color: #2009b6; */
+
+        }
+            .heading h1 {
+                font-size: 12vw;
+            }
+            .heading p {
+                font-size: 2.5vw;
+            }
+            .heading div a {
+                font-size: 2.5vw;
+            }
+            
+            .cards .card {
+                width: 60%;
+    
+            }
+            .card .content h2 {
+                font-size: 3vw;
+                width: 100%;
+            }
+            .card .content h6 {
+                font-size: 2vw;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container{
+            flex-direction: column;
+            gap: 4vw;
+        }
+            .heading{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content:space-around;
+            gap: 4vw;
+            /* background-color: #2009b6; */
+
+        }
+            .heading h1 {
+                font-size: 11vw;
+            }
+            .heading p {
+                font-size: 2.5vw;
+            }
+            .heading div a {
+                font-size: 3vw;
+                
+            }
+            .cards {
+                flex-direction: column;
+                height: auto;
+                justify-content:flex-end;
+                 align-items: center;
+            /* background-color: #1ece36; */
+            gap: 4vw;
+            
+            }
+            .cards .card {
+                width: 80%;
+            }
+            .card .content h2 {
+                font-size: 5vw;
+                width: 100%;
+                text-align: center;
+            }
+            .card .content h6 {
+                font-size: 3vw;
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .heading{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content:space-around;
+            gap: 6vw;
+            /* background-color: #2009b6; */
+
+        }
+            .heading h1 {
+                font-size: 14vw;
+            }
+            .heading p {
+                font-size: 3.1vw;
+            }
+            .heading div a {
+                font-size: 3.8vw;
+            }
+            .cards {
+                gap: 5vw;
+                
+            }
+            .cards .card {
+                width: 90%;
+            }
+            .card .content h2 {
+                font-size: 6vw;
+            }
+            .card .content h6 {
+                font-size: 4vw;
+            }
+        }
+    
