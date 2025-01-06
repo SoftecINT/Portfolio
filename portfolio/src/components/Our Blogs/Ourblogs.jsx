@@ -12,7 +12,7 @@ const Ourblogs = () => {
             <h1>From our blog</h1>
             <p>We create and launch entire digital ecosystems used by billions.</p>
             <div>
-                <a href="">Read blog</a>
+                <a href="" className='read-blog-link'>Read blog<i className="fas fa-arrow-right"></i></a>
             </div>
         </div>   
         <div class="cards">

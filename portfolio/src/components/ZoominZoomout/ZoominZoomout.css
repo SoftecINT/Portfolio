@@ -258,21 +258,75 @@ text-shadow: 0 0 4px white;
 font-size: 4.8vw;
 font-weight: 500;
 }
-.BookT button{
-margin-top: 1.5vw;
-padding: 1.1vw 3vw;
-border-radius: 40px;
-border: none;
-background-color: #DF3821;
-color: white;
-font-size: 1vw;
-font-weight: 500;
-display: flex;
-align-items: center;
-transition: all 0.3s ease;
+.btn{
+    margin-top: 0.5rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "League Spartan";
+    border-radius: 10px;
+    background: #CE4730;
+    box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    cursor: pointer;
+    border: transparent;
+    
 }
-.BookT button svg{
-padding-right: 5px;
+.btn:after {
+    content: " ";
+    width: 0%;
+    height: 100%;
+    background: purple;
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+    right: 0;
+    border-radius: 10px;
+  }
+  
+  .btn:hover::after {
+    right: auto;
+    left: 0;
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .btn span {
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    padding: 16px 20px;
+    color: #FAFAFA;
+    font-size: 0.90rem;
+    /* font-weight: bolder; */
+    letter-spacing: 0.3em;
+    border-radius: 10px;
+    z-index: 20;
+    transition: all 0.3s ease-in-out;
+  }
+  
+ 
+  
+  @keyframes scaleUp {
+    0% {
+      transform: scale(1);
+    }
+  
+    50% {
+      transform: scale(0.95);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+.btn svg{
+    margin-left: 1rem;
+}
+.btn svg:hover {
+    margin-left: 1rem;
+    color: #FAFAFA;
 }
 .OurS{
 position: absolute;
@@ -341,17 +395,7 @@ width: 100%;
 .BookT h1{
 font-size: 9vw;
 }
-.BookT button{
-padding: 2vw 3vw;
-border-radius: 40px;
-border: none;
-background-color: #DF3821;
-color: white;
-font-size: 2vw;
-font-weight: 500;
-display: flex;
-align-items: center;
-}
+
 .BookT button svg{
 padding-right: 5px;
 width:  2vw;
@@ -401,17 +445,7 @@ width: 100%;
 .BookT h1{
 font-size: 9vw;
 }
-.BookT button{
-padding: 3vw 6vw;
-border-radius: 40px;
-border: none;
-background-color: #DF3821;
-color: white;
-font-size: 3vw;
-font-weight: 500;
-display: flex;
-align-items: center;
-}
+
 .BookT button svg{
 padding-right: 5px;
 width:  3vw;

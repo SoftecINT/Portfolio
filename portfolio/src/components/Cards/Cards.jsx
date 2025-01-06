@@ -20,7 +20,8 @@ export const Cards = () => {
                                     digital creations.</p>
                             </div>
                             <div className="home-work_shape-wrapper">
-                                <div className="home-work_shape1 w-embed"><svg
+                                <div className="home-work_shape1 w-embed">
+                                    <svg
                                         xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"
                                         viewBox="0 0 159 193" fill="none"
                                         preserveAspectRatio="xMidYMid meet" aria-hidden="true" role="img">
@@ -34,9 +35,9 @@ export const Cards = () => {
                                         xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"
                                         viewBox="0 0 52 51" fill="none" preserveAspectRatio="xMidYMid meet"
                                         aria-hidden="true" role="img">
-                                        <path
-                                            d="M18.3377 50.3601L33.6153 50.3601L33.6153 32.6514L51.5801 32.6514L51.5801 17.6421L33.6153 17.6421L33.6153 10.9383L33.5247 0.0224601L18.2471 0.0224595L18.3377 10.9383L18.3377 17.6421L11.4235 17.6421L0.312495 17.7311L0.312495 32.7404L11.4537 32.6514L18.3377 32.6514L18.3377 50.3601Z"
-                                            fill="url(#paint0_radial_409_1041)" />
+                                            {/* <path
+                                                d="M18.3377 50.3601L33.6153 50.3601L33.6153 32.6514L51.5801 32.6514L51.5801 17.6421L33.6153 17.6421L33.6153 10.9383L33.5247 0.0224601L18.2471 0.0224595L18.3377 10.9383L18.3377 17.6421L11.4235 17.6421L0.312495 17.7311L0.312495 32.7404L11.4537 32.6514L18.3377 32.6514L18.3377 50.3601Z"
+                                                fill="url(#paint0_radial_409_1041)" /> */}
                                         <defs>
                                             <radialGradient id="paint0_radial_409_1041" cx="0" cy="0" r="1"
                                                 gradientUnits="userSpaceOnUse"
@@ -50,8 +51,8 @@ export const Cards = () => {
                                         xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"
                                         viewBox="0 0 39 40" fill="none" preserveAspectRatio="xMidYMid meet"
                                         aria-hidden="true" role="img">
-                                        <circle cx="19.2113" cy="19.9803" r="19.2113"
-                                            fill="url(#paint0_radial_409_1042)" />
+                                        {/* <circle cx="19.2113" cy="19.9803" r="19.2113"
+                                            fill="url(#paint0_radial_409_1042)" /> */}
                                         <defs>
                                             <radialGradient id="paint0_radial_409_1042" cx="0" cy="0" r="1"
                                                 gradientUnits="userSpaceOnUse"
@@ -65,9 +66,9 @@ export const Cards = () => {
                                         xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"
                                         viewBox="0 0 39 44" fill="none" preserveAspectRatio="xMidYMid meet"
                                         aria-hidden="true" role="img">
-                                        <path
+                                        {/* <path
                                             d="M39 0.862305H0.713623V2.95883L14.4531 32.5075L9.09785 43.2368H17.4579H18.9845L24.7516 31.6689H24.7274L39 2.95883V0.862305Z"
-                                            fill="url(#paint0_linear_409_1045)" />
+                                            fill="url(#paint0_linear_409_1045)" /> */}
                                         <defs>
                                             <linearGradient id="paint0_linear_409_1045" x1="19.8568"
                                                 y1="0.862305" x2="19.8568" y2="43.2368"
