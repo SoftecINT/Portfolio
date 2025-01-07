@@ -1,5 +1,6 @@
 import React from 'react'
 import './Navbar.css'
+import logo from '../../assets/whitelogo.svg'
 const Navbar = () => {
   return (
     
@@ -21,7 +22,7 @@ const Navbar = () => {
             className="nav_brand w-nav-brand w--current"
           >
             <div className="nav_brand-logo w-embed">
-              <img src="logo.png" alt="Logo" />
+              <img src={logo} alt="Logo" />
             </div>
           </a>
         </div>
@@ -71,7 +72,7 @@ const Navbar = () => {
             </div>
           </div>
           <div className="nav_link-wrapper">
-            <a href="/work" className="nav_link w-nav-link">
+            <a href="/" className="nav_link w-nav-link">
               Home
             </a>
             <div className="nav_link-hover"></div>
@@ -101,7 +102,7 @@ const Navbar = () => {
             <div className="nav_link-hover"></div>
           </div>
           <div className="nav_link-wrapper">
-            <a href="/contact" className="nav_link w-nav-link">
+            <a href="/contactus" className="nav_link w-nav-link">
               <span>Contact Us</span>
             </a>
             <div className="nav_link-hover"></div>

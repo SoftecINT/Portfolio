@@ -48,7 +48,10 @@
   }
   
   .nav_link:hover {
-    color: var(--text-color--text-primary);
+    /* color: var(--text-color--text-primary); */
+    color: black;
+    background-color: white;
+    border-radius: 14rem;
   }
   
   .nav_link.w--current {
