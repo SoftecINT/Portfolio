@@ -84,7 +84,7 @@ const Navbar = () => {
             <div className="nav_link-hover"></div>
           </div>
           <div className="nav_link-wrapper">
-            <a href="/contact" className="nav_link w-nav-link">
+            <a href="/ourservices" className="nav_link w-nav-link">
               <span>Our Services</span>
             </a>
             <div className="nav_link-hover"></div>
@@ -96,7 +96,7 @@ const Navbar = () => {
             <div className="nav_link-hover"></div>
           </div>
           <div className="nav_link-wrapper">
-            <a href="/contact" className="nav_link w-nav-link">
+            <a href="/ourclients" className="nav_link w-nav-link">
               <span>Clients</span>
             </a>
             <div className="nav_link-hover"></div>

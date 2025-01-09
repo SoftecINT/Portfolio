@@ -1,0 +1,381 @@
+/* //home container // */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home-container {
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+}
+
+.home-container h1 {
+  font-size: 18vh;
+  opacity: 0;
+  animation: slideUp 1s ease forwards 1s;
+}
+
+.home-container p {
+  width: 33%;
+  font-size: 1.3rem;
+  opacity: 0;
+  margin-top: 20px;
+  animation: slideUp 1s ease forwards 1.5s;
+}
+
+/* Animations for text */
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Background shapes */
+.shape {
+  position: absolute;
+  background: rgba(245, 4, 4, 0.1);
+  border-radius: 50%;
+  animation: move 4s ease-in-out infinite alternate;
+}
+
+.shape.circle {
+  width: 35vw;
+  height: 35vw;
+  background: linear-gradient(to bottom right, #48baeb 40%, #a0ff97);
+  top: -13vw;
+  left: -8vw;
+  animation-duration: 6s;
+  animation-name: big-circle;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.shape.triangle {
+  width: 0;
+  height: 0;
+  border-left: 20vw solid white;
+  border-right: 20vw solid white;
+  border-bottom: 50vw solid #ff6392;
+  border-radius: 0;
+  position: absolute;
+  right: -1vw;
+  bottom: 0;
+  animation-duration: 10s;
+  animation-name: traingle;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.shape.circle-small {
+  width: 22vw;
+  height: 22vw;
+  background: linear-gradient(to bottom right, #fdd365, #ff9a62);
+  bottom: -7vw;
+  left: 23vw;
+  animation-duration: 6s;
+  animation-name: small-circle;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+/* Animations for shapes */
+@keyframes small-circle {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(50px); /* Increased movement */
+  }
+}
+@keyframes big-circle {
+  0% {
+    transform: translateY(50px) translateX(0) skew(0deg, 0deg); /* Starting at the bottom */
+  }
+  100% {
+    transform: translateY(-50px) translateX(50px) skew(0deg, 0deg); /* Move to top-right and apply skew */
+  }
+}
+
+@keyframes traingle {
+  0% {
+    transform: translateY(50px) translateX(0) skew(0deg, 0deg); /* Starting at the bottom */
+  }
+  100% {
+    transform: translateY(-50px) translateX(50px) skew(0deg, 0deg); /* Move to top-right and apply skew */
+  }
+}
+
+@media (max-width: 1200px) {
+  .home-container h1 {
+    font-size: 12vw; /* Adjust font size for large screens */
+  }
+
+  .home-container p {
+    font-size: 1.9vw; /* Larger font size for paragraphs */
+    width: 50%;
+  }
+
+  .shape.circle {
+    width: 40vw;
+    height: 40vw;
+    top: -17vw;
+    left: -12vw;
+  }
+
+  .shape.triangle {
+    border-left: 23vw solid white;
+    border-right: 23vw solid white;
+    border-bottom: 55vw solid #ff6392;
+    right: -8vw;
+    bottom: 0;
+  }
+
+  .shape.circle-small {
+    width: 30vw;
+    height: 30vw;
+    bottom: -16vw;
+    left: 17vw;
+  }
+}
+
+/* Medium Screens (Tablets) */
+@media (max-width: 1024px) {
+  .home-container h1 {
+    font-size: 14vw; /* Adjust font size for medium screens */
+  }
+
+  .home-container p {
+    font-size: 2vw; /* Medium font size */
+    width: 60%; /* Reduce width */
+  }
+
+  .shape.circle {
+    width: 50vw; /* Increase size */
+    height: 50vw;
+    top: -16vw;
+    left: -13vw;
+  }
+
+  .shape.triangle {
+    border-left: 30vw solid white;
+    border-right: 30vw solid white;
+    border-bottom: 65vw solid #ff6392;
+    right: -20vw;
+    bottom: 0;
+  }
+
+  .shape.circle-small {
+    width: 35vw;
+    height: 35vw;
+    bottom: -13vw;
+    left: 15vw;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home-container h1 {
+    font-size: 15vw; /* Adjust font size for smaller screens */
+  }
+
+  .home-container p {
+    font-size: 2.3vw; /* Smaller font size for paragraphs */
+    width: 60%; /* Reduce width on smaller screens */
+  }
+
+  .shape.circle {
+    width: 60vw; /* Increase size for smaller screens */
+    height: 60vw;
+    top: -20vw;
+    left: -15vw;
+  }
+
+  .shape.triangle {
+    border-left: 30vw solid white;
+    border-right: 30vw solid white;
+    border-bottom: 60vw solid #ff6392;
+    right: -9vw;
+    bottom: 6vw;
+  }
+
+  .shape.circle-small {
+    width: 40vw;
+    height: 40vw;
+    bottom: -10vw;
+    left: -12vw;
+    animation-duration: 8s;
+  }
+  /* Animations for shapes */
+  @keyframes small-circle {
+    0% {
+      transform: translateY(20px);
+    }
+    100% {
+      transform: translateY(0px) translateX(10px); /* Increased movement */
+    }
+  }
+  @keyframes big-circle {
+    0% {
+      transform: translateY(0px) translateX(0) skew(0deg, 0deg);
+    }
+    100% {
+      transform: translateY(50px) translateX(50px) skew(0deg, 0deg);
+    }
+  }
+
+  @keyframes traingle {
+    0% {
+      transform: translateY(50px) translateX(0) skew(0deg, 0deg); /* Starting at the bottom */
+    }
+    100% {
+      transform: translateY(-50px) translateX(50px) skew(0deg, 0deg); /* Move to top-right and apply skew */
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .home-container h1 {
+    font-size: 20vw; /* Further reduce font size for very small screens */
+    z-index: 11;
+  }
+
+  .home-container p {
+    font-size: 3vw; /* Smaller text */
+    width: 75%; /* Max width for mobile devices */
+    z-index: 11;
+  }
+
+  .shape.circle {
+    width: 50vw;
+    height: 50vw;
+    top: -20vw;
+    left: -22vw;
+    z-index: 10;
+  }
+
+  .shape.triangle {
+    border-left: 32vw solid white;
+    border-right: 32vw solid white;
+    border-bottom: 70vw solid #ff6392;
+    right: 5vw;
+    top: -3vw;
+    z-index: 9;
+    animation-duration: 3.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  .shape.circle-small {
+    width: 65vw;
+    height: 65vw;
+    bottom: -15vw;
+    left: -10vw;
+    animation-duration: 16s;
+  }
+  @keyframes traingle {
+    0% {
+      transform: translateY(0px) translateX(0) skew(0deg, 0deg); /* Starting at the bottom */
+    }
+    100% {
+      transform: translateY(-60px) translateX(60px) skew(0deg, 0deg); /* Move to top-right and apply skew */
+    }
+  }
+}
+@media (max-width: 360px) {
+  .home-container h1 {
+    font-size: 20vw; /* Further reduce font size for very small screens */
+    z-index: 11;
+  }
+
+  .home-container p {
+    font-size: 6vw; /* Smaller text */
+    width: 95%; /* Max width for mobile devices */
+    z-index: 11;
+    text-align: center;
+  }
+
+  .shape.circle {
+    width: 80vw;
+    height: 80vw;
+    top: 45vw;
+    left: -30vw;
+    z-index: 10;
+    animation-duration: 5s;
+  }
+
+  .shape.triangle {
+    border-left: 32vw solid white;
+    border-right: 32vw solid white;
+    border-bottom: 70vw solid #ff6392;
+    right: 5vw;
+    top: -11vw;
+    z-index: 9;
+    animation-duration: 3.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  .shape.circle-small {
+    width: 65vw;
+    height: 65vw;
+    bottom: -20vw;
+    left: 18vw;
+    animation-duration: 5s;
+  }
+  @keyframes traingle {
+    0% {
+      transform: translateY(30px) translateX(30px) skew(0deg, 0deg); /* Starting at the bottom */
+    }
+    100% {
+      transform: translateY(0) translateX(0) skew(0deg, 0deg); /* Move to top-right and apply skew */
+    }
+  }
+  @keyframes small-circle {
+    0% {
+      transform: translateY(70px) tra;
+    }
+    100% {
+      transform: translateY(20px); /* Increased movement */
+    }
+  }
+  @keyframes big-circle {
+    0% {
+      transform: translateY(50px) translateX(0) skew(0deg, 0deg); /* Starting at the bottom */
+    }
+    100% {
+      transform: translateY(-30px) translateX(0px) skew(0deg, 0deg); /* Move to top-right and apply skew */
+    }
+  }
+}
+
+
+
+
+
+
+
+/* REACT DEVELOPERS WORK START HERE  */
+
+ul{
+    list-style-type: disc;
+}
+.selection1{
+    background-color: linear-gradient(0.71deg, #399FAE -400%, rgba(0, 0, 0, 0) 100.51%)
+}
