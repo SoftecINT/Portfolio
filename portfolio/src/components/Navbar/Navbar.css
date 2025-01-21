@@ -8,16 +8,8 @@
     display: flex;
     position: fixed;
   }
-  /* When the navbar is not visible, it will be hidden */
-.nav_component.hidden {
-    transform: translateY(-100%);  /* Move the navbar out of view */
-    opacity: 0;  /* Optional, to make the navbar fade out */
-  }
-  
-  /* When the navbar is visible, it will be in place */
-  .nav_component.visible {
-    transform: translateY(0);  /* Reset transform to make navbar visible */
-    opacity: 1;  /* Optional, to make the navbar fade in */
+  .nav_component.scrolled {
+    height: 50px; /* Smaller height when scrolled */
   }
   
   .nav_content {

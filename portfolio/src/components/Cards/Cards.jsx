@@ -30,7 +30,8 @@ export const Cards = () => {
                                             stroke="currentColor" stroke-width="5" />
                                         <circle cx="111.244" cy="8.29346" r="8.24414" fill="currentColor" />
                                         <circle cx="50.0137" cy="184.436" r="8.24414" fill="currentColor" />
-                                    </svg></div>
+                                    </svg>
+                                    </div>
                                 <div className="home-work_shape4 w-embed"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"
                                         viewBox="0 0 52 51" fill="none" preserveAspectRatio="xMidYMid meet"
@@ -86,9 +87,6 @@ export const Cards = () => {
                             </div>
                             <div className="home-work_wrapper w-dyn-list">
                                 <div role="list" className="home-work_list w-dyn-items">
-                                    
-                                    
-                                    
                                     
                                     <div role="listitem" className="home-work_item w-dyn-item"><a
                                             href="#"
