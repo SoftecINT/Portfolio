@@ -9,7 +9,7 @@ body {
 /*mouse scroll btn*/
 .mouse-btn {
     margin-top: 67.67vh;
-    height: 160vh;  /* Assuming height of 30px is converted to vh based on the same viewport height */
+    height: 1vh;  /* Assuming height of 30px is converted to vh based on the same viewport height */
 }
 
 p {
