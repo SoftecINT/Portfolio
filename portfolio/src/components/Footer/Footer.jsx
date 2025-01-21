@@ -32,11 +32,11 @@ export const Footer = () => {
                 >
                   <div className="footer_heading">
                     <div className="heading-style-h3">
-                      Let&#x27;s build{" "}
+                      Code{" "}
                       <span className="footer_text-span">
-                        the next big thing
+                      that Connects&#x27; Solutions that
                       </span>{" "}
-                      together.
+                       Work.
                     </div>
                   </div>
                 </div>
@@ -81,41 +81,31 @@ export const Footer = () => {
                   </ul>
                 </div>
                 <div
-                  id="w-node-_538f686c-038b-0f86-7d70-90950202eb4b-0202eb27"
                   className="footer_item"
                 >
                   <div
-                    data-w-id="538f686c-038b-0f86-7d70-90950202eb4c"
                     className="location_item"
                   >
                     <div className="location_image-wrapper">
-                      <img
-                        src="https://cdn.prod.website-files.com/65af9702e930a21edff0f0e0/65ce03d3b5785742650c8e76_Tilburg-zuid.webp"
-                        loading="lazy"
-                        sizes="100vw"
-                        srcset="https://cdn.prod.website-files.com/65af9702e930a21edff0f0e0/65ce03d3b5785742650c8e76_Tilburg-zuid-p-500.webp 500w, https://cdn.prod.website-files.com/65af9702e930a21edff0f0e0/65ce03d3b5785742650c8e76_Tilburg-zuid-p-800.webp 800w, https://cdn.prod.website-files.com/65af9702e930a21edff0f0e0/65ce03d3b5785742650c8e76_Tilburg-zuid-p-1080.webp 1080w, https://cdn.prod.website-files.com/65af9702e930a21edff0f0e0/65ce03d3b5785742650c8e76_Tilburg-zuid-p-1600.webp 1600w, https://cdn.prod.website-files.com/65af9702e930a21edff0f0e0/65ce03d3b5785742650c8e76_Tilburg-zuid-p-2000.webp 2000w, https://cdn.prod.website-files.com/65af9702e930a21edff0f0e0/65ce03d3b5785742650c8e76_Tilburg-zuid.webp 2560w"
-                        alt=""
-                      />
+                      
                     </div>
                     <div className="location_heading is-tilburg">
-                      Tilburg (HQ)
+                      Karachi (HQ)
                     </div>
                     <div className="location_separator"></div>
                     <div>
-                      Goirkekanaaldijk 14
+                      Office No B-451
                       <br />
-                      5046 AT Tilburg
+                      11-A Karachi
                       <br />
                       The Netherlands
                     </div>
                   </div>
                 </div>
                 <div
-                  id="w-node-_538f686c-038b-0f86-7d70-90950202eb56-0202eb27"
                   className="footer_item"
                 >
                   <div
-                    data-w-id="538f686c-038b-0f86-7d70-90950202eb57"
                     className="location_item"
                   >
                     <div className="location_image-wrapper is-veghel">
@@ -128,45 +118,30 @@ export const Footer = () => {
                       />
                     </div>
                     <div className="location_heading is-veghel">
-                      Eindhoven (Strijp-S)
+                      Coming Soon !!!
                     </div>
                     <div className="location_separator"></div>
                     <div>
-                      Achtseweg ZUID 159R <br />
-                      5651 GW Eindhoven
-                      <br />
-                      The Netherlands
+                     
                     </div>
                   </div>
                 </div>
                 <div
-                  id="w-node-_538f686c-038b-0f86-7d70-90950202eb61-0202eb27"
                   className="footer_item"
                 >
                   <div
-                    data-w-id="538f686c-038b-0f86-7d70-90950202eb62"
-                    className="location_item"
+                      className="location_item"
                   >
                     <div className="location_image-wrapper">
-                      <img
-                        src="https://cdn.prod.website-files.com/65af9702e930a21edff0f0e0/65d5e9e1faac48a307175787_IMeRlxDZ%2BKZAIkijfysv.jpeg"
-                        loading="lazy"
-                        width="Auto"
-                        sizes="100vw"
-                        alt=""
-                        srcset="https://cdn.prod.website-files.com/65af9702e930a21edff0f0e0/65d5e9e1faac48a307175787_IMeRlxDZ%2BKZAIkijfysv-p-500.jpeg 500w, https://cdn.prod.website-files.com/65af9702e930a21edff0f0e0/65d5e9e1faac48a307175787_IMeRlxDZ%2BKZAIkijfysv.jpeg 720w"
-                      />
+                      
                     </div>
                     <div className="location_heading is-eindhoven">
-                      Antwerp (C-Hive)
+                      Coming Soon !!!
                     </div>
                     <div className="location_separator"></div>
                     <div>
-                      Mechelsesteenweg 180
-                      <br />
-                      2018 Antwerpen
-                      <br />
-                      Belgium
+                      
+                     
                     </div>
                   </div>
                 </div>
