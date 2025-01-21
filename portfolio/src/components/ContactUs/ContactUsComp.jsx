@@ -105,7 +105,8 @@ const ContactUsComp = () => {
         <a href="mailto:admin@softecint.com">admin@softecint.com</a>
         <p>Karachi</p>
         <p>
-          <a href="#">Get directions</a> | (+92) 345 - 8855857
+          
+          <a href="https://maps.app.goo.gl/6AJvP7xAS63PwUrF6" target="blank">Get directions</a> | (+92) 345 - 8855857
         </p>
         <a href="#">Privacy Policy</a>
       </div>
