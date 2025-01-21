@@ -86,6 +86,10 @@ export const Cards = () => {
                             </div>
                             <div className="home-work_wrapper w-dyn-list">
                                 <div role="list" className="home-work_list w-dyn-items">
+                                    
+                                    
+                                    
+                                    
                                     <div role="listitem" className="home-work_item w-dyn-item"><a
                                             href="#"
                                             className="work_link is-full w-inline-block">
@@ -121,7 +125,7 @@ export const Cards = () => {
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div id="expandable-trailers" className="work_background">
+                                                <div id="expandable-trailers" className="work_background work_circle">
                                                     <div className="work_embed w-embed"><svg width="100%"
                                                             height="100%" viewBox="0 0 214 214" fill="none"
                                                             xmlns="http://www.w3.org/2000/svg">
@@ -168,6 +172,21 @@ export const Cards = () => {
                                             </h3>
                                         </div>
                                     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                                     <div role="listitem" className="home-work_item w-dyn-item"><a
                                             href="#"
                                             className="work_link is-full w-inline-block">
@@ -218,7 +237,7 @@ export const Cards = () => {
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div id="zuid" className="work_background">
+                                                <div id="zuid" className="work_background work_plus">
                                                     <div className="work_embed w-embed"><svg width="100%"
                                                             height="100%" viewBox="0 0 214 214" fill="none"
                                                             xmlns="http://www.w3.org/2000/svg">
@@ -317,7 +336,7 @@ export const Cards = () => {
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div id="beyond-creativity" className="work_background">
+                                                <div id="beyond-creativity" className="work_background work_plus">
                                                     <div className="work_embed w-embed"><svg width="100%"
                                                             height="100%" viewBox="0 0 214 214" fill="none"
                                                             xmlns="http://www.w3.org/2000/svg">
@@ -418,7 +437,7 @@ export const Cards = () => {
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div id="salud-spirits" className="work_background">
+                                                <div id="salud-spirits" className="work_background work_circle">
                                                     <div className="work_embed w-embed"><svg width="100%"
                                                             height="100%" viewBox="0 0 214 214" fill="none"
                                                             xmlns="http://www.w3.org/2000/svg">

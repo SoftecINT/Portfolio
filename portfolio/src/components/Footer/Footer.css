@@ -194,3 +194,181 @@
   max-width: 90ch;
 }
 
+
+
+
+
+
+/* CDN css */
+body {
+  font-family: 'Your Typekit Font', sans-serif, 'Arial'; /* Replace with your Typekit font name */
+  margin: 0;
+  padding: 0;
+  color: #333; /* Default text color */
+  background-color: #f9f9f9; /* Page background color */
+}
+
+/* General Typography (Fallback Setup for Linked Custom JS) */
+body {
+  font-family: 'Arial', sans-serif; /* Add a font-family fallback */
+  color: #333; /* Default text color */
+  background-color: #f5f5f5; /* Neutral background color */
+}
+
+/* Favicon and Apple Touch Icon Fallback */
+.favicon {
+  display: none; /* Favicon is handled by the browser */
+}
+
+/* Cookie Consent Banner Styling */
+.fs-cc-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.85); /* Dark background for the banner */
+  color: #fff; /* White text for contrast */
+  font-size: 14px;
+  padding: 15px 20px;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+}
+
+.fs-cc-banner button {
+  background: #ff6f61; /* Primary button color */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.fs-cc-banner button:hover {
+  background: #e55d50; /* Darker shade on hover */
+}
+
+/* Touch-Specific Styles */
+.w-mod-touch body {
+  -webkit-tap-highlight-color: transparent; /* Remove tap highlight on mobile */
+  touch-action: manipulation; /* Optimize touch interaction */
+}
+
+.w-mod-touch button {
+  padding: 12px 24px;
+  font-size: 16px;
+}
+
+.w-mod-touch input, 
+.w-mod-touch textarea {
+  font-size: 16px; /* Larger input text for better touch usability */
+  padding: 10px;
+}
+
+/* Icon Classes */
+.apple-touch-icon {
+  width: 120px; /* Default Apple touch icon size */
+  height: 120px;
+}
+
+/* Buttons and Inputs */
+
+
+/* Styling for Animations and Dynamic Elements */
+.dynamic-element {
+  position: relative;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease-out; /* Smooth animation */
+}
+
+.dynamic-element.visible {
+  opacity: 1;
+  transform: translateY(0); /* Visible state */
+}
+
+/* LinkedIn Pixel Fallback Visibility */
+.pixel-tracker {
+  display: none;
+  height: 1px;
+  width: 1px;
+  opacity: 0; /* Ensures it's visually hidden */
+}
+
+/* Styling for Modals or Pop-ups */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 600px;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  z-index: 1000;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Overlay for Modals */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal-overlay.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* General Responsive Design */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .fs-cc-banner {
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .fs-cc-banner button {
+    margin-top: 10px;
+  }
+
+  button, a {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .modal {
+    width: 100%;
+    max-width: 90%;
+  }
+}
+
+/* Scroll Behavior for Modernizr (Optional) */
+.w-mod-js body {
+  scroll-behavior: smooth; /* Enable smooth scrolling for JS-enabled users */
+}
