@@ -1,6 +1,12 @@
 import React from "react";
 import "./Contactus.css";
 import placeholder50 from "../../assets/placeholder-50.png";
+import linkedinn from "../../assets/linkedinn.png";
+import twitter from "../../assets/twitter.png";
+import instagram from "../../assets/instagram.png";
+import instagram1 from "../../assets/insta1.png";
+import linkedinn1 from "../../assets/linkedinn1.png";
+import twitter1 from "../../assets/twitter1.png";
 
 const ContactUsComp = () => {
   return (
@@ -96,31 +102,31 @@ const ContactUsComp = () => {
     <div className="col-md-3 d-flex flex-column justify-content-start align-items-start p-4 bg-black text-white">
       <div className="contact-info">
         <p>Prepare for a quick response</p>
-        <a href="mailto:interact@fantasy.co">interact@fantasy.co</a>
-        <p>New York</p>
+        <a href="mailto:admin@softecint.com">admin@softecint.com</a>
+        <p>Karachi</p>
         <p>
-          <a href="#">Get directions</a> | +1 212-941-5220
+          <a href="#">Get directions</a> | (+92) 345 - 8855857
         </p>
         <a href="#">Privacy Policy</a>
       </div>
 
       <div className="team-info">
         <div className="team-member">
-          <img src={placeholder50} alt="Firidosh Tangri" />
+          <img style={{backgroundColor: "white" }} src={linkedinn1} alt="Firidosh Tangri" />
           <p>
-            Firidosh Tangri <small>CEO</small>
+            Linked In <small>Visit our LinkedIn page for more details about what we do and connect with us!</small>
           </p>
         </div>
         <div className="team-member">
-          <img src={placeholder50} alt="David Martin" />
+          <img style={{backgroundColor: "white" }} src={instagram1} alt="David Martin" />
           <p>
-            David Martin <small>President & Founder</small>
+            Instagram <small>Follow us on Instagram for updates, news, and more!</small>
           </p>
         </div>
         <div className="team-member">
-          <img src={placeholder50} alt="Peter Smart" />
+          <img style={{backgroundColor: "white" }} src={twitter1} alt="Peter Smart" />
           <p>
-            Peter Smart <small>Active Windows</small>
+            Twitter <small>Explore our Twitter profile to learn more about our work and team!</small>
           </p>
         </div>
       </div>

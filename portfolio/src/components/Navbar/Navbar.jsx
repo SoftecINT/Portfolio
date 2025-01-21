@@ -17,7 +17,7 @@ const Navbar = () => {
       <div className="nav_content">
         <div className="nav_brand-wrapper">
           <a
-            href="https://softecint.com/"
+            href="/"
             aria-current="page"
             className="nav_brand w-nav-brand w--current"
           >
@@ -37,38 +37,8 @@ const Navbar = () => {
               data-w-id="f427bac6-ebd1-5091-ffa8-bad772c306f5"
               className="nav_dropdown w-dropdown"
             >
-              <div className="nav_dropdown-toggle w-dropdown-toggle">
-                <div className="nav_dropdown-text-wrapper">
-                  <div className="nav_dropdown-text-static">
-                    <div>Our</div>
-                  </div>
-                  <div className="nav_dropdown-text-rotate">
-                    <div className="nav_dropdown-text-rotate_item is-1">
-                      Portfolio
-                    </div>
-                    <div className="nav_dropdown-text-rotate_item is-2">
-                      agencies
-                    </div>
-                    <div className="nav_dropdown-text-rotate_item is-3">
-                      enterprise
-                    </div>
-                  </div>
-                </div>
-                <div className="nav_dropdown-icon w-icon-dropdown-toggle"></div>
-              </div>
-              <nav className="nav_dropdown-list w-dropdown-list">
-                <div className="nav_dropdown-list-wrap">
-                  <a href="/for-bold-brands" className="nav_dropdown-link w-dropdown-link">
-                    A
-                  </a>
-                  <a href="/for-creative-agencies-en" className="nav_dropdown-link w-dropdown-link">
-                    B
-                  </a>
-                  <a href="/for-webflow-enterprise" className="nav_dropdown-link w-dropdown-link">
-                    C
-                  </a>
-                </div>
-              </nav>
+              
+              
             </div>
           </div>
           <div className="nav_link-wrapper">
