@@ -189,3 +189,170 @@
     transform: translateY(4rem);
   }
 }
+
+
+
+
+
+
+
+
+/* CDN css */
+
+/* General Styles */
+body {
+  font-family: 'Your Adobe Typekit Font', sans-serif; /* Replace with the specific Typekit font name */
+  margin: 0;
+  padding: 0;
+  /* overflow-x: hidden; */
+  /* overflow-y: auto; */
+  scroll-behavior: smooth; /* Smooth scrolling for fallback */
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Smooth Scroll (for Lenis and fallback) */
+html {
+  /* overflow-y: auto; */
+  scroll-behavior: smooth;
+ 
+}
+
+/* GSAP Animation Classes */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ScrollTrigger Element Highlight */
+.scroll-section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.scroll-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Cookie Consent Styling (Finsweet) */
+.fs-cc-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 20px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+}
+
+.fs-cc-banner button {
+  background: #00bcd4;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.fs-cc-banner button:hover {
+  background: #008ba3;
+}
+
+/* Disable Scrolling */
+.disable-scroll {
+  overflow: hidden !important;
+}
+
+/* Smooth Scroll Styling */
+.scroll-container {
+  overflow: hidden;
+  position: relative;
+}
+
+/* Google Tag Manager (Hidden by Default) */
+[data-gtm] {
+  display: none;
+}
+
+/* LinkedIn Tracking Placeholder */
+.linkedIn-tracking {
+  display: none;
+}
+
+/* Additional Animations */
+.zoom-in {
+  animation: zoomIn 0.5s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Customizable Modals (useful for ScrollDisable and GTM modals) */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10000;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: none;
+}
+
+.modal.active {
+  display: block;
+}
+
+/* Typography Styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Your Adobe Typekit Font', serif;
+  margin: 0;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Buttons */
+button {
+  font-family: inherit;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #6200ea;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #3700b3;
+}
