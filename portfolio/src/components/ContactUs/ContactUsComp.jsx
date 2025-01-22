@@ -99,16 +99,14 @@ const ContactUsComp = () => {
     </div>
 
     {/* Right Section for Contact Info and Team Info */}
-    <div className="col-md-3 d-flex flex-column justify-content-start align-items-start p-4 bg-black text-white">
+    <div className="col-md-3 d-flex flex-column justify-content-start align-items-start p-3 bg-black text-white">
       <div className="contact-info">
-        <p>Prepare for a quick response</p>
+        <p className="text-left">
+        <b>Prepare for a quick response</b>
+        <br />
         <a href="mailto:admin@softecint.com">admin@softecint.com</a>
-        <p>Karachi</p>
-        <p>
-          
-          <a href="https://maps.app.goo.gl/6AJvP7xAS63PwUrF6" target="blank">Get directions</a> | (+92) 345 - 8855857
         </p>
-        <a href="#">Privacy Policy</a>
+        
       </div>
 
       <div className="team-info">
@@ -129,8 +127,14 @@ const ContactUsComp = () => {
           <p>
             Twitter <small>Explore our Twitter profile to learn more about our work and team!</small>
           </p>
+          
         </div>
       </div>
+      <div className="contact-info">
+      <p className="mt-2">
+          <a href="https://maps.app.goo.gl/6AJvP7xAS63PwUrF6" target="blank">Get directions</a> <br /> (+92) 345 - 8855857 | Karachi
+        </p>
+        </div>
     </div>
   </div>
 </div>

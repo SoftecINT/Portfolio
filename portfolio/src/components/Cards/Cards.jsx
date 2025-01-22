@@ -20,7 +20,7 @@ export const Cards = () => {
                                     digital creations.</p>
                             </div>
                             <div className="home-work_shape-wrapper">
-                                <div className="home-work_shape1 w-embed">
+                                <div className="home-work_shape1 w-embed ">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"
                                         viewBox="0 0 159 193" fill="none"

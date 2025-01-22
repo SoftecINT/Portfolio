@@ -2,23 +2,24 @@ import React,{ useState, useEffect } from 'react'
 import './Navbar.css'
 import logo from '../../assets/whitelogo.svg'
 const Navbar = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
+  // const [isScrolled, setIsScrolled] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 950) {
-        setIsScrolled(false);
-      } else {
-        setIsScrolled(true);
-      }
-    };
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     if (window.scrollY > 950) {
+  //       setIsScrolled(false);
+  //     } else {
+  //       setIsScrolled(true);
+  //     }
+  //   };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  //   window.addEventListener('scroll', handleScroll);
+  //   return () => window.removeEventListener('scroll', handleScroll);
+  // }, []);
   return (
     
-    <header className={`nav_component ${isScrolled ? 'scrolled' : ''}`}>
+    // <header className={`nav_component ${isScrolled ? 'scrolled' : ''}`}>
+    <header className="nav_component">
     <div
       data-animation="default"
       data-collapse="none"

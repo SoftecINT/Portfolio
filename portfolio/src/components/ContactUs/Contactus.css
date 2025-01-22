@@ -515,7 +515,7 @@ input:focus, textarea:focus {
 
 /* TEAM INFO Start */
 .team-info {
-    margin-top: 3rem;
+    margin-top: 1.5rem;
     display: flex;
     flex-direction: column;
     gap: 1.5rem; /* Spacing between team members */
