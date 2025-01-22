@@ -1,4 +1,8 @@
 
+
+
+
+
 .footer_component {
   background-color: var(--background-color--background-primary);
   color: var(--text-color--text-alternate);
@@ -371,4 +375,10 @@ body {
 /* Scroll Behavior for Modernizr (Optional) */
 .w-mod-js body {
   scroll-behavior: smooth; /* Enable smooth scrolling for JS-enabled users */
+}
+
+
+
+.lochead{
+  width: 200px;
 }

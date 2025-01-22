@@ -22,7 +22,8 @@ const Ourblogs = () => {
             </div>
             <div class="content">
               <h2>46 ideas for Elon Musk and Tesla</h2>
-              <h6>by David Martin</h6>
+              <h6>by Dani</h6>
+              <h6><span>12/11/24</span></h6>
             </div>
         </div>
         <div class="card">
@@ -32,6 +33,8 @@ const Ourblogs = () => {
             <div class="content">
               <h2>46 ideas for Elon Musk and Tesla</h2>
               <h6>by David Martin</h6>
+              <h6><span>12/11/24</span></h6>
+
             </div>
         </div>
         <div class="card">
@@ -41,6 +44,8 @@ const Ourblogs = () => {
             <div class="content">
               <h2>46 ideas for Elon Musk and Tesla</h2>
               <h6>by David Martin</h6>
+              <h6><span>12/11/24</span></h6>
+
             </div>
         </div>
         </div>

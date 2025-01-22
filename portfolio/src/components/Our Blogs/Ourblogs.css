@@ -73,22 +73,21 @@
             width: 100%;
             display: flex;
             flex-direction:column;
-            border-radius: 1.5rem;
         }
         .card .img-div{
             height: 70%;
             width: 100%;
             /* background-color: #fff; */
-            border-radius: 1.5rem;
 
         }
         .card .img-div img{
             width: 100%;
             object-fit: cover;
             height: 100%;
-            border-radius: 1.5rem;
-
             
+        }
+        .img-div img{
+            border-radius: 0.25rem;
         }
 
         .card .content{

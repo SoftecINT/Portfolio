@@ -23,93 +23,32 @@ const Services = () => {
     <section className="bg-neutral-950 p-4 md:p-8">
       <div className="mx-auto max-w-5xl">
         <Link
-          heading="UI/UX  Design"
-          subheading={
-            <>
-              We specialize in crafting responsive UI/UX designs that adapt <br />
-              seamlessly to all devices, ensuring a consistent and engaging user experience. <br />
-              <br />
-              <ul>
-                <li><strong>Cross-Device Compatibility:</strong> Designs optimized for desktops, tablets, and mobile platforms.</li>
-                <li><strong>User-Centric Interfaces:</strong> Prioritizing intuitive navigation and accessibility for all users.</li>
-                <li><strong>Modern Aesthetics:</strong> Sleek, visually appealing designs tailored to your brand.</li>
-                <li><strong>Performance Optimization:</strong> Ensuring fast loading and smooth interactions.</li>
-                <li><strong>Scalable Solutions:</strong> Designs that grow with your business needs.</li>
-              </ul>
-            </>
-          }
+          heading="UI/UX &nbsp; Design"
+          
           imgSrc={mockup1}
           href="#"
         />
         <Link
-          heading="Graphic Designing"
-          subheading={
-            <>
-              We specialize in creating stunning graphic designs <br/> that capture your brand's essence and engage your audience. <br />
-              <br />
-              <ul>
-                <li><strong>Brand Identity Design:</strong> Creating unique logos, color schemes, and typography that represent your brand.</li>
-                <li><strong>Print Design:</strong> Crafting eye-catching brochures, posters, flyers, and business cards that make a lasting impression.</li>
-                <li><strong>Digital Design:</strong> Designing captivating social media graphics, email templates, and web visuals to boost your online presence.</li>
-                <li><strong>Packaging Design:</strong> Developing product packaging that is both attractive and functional, enhancing customer experience.</li>
-                <li><strong>Illustrations & Icons:</strong> Custom illustrations and icons that communicate your message in a creative and engaging way.</li>
-              </ul>
-            </>
-          }          
+          heading="Graphic &nbsp; Designing"
+                    
           imgSrc={mockup2}
           href="#"
         />
         <Link
-          heading="Full Stack Development"
-          subheading={
-            <>
-              We specialize in delivering comprehensive full-stack development services <br/> that build robust and scalable web applications from the ground up. <br />
-              <br />
-              <ul>
-                <li><strong>Front-End Development:</strong> Building responsive UIs with React, Angular, and Vue.js.</li>
-                <li><strong>Back-End Development:</strong> Creating server-side solutions with Node.js, Python, and Java.</li>
-                <li><strong>Database Management:</strong> Managing SQL (PostgreSQL, MySQL) and NoSQL (MongoDB) databases.</li>
-                <li><strong>API Development:</strong> Developing RESTful and GraphQL APIs for seamless integration.</li>
-                <li><strong>Cloud Integration:</strong> Implementing scalable cloud solutions with AWS, Azure, and Google Cloud.</li>
-              </ul>
-            </>
-          }               
+          heading="Full Stack &nbsp;Development"
+                         
           imgSrc={mockup3}
           href="#"
         />
         <Link
-          heading="Laravel Development"
-          subheading={
-            <>
-              We specialize in developing powerful and scalable web applications using Laravel, <br /> providing high-quality solutions with clean and maintainable code. <br />
-              <br />
-              <ul>
-                <li><strong>Laravel Framework:</strong> Building robust applications using the elegant Laravel framework.</li>
-                <li><strong>Database Management:</strong> Managing databases with Laravel's Eloquent ORM and migrations.</li>
-                <li><strong>RESTful APIs:</strong> Developing efficient RESTful APIs for seamless communication and data exchange.</li>
-                <li><strong>Authentication & Authorization:</strong> Implementing secure user authentication and role-based access control.</li>
-                <li><strong>Deployment & Hosting:</strong> Deploying Laravel applications on cloud platforms like AWS, DigitalOcean, and shared hosting.</li>
-              </ul>
-            </>
-          }          
+          heading="Laravel &nbsp; Development"
+                    
           imgSrc={mockup2}
           href="#"
         />
         <Link
-          heading="Mern Development"
-          subheading={
-            <>
-              We specialize in building dynamic and scalable web applications using the MERN stack, <br /> leveraging MongoDB, Express, React, and Node.js for full-stack solutions. <br />
-              <br />
-              <ul>
-                <li><strong>MongoDB:</strong> Managing NoSQL databases for flexible data storage and scalability.</li>
-                <li><strong>Express.js:</strong> Building server-side applications and RESTful APIs with Express.js.</li>
-                <li><strong>React.js:</strong> Developing interactive user interfaces with the React JavaScript library.</li>
-                <li><strong>Node.js:</strong> Creating fast and scalable server-side applications with Node.js.</li>
-                <li><strong>API Integration:</strong> Integrating third-party APIs and developing custom APIs for seamless functionality.</li>
-              </ul>
-            </>
-          }          
+          heading="Mern &nbsp; Development"
+                    
           imgSrc={mockup2}
           href="#"
         />
