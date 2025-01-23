@@ -1,0 +1,191 @@
+.container1 {
+    display: flex;
+    justify-content: space-between; /* Distribute space between items */
+    align-items: center; /* Center items vertically */
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+
+}
+
+.text-container {
+    margin-left: 8vh;
+    width: 50vw; /* Half the viewport width */
+    text-align: center; /* Center text inside */
+}
+
+.img-container {
+    width: 40vw; 
+}
+
+
+.ourtrusted-partners{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column ;
+    background-color: #fff;
+    gap: 2vw;
+    /* padding-bottom: 10vw; */
+  }
+  .ourtrusted-partners h1{
+    text-align: center;
+    font-size: 5vw;
+  }
+  /* Overall container for partners */
+.partners {
+  height: 60%;
+  width: 60%;
+  /* background-color: #000; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2vw; 
+  align-items: center;
+  justify-content: space-between;
+}
+/* Individual partner styles */
+.partner {
+    height: 20%;
+    width: 30%;
+    flex: 1 1 calc(25% - 2vw); /* 4 partners per row, with space for gap */
+    background-color: #f1f1f1;
+    display: flex;
+    border-radius: .6vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .partner a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: .6vw;
+  }
+
+
+.Founder-container{
+    height: 120vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column ;
+    background-color: #fff;
+    gap: 2vw;
+  }
+  .Founder-container h1{
+    text-align: center;
+    font-size: 7vw;
+  }
+  .Founder-container h1 span{
+    border: .125rem solid #000;
+    border-radius: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: inline-block;
+  }
+
+  .card-founder {
+    height: 500px;
+    width: 400px;
+    border: solid 1px #000;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    text-align: center; /* Optionally, center the text inside h3 and h4 */
+}
+
+.card-founder img {
+    height: 60%; /* Adjust based on how much space you want the image to take */
+    width: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.card-founder h3{
+    margin: 10px 0;
+}
+.card-founder h4 {
+    margin: 0 0;
+    font-weight:100; /* Add margin for spacing between the elements */
+}
+
+
+
+/* Team container below  */
+.Team-container{
+    height: 180vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    gap: 2vw;
+  }
+  .Team-container h1{
+    text-align: center;
+    font-size: 7vw;
+  }
+  .Team-container h1 span{
+    border: .125rem solid #000;
+    border-radius: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: inline-block;
+  }
+
+
+
+
+
+
+
+
+
+
+
+  .team-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 80px;
+    flex-wrap: wrap;
+    padding: 100px;
+  }
+  
+  .team-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 22%;  /* Adjust the width for four cards in one row */
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .team-card img {
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .team-card h3 {
+    margin-top: 10px;
+    font-size: 1.25rem;
+    color: #333;
+  }
+  
+  .team-card h4 {
+    margin-top: 5px;
+    color: #666;
+    font-size: 1rem;
+  }
+  
+  .team-card:hover {
+    transform: translateY(-10px);  /* Optional hover effect */
+  }
+  
+
+  

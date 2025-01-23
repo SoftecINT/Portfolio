@@ -69,8 +69,8 @@ const Navbar = () => {
             <div className="nav_link-hover"></div>
           </div>
           <div className="nav_link-wrapper">
-            <a href="/contact" className="nav_link w-nav-link">
-              <span>Blog</span>
+            <a href="/aboutus" className="nav_link w-nav-link">
+              <span>About Us</span>
             </a>
             <div className="nav_link-hover"></div>
           </div>
