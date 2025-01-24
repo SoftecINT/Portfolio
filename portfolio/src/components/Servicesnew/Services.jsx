@@ -35,19 +35,19 @@ const Services = () => {
           href="#"
         />
         <Link
-          heading="Full Stack &nbsp;Development"
+          heading="Web &nbsp;Development"
                          
           imgSrc={mockup3}
           href="#"
         />
         <Link
-          heading="Laravel &nbsp; Development"
+          heading="Application &nbsp; Development"
                     
           imgSrc={mockup2}
           href="#"
         />
         <Link
-          heading="Mern &nbsp; Development"
+          heading="Digital &nbsp; Marketing"
                     
           imgSrc={mockup2}
           href="#"
