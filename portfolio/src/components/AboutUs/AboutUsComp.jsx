@@ -25,7 +25,7 @@ const AboutUsComp = () => {
       </div>
 
       {/* Header close here  */}
-    <div className="container1 ">
+    <div className="container1 bg-black text-white ">
       <div className="text-container">
         <SplitText
           text="Back in 2006 at the start ofthe digital era we founded our first agency crafting digital products. But it took a while when we witnessed the early indicators of a significant shift by upcoming tech called low-code"
