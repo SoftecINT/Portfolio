@@ -17,6 +17,164 @@
     width: 40vw; 
 }
 
+/* Popup Overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Popup Content */
+.popup-content {
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  width: 90%;
+  max-width: 800px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: fadeIn 0.4s ease-out;
+
+}
+
+/* Close Button */
+.close-button {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 50px;
+  height: 50px;
+  background-color: #ff4d4f;
+  border: none;
+  color: white;
+  font-size: 30px;
+  font-weight: lighter;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.close-button:hover {
+  background-color: #d9363e;
+  transform: scale(1.1) rotate(90deg);
+  transition: all 0.3s ease;
+}
+.popup-content {
+  overflow: visible;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.close-button:hover {
+  background-color: #f8591a;
+  transform: scale(1.1) rotate(90deg);
+}
+
+/* Popup Container */
+.popup-container {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* Popup Image Section */
+.popup-image {
+  flex: 1;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.popup-profile-img {
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.linkedin-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  color: white;
+  border: #f8591a 2px solid;
+  font-size: 1rem;
+  font-weight: normal;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.linkedin-button:hover {
+  background-color: #f8591a;
+  transform: scale(1.05);
+}
+
+/* Popup Details Section */
+.popup-details {
+  flex: 2;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.popup-name {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+color: #f8591a;
+font-family: 'Great Vibes', cursive;
+}
+
+.popup-role {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.popup-description {
+  font-size: 1rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: normal;
+  line-height: 1.6;
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.popup-description::-webkit-scrollbar {
+  width: 6px;
+}
+
+.popup-description::-webkit-scrollbar-thumb {
+  background-color: #bbb;
+  border-radius: 10px;
+}
+
 
 .ourtrusted-partners{
     height: 70vh;
@@ -103,13 +261,28 @@
     width: 100%;
     object-fit: cover;
     border-radius: 30px;
+    filter: grayscale(100%); /* Default grayscale */
+    transform: scale(1); /* Default size */
+    transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.card-founder img:hover {
+  transform: scale(1.03); 
+    filter: grayscale(0%);
 }
 
 .card-founder h3{
     margin: 10px 0;
+    font-size: 2rem;
+    color: #f8591a;
+    font-family: 'Great Vibes', cursive;
 }
 .card-founder h4 {
     margin: 0 0;
+    font-size: 1.25rem;
+    font-weight: normal;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight:100; /* Add margin for spacing between the elements */
 }
 
@@ -159,33 +332,53 @@
   .team-card {
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    /* padding: 20px; */
     width: 22%;  /* Adjust the width for four cards in one row */
     text-align: center;
-    transition: transform 0.3s ease;
+    /* transition: transform 0.3s ease; */
+
+  cursor: pointer;
   }
   
+  
+  
   .team-card img {
-    border-radius: 50%;
+    border-radius: 8px;
+    width: 100%;
     object-fit: cover;
+  }
+  .team-card img {
+    filter: grayscale(100%); /* Default grayscale */
+    transform: scale(1); /* Default size */
+    transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out;
+  }
+  
+  .team-card:hover img {
+    transform: scale(1.03); 
+    filter: grayscale(0%);
+
   }
   
   .team-card h3 {
     margin-top: 10px;
-    font-size: 1.25rem;
-    color: #333;
+    font-size: 2rem;
+    color: #f8591a;
+    font-family: 'Great Vibes', cursive;
+
   }
   
   .team-card h4 {
     margin-top: 5px;
-    color: #666;
-    font-size: 1rem;
+    color: black;
+    font-weight: normal;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.25rem;
   }
   
-  .team-card:hover {
-    transform: translateY(-10px);  /* Optional hover effect */
-  }
+  /* .team-card:hover {
+    transform: translateY(-10px);  
+  } */
   
 
   

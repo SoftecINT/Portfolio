@@ -6,7 +6,7 @@ import logo from '../../assets/whitelogo.svg';
 
 const ZoominZoomout = () => {
   useEffect(() => {
-    if (window.gsap && window.ScrollTrigger) {
+    // if (window.gsap && window.ScrollTrigger) {
       const gsap = window.gsap;
       const ScrollTrigger = window.ScrollTrigger;
 
@@ -39,7 +39,7 @@ const ZoominZoomout = () => {
         document.querySelector("#zoom-in").scrollIntoView({ behavior: "smooth" });
       },
     });
-  }
+  
   }, []); // Empty dependency array to run only once when component mounts
 
   // GSAP animation for logo fall effect with shadow (bounce effect)

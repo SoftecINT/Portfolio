@@ -1,15 +1,84 @@
-import React from "react";
+import React, { useState } from "react";
 import SplitText from "./Splittext";
 import "./AboutUs.css";
 import logo from "../../assets/whitelogo.svg";
 import xiomi from "../../assets/xiomi.jpg";
-import { MdHeight } from "react-icons/md";
+import asset1 from '../../assets/images.jpg'
 
+const teamMembers = [
+  {
+    name: "Nasir Qureshi",
+    role: "Team Lead",
+    image: asset1, 
+    details:
+      "As the Editorial Manager at AFE, Noha Saadi’s motto, Every detail matters... every word counts, reflects her approach to her work. Noha’s creative vision, paired with her meticulous attention to detail, ensures that content not only meets strategic objectives but resonates with the audience. Her background as a writer gives her a deep understanding of the creative process, enabling her to guide the team in crafting impactful, high-quality content. When she’s not working, Noha enjoys reading, writing, and fishing. She also loves traveling and is drawn to destinations rich in history or beautiful beaches. Fun fact: Noha has a variety of fun facts, but they always seem to cancel each other out!",
+  },
+  {
+    name: "Ali Naeem",
+    role: "Developer",
+    image: asset1, // Add image URL
+    details:
+      "Ali specializes in front-end development with a strong focus on modern UI/UX designs.",
+  },
+  {
+    name: "Momin Khan",
+    role: "Developer",
+    image: asset1, // Add image URL
+    details:
+      "Ali specializes in front-end development with a strong focus on modern UI/UX designs.",
+  },
+  {
+    name: "Danish Rizwan",
+    role: "Developer",
+    image: asset1, // Add image URL
+    details:
+      "Ali specializes in front-end development with a strong focus on modern UI/UX designs.",
+  },
+  {
+    name: "Zain Tanoli",
+    role: "Developer",
+    image: asset1, // Add image URL
+    details:
+      "Ali specializes in front-end development with a strong focus on modern UI/UX designs.",
+  },
+  {
+    name: "Ali Hassan",
+    role: "Developer",
+    image: asset1, // Add image URL
+    details:
+      "Ali specializes in front-end development with a strong focus on modern UI/UX designs.",
+  },
+  {
+    name: "Shahid Saeed",
+    role: "Developer",
+    image: asset1, // Add image URL
+    details:
+      "Ali specializes in front-end development with a strong focus on modern UI/UX designs.",
+  },
+  {
+    name: "Asad Hayat",
+    role: "Developer",
+    image: asset1, // Add image URL
+    details:
+      "Ali specializes in front-end development with a strong focus on modern UI/UX designs.",
+  },];
 const handleAnimationComplete = () => {
   console.log("All letters have animated!");
 };
 
+  
 const AboutUsComp = () => {
+
+  const [selectedMember, setSelectedMember] = useState(null);
+
+  const handleCardClick = (member) => {
+    setSelectedMember(member);
+  };
+
+  const closePopup = () => {
+    setSelectedMember(null);
+  };
+
   return (
     <div>
       <div className="home-container">
@@ -61,59 +130,74 @@ const AboutUsComp = () => {
         <div className="Founder-container">
             <h1>The <span>Founder</span> </h1>
             <div className="card-founder">
-                <img style={{height: "350px", width: "350px"}} src="" alt="" />
-                <h3 className="text-2xl font-semibold text-black">Shakeel Ahmed</h3>
-                <h4 className="text-gray-600 text-lg">Founder</h4>
+                <img style={{height: "350px", width: "350px"}} src={asset1} alt="" />
+                <h3 className="text-2xl font-semibold">Shakeel Ahmed</h3>
+                <h4 className="text-black text-lg">Founder</h4>
             </div>
         </div>
 
 
         <div className="Team-container">
-            <h1>The <span>Team</span> </h1>
-            <div className="team-cards">
-            <div className="team-card">
-                    <img style={{height: "300px", width: "300px"}} src="" alt="" />
-                    <h3 className="text-2xl font-semibold text-black">Nasir Qureshi</h3>
-                    <h4 className="text-gray-600 text-lg">Team Lead</h4>
-                </div>
-                <div className="team-card">
-                    <img style={{height: "300px", width: "300px"}} src="" alt="" />
-                    <h3 className="text-2xl font-semibold text-black">Ali Naeem</h3>
-                    <h4 className="text-gray-600 text-lg">Developer</h4>
-                </div>
-                <div className="team-card">
-                    <img style={{height: "300px", width: "300px"}} src="" alt="" />
-                    <h3 className="text-2xl font-semibold text-black">Momin Khan</h3>
-                    <h4 className="text-gray-600 text-lg">Developer</h4>
-                </div>
-                <div className="team-card">
-                    <img style={{height: "300px", width: "300px"}} src="" alt="" />
-                    <h3 className="text-2xl font-semibold text-black">Danish Rizwan</h3>
-                    <h4 className="text-gray-600 text-lg">Developer</h4>
-                </div>
-                <div className="team-card">
-                    <img style={{height: "300px", width: "300px"}} src="" alt="" />
-                    <h3 className="text-2xl font-semibold text-black">Ali Hassan</h3>
-                    <h4 className="text-gray-600 text-lg">Marketing Manager</h4>
-                </div>
-                <div className="team-card">
-                    <img style={{height: "300px", width: "300px"}} src="" alt="" />
-                    <h3 className="text-2xl font-semibold text-black">Zaim Tanoli</h3>
-                    <h4 className="text-gray-600 text-lg">Developer</h4>
-                </div>
-                <div className="team-card">
-                    <img style={{height: "300px", width: "300px"}} src="" alt="" />
-                    <h3 className="text-2xl font-semibold text-black">Shahid Saeed</h3>
-                    <h4 className="text-gray-600 text-lg">Tea Boy</h4>
-                </div>
-                <div className="team-card">
-                    <img style={{height: "300px", width: "300px"}} src="" alt="" />
-                    <h3 className="text-2xl font-semibold text-black">Asad Hayat</h3>
-                    <h4 className="text-gray-600 text-lg">COC</h4>
-                </div>
-                
+        <h1>
+          The <span>Team</span>
+        </h1>
+        <div className="team-cards">
+          {teamMembers.map((member, index) => (
+            <div
+              key={index}
+              className="team-card"
+              onClick={() => handleCardClick(member)}
+            >
+              <img
+                style={{ height: "300px", width: "300px" }}
+                src={member.image}
+                alt={member.name}
+              />
+              <h3 className="text-2xl font-semibold">
+                {member.name}
+              </h3>
+              <h4 className="text-gray-600 text-lg">{member.role}</h4>
             </div>
+          ))}
         </div>
+      </div>
+
+      {selectedMember && (
+  <div className="popup-overlay">
+    <div className="popup-content" style={{backgroundColor: "black"}}>
+      <button className="close-button" onClick={closePopup}>
+        &times;
+      </button>
+      <div className="popup-container">
+        {/* Image Section */}
+        <div className="popup-image" >
+          <img
+            className="popup-profile-img"
+            src={selectedMember.image}
+            alt={selectedMember.name}
+          />
+          <a
+            href="https://www.linkedin.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="linkedin-button"
+          >
+            <i className="fab fa-linkedin"></i> Follow on LinkedIn
+          </a>
+        </div>
+
+        {/* Details Section */}
+        <div className="popup-details">
+          <h1 className="popup-name">{selectedMember.name}</h1>
+          <h2 className="popup-role">{selectedMember.role}</h2>
+          <h6 className="popup-description">{selectedMember.details}</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+)}
+
+    
 
     </div>
   );
