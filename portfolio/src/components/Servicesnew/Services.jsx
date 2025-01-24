@@ -26,7 +26,7 @@ const Services = () => {
           heading="UI/UX &nbsp; Design"
           
           imgSrc={mockup1}
-          href="#"
+          href="/uiuxdesign"
         />
         <Link
           heading="Graphic &nbsp; Designing"

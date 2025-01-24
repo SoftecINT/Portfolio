@@ -5,6 +5,7 @@ import Contactus from './pages/Contactus'
 import OurServices from './pages/OurServices'
 import Ourclients from './pages/Ourclients'
 import AboutUs from './pages/AboutUs'
+import UiUxDesign from './pages/UiUxDesign'
 
 const App = () => {
   return (
@@ -14,6 +15,10 @@ const App = () => {
       <Route path='/ourservices' element={<OurServices/>}/>
       <Route path='/ourclients' element={<Ourclients/>}/>
       <Route path='/aboutus' element={<AboutUs/>}/>
+
+
+      {/* innner pages */}
+      <Route path='/uiuxdesign' element={<UiUxDesign/>}/>
     </Routes>
   )
 }
