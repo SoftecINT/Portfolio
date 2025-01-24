@@ -34,9 +34,9 @@ export const Footer = () => {
                     <div className="heading-style-h3">
                       Code{" "}
                       <span className="footer_text-span">
-                      that Connects&#x27; Solutions that
+                        that Connects&#x27; Solutions that
                       </span>{" "}
-                       Work.
+                      Work.
                     </div>
                   </div>
                 </div>
@@ -72,7 +72,10 @@ export const Footer = () => {
                       </a>
                     </li>
                     <li className="footer_contact-list-item is-cta">
-                      <a href="/get-quote" className=" is-footer w-inline-block">
+                      <a
+                        href="/get-quote"
+                        className=" is-footer w-inline-block"
+                      >
                         <button className="btn">
                           <span>BOOK A CALL</span>
                         </button>
@@ -80,15 +83,9 @@ export const Footer = () => {
                     </li>
                   </ul>
                 </div>
-                <div
-                  className="footer_item"
-                >
-                  <div
-                    className="location_item"
-                  >
-                    <div className="location_image-wrapper">
-                      
-                    </div>
+                <div className="footer_item">
+                  <div className="location_item">
+                    <div className="location_image-wrapper"></div>
                     <div className="location_heading is-tilburg lochead">
                       Karachi (HQ)
                     </div>
@@ -97,35 +94,38 @@ export const Footer = () => {
                       Office No B-451
                       <br />
                       11-A Karachi
-                  
                     </div>
                   </div>
                 </div>
-                
-                <div
-                >
+
+                <div>
                   <div
-                  style={{float:'right'}} className="footer-map-container"
+                    
+                    className="footer-map-container"
                   >
                     <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d452.07563688418196!2d67.059912!3d24.9795471!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb340e5164466c5%3A0xf2981717778daa85!2sPlot%20B%20452%2C%20Sector%2011-A%20Sector%2011%20A%20North%20Karachi%20Twp%2C%20Karachi%2C%20Karachi%20City%2C%20Sindh!5e0!3m2!1sen!2s!4v1737549818269!5m2!1sen!2s"
-        width="500"
-        height="250"
-        style={{ border: 0 }}
-        allowFullScreen
-        loading="lazy"
-        referrerPolicy="no-referrer-when-downgrade"
-        title="Google Map Location"
-      ></iframe>
-        <div className="map-overlay">Find Us Here</div>
-        <a href="https://maps.google.com" target="_blank" className="map-button">Open in Maps</a>
-
-                    
+                      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d452.07563688418196!2d67.059912!3d24.9795471!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb340e5164466c5%3A0xf2981717778daa85!2sPlot%20B%20452%2C%20Sector%2011-A%20Sector%2011%20A%20North%20Karachi%20Twp%2C%20Karachi%2C%20Karachi%20City%2C%20Sindh!5e0!3m2!1sen!2s!4v1737549818269!5m2!1sen!2s"
+                      width="500"
+                      height="250"
+                      style={{ border: 0, borderRadius: "10px" }}
+                      allowFullScreen
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      title="Google Map Location"
+                    ></iframe>
+                    <div className="map-overlay">Find Us Here</div>
+                    <a
+                      href="https://maps.google.com"
+                      target="_blank"
+                      className="map-button"
+                    >
+                      Open in Maps
+                    </a>
                   </div>
                 </div>
               </div>
-              <div className="footer_copyright" >
-                <div className="footer_copyright_webflow" >
+              <div className="footer_copyright">
+                <div className="footer_copyright_webflow">
                   <div className="footer_copyright-copy">
                     <div>
                       © 2024{" "}
@@ -138,7 +138,6 @@ export const Footer = () => {
                       Leading Development agency
                     </div>
                   </div>
-                  
                 </div>
                 <div className="footer_copyright-links">
                   <a href="/get-quote" className="footer_copyright-link">
@@ -170,17 +169,11 @@ export const Footer = () => {
                     className="footer_copyright-zag-link w-inline-block"
                   ></a>
                 </div>
-               
               </div>
-              
             </div>
-           
           </div>
-          
         </div>
-        
       </div>
-      
     </footer>
   );
 };

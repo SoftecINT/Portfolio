@@ -1,7 +1,11 @@
-
-
 .footer-map-container {
+  --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+  background: #f7ba2b;
+  background: var(--background);
+  padding: 5px;
+  float: right;
   position: relative;
+  z-index: 1;
   width: 100%;
   max-height: 400px;
   overflow: hidden;
