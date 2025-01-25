@@ -32,25 +32,25 @@ const Services = () => {
           heading="Graphic &nbsp; Designing"
                     
           imgSrc={mockup2}
-          href="#"
+          href="graphicdesign"
         />
         <Link
           heading="Web &nbsp;Development"
                          
           imgSrc={mockup3}
-          href="#"
+          href="/webdevelopment"
         />
         <Link
           heading="Application &nbsp; Development"
                     
           imgSrc={mockup2}
-          href="#"
+          href="/appdevelopment"
         />
         <Link
           heading="Digital &nbsp; Marketing"
                     
           imgSrc={mockup2}
-          href="#"
+          href="/digitalmarketing"
         />
         <br /><br /><br /><br /> <br />
       </div>

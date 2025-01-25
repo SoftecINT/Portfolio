@@ -153,7 +153,8 @@
   
   .card-subtitle {
     font-size: 0.875rem; /* text-sm */
-    color: #a0aec0; /* text-gray-400 */
+    color: #a0aec0;
+    margin-left: 0px; /* text-gray-400 */
   }
   
   /* Card Footer */

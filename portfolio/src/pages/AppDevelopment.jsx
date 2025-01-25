@@ -1,19 +1,21 @@
 import React, { useRef, useEffect } from "react";
 import Layout from "../components/Layout/Layout";
 import backgroundImage from "../assets/daniel-olahh.jpg";
-import video from "../assets/video1.mp4";
+import video from "../assets/graphicdesign.mp4";
 import "../css/UiUxDesign.css";
 import avatar from "../assets/avatar.jpg"
 import { Footer } from '../components/Footer/Footer'
 
-import wireframe from '../assets/wireframe.png'
-import mockup from '../assets/mockup.png'
-import figma from '../assets/figma.png'
+import flutter from '../assets/flutter.png'
+import android from '../assets/android.png'
+import ios from '../assets/ios.png'
+
 import linkedin from '../assets/linkedinn.png'
 import instagram from '../assets/instagram.png'
 import twitter from '../assets/twitter.png'
 
-const UiUxDesign = () => {
+
+const AppDevelopment = () => {
   return (
     <>
       <Layout>
@@ -29,9 +31,9 @@ const UiUxDesign = () => {
 
           {/* Overlay */}
           <div className="absolute inset-0 bg-black/50 flex flex-col justify-center items-center text-center text-white">
-            <h1 className="text-6xl font-bold mb-4">Ui / Ux Design</h1>
+            <h1 className="text-6xl font-bold mb-4">Application Development</h1>
             <h3 className="text-2xl font-poppins mb-6">
-              We Provide top-notch UI/UX design
+              We provide High Quality and scalable Application Solutions
             </h3>
             <a
               className="px-6 py-3 bg-orange-500 hover:bg-orange-600 text-white rounded-lg shadow-lg transition duration-300"
@@ -49,7 +51,7 @@ const UiUxDesign = () => {
             {/* Header Section */}
             <div className="mb-12 max-w-2xl mx-auto">
               <h2 className="text-4xl font-bold text-gray-800 mb-4">
-                Ui / Ux Design
+              Application Development
               </h2>
               <h5 className="text-lg text-gray-600 mb-6">
                 This is the paragraph where you can write more details about
@@ -58,12 +60,13 @@ const UiUxDesign = () => {
                 otherwise, they wouldn't scroll to get here. Add a button if you
                 want the user to see more.
               </h5>
-              <a
+              {/* <a
                 href="#"
                 className="inline-block px-8 py-3 bg-orange-500 text-white rounded-full shadow-md hover:bg-orange-600 transition"
               >
                 See Details
-              </a>
+              </a> */}
+              <br />
             </div>
 
             {/* header end  */}
@@ -75,8 +78,8 @@ const UiUxDesign = () => {
                   <div className="back">
                     <div className="back-content">
                       
-                      <img src={figma} alt="" style={{ width: "50px" , height: "50px"}} />
-                      <strong>Figma</strong>
+                      <img src={flutter} alt="" style={{ width: "50px" , height: "50px"}} />
+                      <strong>FLUTTER</strong>
                     </div>
                   </div>
                 </div>
@@ -87,8 +90,8 @@ const UiUxDesign = () => {
                   {/* Back of the Card */}
                   <div className="back">
                     <div className="back-content">
-                    <img src={wireframe} alt="" style={{ width: "50px" , height: "50px"}} />
-                      <strong>WireFrames</strong>
+                    <img src={android} alt="" style={{ width: "50px" , height: "50px"}} />
+                      <strong>ANDROID</strong>
                     </div>
                   </div>
                 </div>
@@ -99,8 +102,8 @@ const UiUxDesign = () => {
                   {/* Back of the Card */}
                   <div className="back">
                     <div className="back-content">
-                    <img src={mockup} alt="" style={{ width: "50px" , height: "50px"}} />
-                      <strong>Mockups</strong>
+                    <img src={ios} alt="" style={{ width: "50px" , height: "50px"}} />
+                      <strong>IOS</strong>
                     </div>
                   </div>
                 </div>
@@ -118,7 +121,7 @@ const UiUxDesign = () => {
         <div className="section bg-black text-center py-16">
           <div className="container mx-auto px-4">
             <h2 className="text-4xl font-bold text-white mb-4">
-              OUR UI/UX Developers
+            Our Application Developers
             </h2>
 
             <div className="devcards">
@@ -128,8 +131,8 @@ const UiUxDesign = () => {
                   <img src={avatar} alt="Developer 1" className="avatar-img" />
                 </div>
                 <div className="card-body">
-                  <h3 className="card-title">Asad Hayat</h3>
-                  <p className="card-subtitle">UI/UX Developer</p>
+                  <h3 className="card-title">Nasir Qureshi</h3>
+                  <p className="card-subtitle">App Developer</p>
                 </div>
                 <div className="card-footer">
                   <a className="social-icon" href="#">
@@ -150,8 +153,8 @@ const UiUxDesign = () => {
                   <img src={avatar} alt="Developer 1" className="avatar-img" />
                 </div>
                 <div className="card-body">
-                  <h3 className="card-title">Zain Tanoli</h3>
-                  <p className="card-subtitle">UI/UX Developer</p>
+                  <h3 className="card-title">Momin Khan</h3>
+                  <p className="card-subtitle">App Developer</p>
                 </div>
                 <div className="card-footer">
                   <a className="social-icon" href="#">
@@ -172,8 +175,8 @@ const UiUxDesign = () => {
                   <img src={avatar} alt="Developer 1" className="avatar-img" />
                 </div>
                 <div className="card-body">
-                  <h3 className="card-title">Ali Hassan</h3>
-                  <p className="card-subtitle">UI/UX Developer</p>
+                  <h3 className="card-title">Danish Rizwan</h3>
+                  <p className="card-subtitle">App Developer</p>
                 </div>
                 <div className="card-footer">
                   <a className="social-icon" href="#">
@@ -198,8 +201,8 @@ const UiUxDesign = () => {
         <Footer/> 
 
       </Layout>
-    </>
-  );
-};
+    </> 
+  )
+}
 
-export default UiUxDesign;
+export default AppDevelopment
