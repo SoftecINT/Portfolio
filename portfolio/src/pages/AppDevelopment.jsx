@@ -15,6 +15,22 @@ import instagram from '../assets/instagram.png'
 import twitter from '../assets/twitter.png'
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const AppDevelopment = () => {
   return (
     <>
@@ -43,7 +59,8 @@ const AppDevelopment = () => {
             </a>
           </div>
         </div>
-
+  
+        
         {/* header end here  */}
 
         <div className="bg-white text-center py-16">
@@ -113,7 +130,7 @@ const AppDevelopment = () => {
             {/* cards end  */}
           </div>
         </div>
-
+        
         {/* info end  here  */}
 
         {/* Our ui/ux developers starts */}

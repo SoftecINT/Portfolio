@@ -13,7 +13,7 @@
     "@react-spring/web": "^9.7.5",
     "bootstrap": "^5.3.3",
     "clsx": "^2.1.1",
-    "framer-motion": "^11.16.0",
+    "framer-motion": "^11.18.2",
     "gsap": "^3.12.5",
     "lenis": "^1.1.18",
     "motion": "^12.0.1",
