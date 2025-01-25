@@ -113,7 +113,7 @@ const CenterImage = () => {
         <div className="shape circle"></div>
         <div className="shape triangle"></div>
         <div className="shape circle-small"></div>
-        <h1>Our Clients</h1 >
+        <h1>Our Clients.</h1 >
         </div>
       // </motion.div>
     
