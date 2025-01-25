@@ -1,6 +1,7 @@
 import React from 'react'
 import Layout from '../components/Layout/Layout'
 import Clients from '../components/Clients/Clients'
+import {Footer} from '../components/Footer/Footer'
 
 const Ourclients = () => {
   return (
@@ -8,6 +9,7 @@ const Ourclients = () => {
         <Layout>
         <Clients/>
         </Layout>
+        <Footer/>
     </div>
   )
 }

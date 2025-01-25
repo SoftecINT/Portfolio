@@ -1,6 +1,7 @@
 import React from 'react'
 import ContactUsComp from '../components/ContactUs/ContactUsComp'
 import Layout from '../components/Layout/Layout'
+import {Footer} from '../components/Footer/Footer'
 
 const Contactus = () => {
   return (
@@ -8,6 +9,7 @@ const Contactus = () => {
       <Layout>
         <ContactUsComp/>
         </Layout>
+        <Footer/>
     </div>
     
   )

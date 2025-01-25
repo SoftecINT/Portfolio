@@ -6,17 +6,30 @@ import {
     useScroll,
     useTransform,
   } from "framer-motion";
+  import {
+    SiAdobe,
+    SiApple,
+    SiFacebook,
+    SiGoogle,
+    SiLinkedin,
+    SiShopify,
+    SiSoundcloud,
+    SiSpotify,
+    SiTiktok,
+  } from "react-icons/si";
+  import { useAnimate } from "framer-motion";
   import { SiSpacex } from "react-icons/si";
   import { FiArrowRight, FiMapPin } from "react-icons/fi";
   import logo from '../../assets/whitelogo.svg'
 
 import mockup1 from '../../assets/mockup1.png'
 import mockup2 from '../../assets/mockup2.png'
+import Horizontal from '../Horizontal/Horizontal';
 
 const Clients = () => {
   return (
-<div className="bg-zinc-950">
-      <ReactLenis
+<div>
+      {/* <ReactLenis
         root
         options={{
           // Learn more -> https://github.com/darkroomengineering/lenis?tab=readme-ov-file#instance-settings
@@ -24,11 +37,13 @@ const Clients = () => {
           //   infinite: true,
           //   syncTouch: true,
         }}
-      >
-        <Nav />
+      > */}
+        {/* <Nav /> */}
         <Hero />
-        <Schedule />
-      </ReactLenis>
+        <Horizontal/>
+        <ClipPathLinks />
+        {/* <Schedule /> */}
+      {/* </ReactLenis> */}
     </div>
   )
 }
@@ -38,16 +53,7 @@ const Nav = () => {
       <nav className="fixed left-0 right-0 top-0 z-50 flex items-center justify-between px-6 py-3 text-white">
         {/* <SiSpacex className="text-3xl mix-blend-difference" /> */}
         <img src={logo} alt="Softecint" className='w-32 mix-blend-difference' />
-        <button
-          onClick={() => {
-            document.getElementById("launch-schedule")?.scrollIntoView({
-              behavior: "smooth",
-            });
-          }}
-          className="flex items-center gap-1 text-xs text-zinc-400"
-        >
-          START  <FiArrowRight />
-        </button>
+        
       </nav>
     );
   };
@@ -58,12 +64,12 @@ const Nav = () => {
 const Hero = () => {
   return (
     <div
-      style={{ height: `calc(${SECTION_HEIGHT}px + 100vh)` }}
+      // style={{ height: `calc(${SECTION_HEIGHT}px + 100vh)` }}
       className="relative w-full"
     >
       <CenterImage />
 
-      <ParallaxImages />
+      {/* <ParallaxImages /> */}
 
       <div className="absolute bottom-0 left-0 right-0 h-96 bg-gradient-to-b from-zinc-950/0 to-zinc-950" />
     </div>
@@ -90,55 +96,63 @@ const CenterImage = () => {
   );
 
   return (
-    <motion.div
-      className="sticky top-0 h-screen w-full"
-      style={{
-        clipPath,
-        backgroundSize,
-        opacity,
-        backgroundImage:"url(https://images.unsplash.com/photo-1460186136353-977e9d6085a1?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
+    // <motion.div
+    //   className="sticky top-0 h-screen w-full"
+    //   style={{
+        // clipPath,
+        // backgroundSize,
+        // opacity,
+        // backgroundImage:"url(https://images.unsplash.com/photo-1460186136353-977e9d6085a1?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
         //backgroundImage:
         //  "url(https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
-    />
+        // backgroundPosition: "center",
+        // backgroundRepeat: "no-repeat",
+      // }}
+    // >
+      <div className='home-container'>
+        <div className="shape circle"></div>
+        <div className="shape triangle"></div>
+        <div className="shape circle-small"></div>
+        <h1>Our Clients</h1 >
+        </div>
+      // </motion.div>
+    
   );
 };
 
 const ParallaxImages = () => {
   return (
     <div className="mx-auto max-w-5xl px-4 pt-[200px]">
-      <ParallaxImg
-        // src="https://images.unsplash.com/photo-1484600899469-230e8d1d59c0?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        src={mockup1}
+      {/* <ParallaxImg */}
+        {/* // src="https://images.unsplash.com/photo-1484600899469-230e8d1d59c0?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" */}
+        {/* src={mockup1}
         alt="And example of a space launch"
         start={-200}
         end={200}
         className="w-1/3"
-      />
-      <ParallaxImg
+      /> */}
+      {/* <ParallaxImg
         src="https://images.unsplash.com/photo-1446776709462-d6b525c57bd3?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         alt="An example of a space launch"
         start={200}
         end={-250}
         className="mx-auto w-2/3"
-      />
-      <ParallaxImg
+      /> */}
+      {/* <ParallaxImg
         src="https://images.unsplash.com/photo-1541185933-ef5d8ed016c2?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         alt="Orbiting satellite"
         start={-200}
         end={200}
         className="ml-auto w-1/3"
-      />
-      <ParallaxImg
+      /> */}
+      {/* <ParallaxImg
         //src="https://images.unsplash.com/photo-1494022299300-899b96e49893?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         src={mockup2}
         alt="Orbiting satellite"
         start={0}
         end={-500}
         className="ml-24 w-5/12"
-      />
+      /> */}
     </div>
   );
 };
@@ -168,28 +182,120 @@ const ParallaxImg = ({ className, alt, src, start, end }) => {
   );
 };
 
-const Schedule = () => {
+const ClipPathLinks = () => {
   return (
-    <section
-      id="launch-schedule"
-      className="mx-auto max-w-5xl px-4 py-48 text-white"
+    <div className="divide-y divide-neutral-900 border border-neutral-900">
+      <div className="grid grid-cols-2 divide-x divide-neutral-900">
+        <LinkBox Icon={SiGoogle} href="#" />
+        <LinkBox Icon={SiShopify} href="#" />
+      </div>
+      <div className="grid grid-cols-4 divide-x divide-neutral-900">
+        <LinkBox Icon={SiApple} href="#" />
+        <LinkBox Icon={SiSoundcloud} href="#" />
+        <LinkBox Icon={SiAdobe} href="#" />
+        <LinkBox Icon={SiFacebook} href="#" />
+      </div>
+      <div className="grid grid-cols-3 divide-x divide-neutral-900">
+        <LinkBox Icon={SiTiktok} href="#" />
+        <LinkBox Icon={SiSpotify} href="#" />
+        <LinkBox Icon={SiLinkedin} href="#" />
+      </div>
+    </div>
+  );
+};
+
+const NO_CLIP = "polygon(0 0, 100% 0, 100% 100%, 0% 100%)";
+const BOTTOM_RIGHT_CLIP = "polygon(0 0, 100% 0, 0 0, 0% 100%)";
+const TOP_RIGHT_CLIP = "polygon(0 0, 0 100%, 100% 100%, 0% 100%)";
+const BOTTOM_LEFT_CLIP = "polygon(100% 100%, 100% 0, 100% 100%, 0 100%)";
+const TOP_LEFT_CLIP = "polygon(0 0, 100% 0, 100% 100%, 100% 0)";
+
+const ENTRANCE_KEYFRAMES = {
+  left: [BOTTOM_RIGHT_CLIP, NO_CLIP],
+  bottom: [BOTTOM_RIGHT_CLIP, NO_CLIP],
+  top: [BOTTOM_RIGHT_CLIP, NO_CLIP],
+  right: [TOP_LEFT_CLIP, NO_CLIP],
+};
+
+const EXIT_KEYFRAMES = {
+  left: [NO_CLIP, TOP_RIGHT_CLIP],
+  bottom: [NO_CLIP, TOP_RIGHT_CLIP],
+  top: [NO_CLIP, TOP_RIGHT_CLIP],
+  right: [NO_CLIP, BOTTOM_LEFT_CLIP],
+};
+
+const LinkBox = ({ Icon, href }) => {
+  const [scope, animate] = useAnimate();
+
+  const getNearestSide = (e) => {
+    const box = e.target.getBoundingClientRect();
+
+    const proximityToLeft = {
+      proximity: Math.abs(box.left - e.clientX),
+      side: "left",
+    };
+    const proximityToRight = {
+      proximity: Math.abs(box.right - e.clientX),
+      side: "right",
+    };
+    const proximityToTop = {
+      proximity: Math.abs(box.top - e.clientY),
+      side: "top",
+    };
+    const proximityToBottom = {
+      proximity: Math.abs(box.bottom - e.clientY),
+      side: "bottom",
+    };
+
+    const sortedProximity = [
+      proximityToLeft,
+      proximityToRight,
+      proximityToTop,
+      proximityToBottom,
+    ].sort((a, b) => a.proximity - b.proximity);
+
+    return sortedProximity[0].side;
+  };
+
+  const handleMouseEnter = (e) => {
+    const side = getNearestSide(e);
+
+    animate(scope.current, {
+      clipPath: ENTRANCE_KEYFRAMES[side],
+    });
+  };
+
+  const handleMouseLeave = (e) => {
+    const side = getNearestSide(e);
+
+    animate(scope.current, {
+      clipPath: EXIT_KEYFRAMES[side],
+    });
+  };
+
+  return (
+    <a
+      href={href}
+      onMouseEnter={(e) => {
+        handleMouseEnter(e);
+      }}
+      onMouseLeave={(e) => {
+        handleMouseLeave(e);
+      }}
+      className="relative grid h-20 w-full place-content-center sm:h-28 md:h-36"
     >
-      <motion.h1
-        initial={{ y: 48, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ ease: "easeInOut", duration: 0.75 }}
-        className="mb-20 text-4xl font-black uppercase text-zinc-50"
+      <Icon className="text-xl sm:text-3xl lg:text-4xl" />
+
+      <div
+        ref={scope}
+        style={{
+          clipPath: BOTTOM_RIGHT_CLIP,
+        }}
+        className="absolute inset-0 grid place-content-center bg-neutral-900 text-white"
       >
-        OUR CLIENTS
-      </motion.h1>
-      <ScheduleItem title="GOOGLE" date="Dec 9th" location="UNITED STATES" />
-      <ScheduleItem title="Starlink" date="Dec 20th" location="HONGKONG" />
-      <ScheduleItem title="Microsoft" date="Jan 13th" location="UNITED STATES" />
-      <ScheduleItem title="Twitter" date="Feb 22nd" location="UNITED KINGDOM" />
-      <ScheduleItem title="Apple" date="Mar 1st" location="UNITED STATES" />
-      <ScheduleItem title="Upwork" date="Mar 8th" location="UNITED KINGDOM" />
-      <ScheduleItem title="Fiverr" date="Apr 8th" location="Thailand" />
-    </section>
+        <Icon className="text-xl sm:text-3xl md:text-4xl" />
+      </div>
+    </a>
   );
 };
 
