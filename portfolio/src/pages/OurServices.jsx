@@ -8,7 +8,6 @@ const OurServices = () => {
   return (
     <div>
         <Layout>
-        
         <Services/>
         </Layout>
         <Footer/>

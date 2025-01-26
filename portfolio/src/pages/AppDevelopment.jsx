@@ -141,74 +141,7 @@ const AppDevelopment = () => {
             Our Application Developers
             </h2>
 
-            <div className="devcards">
-              {/* Card 1 */}
-              <div className="card">
-                <div className="card-avatar">
-                  <img src={avatar} alt="Developer 1" className="avatar-img" />
-                </div>
-                <div className="card-body">
-                  <h3 className="card-title">Nasir Qureshi</h3>
-                  <p className="card-subtitle">App Developer</p>
-                </div>
-                <div className="card-footer">
-                  <a className="social-icon" href="#">
-                    <img src={linkedin} alt="Social Icon" className="social-img" />
-                  </a>
-                  <a className="social-icon" href="#">
-                    <img src={instagram} alt="Social Icon" className="social-img" />
-                  </a>
-                  <a className="social-icon" href="#">
-                    <img src={twitter} alt="Social Icon" className="social-img" />
-                  </a>
-                </div>
-              </div>
-
-              {/* card 2  */}
-              <div className="card">
-                <div className="card-avatar">
-                  <img src={avatar} alt="Developer 1" className="avatar-img" />
-                </div>
-                <div className="card-body">
-                  <h3 className="card-title">Momin Khan</h3>
-                  <p className="card-subtitle">App Developer</p>
-                </div>
-                <div className="card-footer">
-                  <a className="social-icon" href="#">
-                    <img src={linkedin} alt="Social Icon" className="social-img" />
-                  </a>
-                  <a className="social-icon" href="#">
-                    <img src={instagram} alt="Social Icon" className="social-img" />
-                  </a>
-                  <a className="social-icon" href="#">
-                    <img src={twitter} alt="Social Icon" className="social-img" />
-                  </a>
-                </div>
-              </div>
-
-              {/* card 3  */}
-              <div className="card">
-                <div className="card-avatar">
-                  <img src={avatar} alt="Developer 1" className="avatar-img" />
-                </div>
-                <div className="card-body">
-                  <h3 className="card-title">Danish Rizwan</h3>
-                  <p className="card-subtitle">App Developer</p>
-                </div>
-                <div className="card-footer">
-                  <a className="social-icon" href="#">
-                    <img src={linkedin} alt="Social Icon" className="social-img" />
-                  </a>
-                  <a className="social-icon" href="#">
-                    <img src={instagram} alt="Social Icon" className="social-img" />
-                  </a>
-                  <a className="social-icon" href="#">
-                    <img src={twitter} alt="Social Icon" className="social-img" />
-                  </a>
-                </div>
-              </div>
-
-            </div>
+           
           </div>
         </div>
 

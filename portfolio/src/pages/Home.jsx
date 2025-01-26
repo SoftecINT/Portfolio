@@ -62,31 +62,8 @@ const Home = () => {
   return (
     <div>
         <Layout2>
-          <Horizontal/>
-         {/* ZoominZoomout Component */}
-      {/* <div
-        ref={zoomRef}
-        style={{
-          height: "200vh", // Adjust the height based on your ZoominZoomout content
-        }}
-      > */}
-              <Cards />
-
         <ZoominZoomout />
-       {/* </div> */}
-      {/* <div> */}
-      {/* </div>  */}
-      {/* Horizontal Scrolling Section */}
-      {/* <div
-        ref={horizontalContainerRef}
-        style={{
-          height: "100%",
-          display: "flex",
-          overflow: "hidden", // Prevent default scrolling here
-        }}
-      >
-        <Horizontal />
-      </div> */}
+        <Cards />
         <Ourblogs/> 
         <Testimonials/>
         <Footer/> 
