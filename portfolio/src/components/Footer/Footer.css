@@ -435,6 +435,8 @@ body {
   visibility: visible;
 }
 
+
+
 /* General Responsive Design */
 @media (max-width: 768px) {
   body {
