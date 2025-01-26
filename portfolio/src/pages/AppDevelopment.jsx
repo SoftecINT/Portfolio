@@ -140,8 +140,6 @@ const AppDevelopment = () => {
             <h2 className="text-4xl font-bold text-white mb-4">
             Our Application Developers
             </h2>
-
-           
           </div>
         </div>
 
