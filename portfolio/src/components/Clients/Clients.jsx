@@ -1,5 +1,6 @@
 import React, { useRef } from 'react'
 import { ReactLenis } from "lenis/dist/lenis-react";
+import difara from '../../assets/difara.jpg'
 import {
     motion,
     useMotionTemplate,
@@ -224,7 +225,7 @@ const EXIT_KEYFRAMES = {
   right: [NO_CLIP, BOTTOM_LEFT_CLIP],
 };
 
-const LinkBox = ({ Icon, href }) => {
+const LinkBox = ({ Icon , href }) => {
   const [scope, animate] = useAnimate();
 
   const getNearestSide = (e) => {

@@ -1,5 +1,6 @@
 import React from 'react'
 import './Testimonials.css'
+import parrot from '../../assets/parrot-party.gif'
 const Testimonials = () => {
   return (
     <div className="testimonials">
@@ -22,7 +23,7 @@ const Testimonials = () => {
            </div>
            <div className="bottom">
                <div className="profile">
-                <div id="circle"><img src="/profile.jpg" alt="" width="100%" height="100%" style={{borderRadius: "50%"}}/></div>
+                <div id="circle"><img src={parrot} alt="" width="100%" height="100%" style={{borderRadius: "50%"}}/></div>
                   <div className="id">
                 <div className="Name">Dominic Kalms</div>
                 <div className="designation">CEO at B Generous</div>

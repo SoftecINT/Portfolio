@@ -116,7 +116,7 @@
        .bottom .profile #circle{
         width: 3vw;
         height: 3vw;
-        background-color: #ec1d1d;
+        /* background-color: #ec1d1d; */
         border-radius: 50%;
        }
        .bottom .profile  .id {

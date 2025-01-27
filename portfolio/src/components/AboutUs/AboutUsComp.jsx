@@ -97,8 +97,8 @@ const AboutUsComp = () => {
     <div className="container1 bg-black text-white ">
       <div className="text-container">
         <SplitText
-          text="Back in 2006 at the start ofthe digital era we founded our first agency crafting digital products. But it took a while when we witnessed the early indicators of a significant shift by upcoming tech called low-code"
-          className="text-2xl font-semibold text-center"
+          text="Back in 2006 at the start of the digital era we founded our first agency crafting digital products. But it took a while when we witnessed the early indicators of a significant shift by upcoming tech called low-code"
+          className="text-2xl font-medium text-center"
           delay={15}
           animationFrom={{ opacity: 0, transform: "translate3d(0,50px,0)" }}
           animationTo={{ opacity: 1, transform: "translate3d(0,0,0)" }}
