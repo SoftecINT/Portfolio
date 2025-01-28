@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from "react";
 import Layout from "../components/Layout/Layout";
 import backgroundImage from "../assets/daniel-olahh.jpg";
 import video from "../assets/graphicdesign.mp4";
-import "../css/UiUxDesign.css";
+import "../css/UiUxdesign.css";
 import avatar from "../assets/avatar.jpg"
 import { Footer } from '../components/Footer/Footer'
 
