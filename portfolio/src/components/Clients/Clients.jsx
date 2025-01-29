@@ -1,6 +1,5 @@
 import React, { useRef } from 'react'
 import { ReactLenis } from "lenis/dist/lenis-react";
-import difara from '../../assets/difara.jpg'
 import {
     motion,
     useMotionTemplate,
@@ -26,6 +25,15 @@ import {
 import mockup1 from '../../assets/mockup1.png'
 import mockup2 from '../../assets/mockup2.png'
 import Horizontal from '../Horizontal/Horizontal';
+import difara from '../../assets/difara.png'
+import sheraton from '../../assets/sheraton.png'
+import youLearn from '../../assets/youlearn.png'
+import infiniti from '../../assets/infiniti.png'
+import hms from '../../assets/hms.png'
+import funplex from '../../assets/funplex.png'
+import luxe from '../../assets/luxe.png'
+import parrot from '../../assets/parrot-party.gif'
+import gabriele from '../../assets/gabriele.png'
 
 const Clients = () => {
   return (
@@ -187,19 +195,19 @@ const ClipPathLinks = () => {
   return (
     <div className="divide-y divide-neutral-900 border border-neutral-900">
       <div className="grid grid-cols-2 divide-x divide-neutral-900">
-        <LinkBox Icon={SiGoogle} href="#" />
-        <LinkBox Icon={SiShopify} href="#" />
+        <LinkBox image={difara} href="#" />
+        <LinkBox image={youLearn} href="#" />
       </div>
       <div className="grid grid-cols-4 divide-x divide-neutral-900">
-        <LinkBox Icon={SiApple} href="#" />
-        <LinkBox Icon={SiSoundcloud} href="#" />
-        <LinkBox Icon={SiAdobe} href="#" />
-        <LinkBox Icon={SiFacebook} href="#" />
+        <LinkBox image={hms} href="#" />
+        <LinkBox image={infiniti} href="#" />
+        <LinkBox image={sheraton} href="#" />
+        <LinkBox image={luxe} href="#" />
       </div>
       <div className="grid grid-cols-3 divide-x divide-neutral-900">
-        <LinkBox Icon={SiTiktok} href="#" />
-        <LinkBox Icon={SiSpotify} href="#" />
-        <LinkBox Icon={SiLinkedin} href="#" />
+        <LinkBox image={funplex} href="#" />
+        <LinkBox image={parrot} href="#" />
+        <LinkBox image={gabriele} href="#" />
       </div>
     </div>
   );
@@ -225,7 +233,7 @@ const EXIT_KEYFRAMES = {
   right: [NO_CLIP, BOTTOM_LEFT_CLIP],
 };
 
-const LinkBox = ({ Icon , href }) => {
+const LinkBox = ({ image, href }) => {
   const [scope, animate] = useAnimate();
 
   const getNearestSide = (e) => {
@@ -260,46 +268,33 @@ const LinkBox = ({ Icon , href }) => {
 
   const handleMouseEnter = (e) => {
     const side = getNearestSide(e);
-
-    animate(scope.current, {
-      clipPath: ENTRANCE_KEYFRAMES[side],
-    });
+    animate(scope.current, { clipPath: ENTRANCE_KEYFRAMES[side] });
   };
 
   const handleMouseLeave = (e) => {
     const side = getNearestSide(e);
-
-    animate(scope.current, {
-      clipPath: EXIT_KEYFRAMES[side],
-    });
+    animate(scope.current, { clipPath: EXIT_KEYFRAMES[side] });
   };
 
   return (
     <a
       href={href}
-      onMouseEnter={(e) => {
-        handleMouseEnter(e);
-      }}
-      onMouseLeave={(e) => {
-        handleMouseLeave(e);
-      }}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
       className="relative grid h-20 w-full place-content-center sm:h-28 md:h-36"
     >
-      <Icon className="text-xl sm:text-3xl lg:text-4xl" />
+      <img src={image} alt="Client Logo" className="h-10 sm:h-14 lg:h-16 mx-auto" />
 
       <div
         ref={scope}
-        style={{
-          clipPath: BOTTOM_RIGHT_CLIP,
-        }}
+        style={{ clipPath: BOTTOM_RIGHT_CLIP }}
         className="absolute inset-0 grid place-content-center bg-neutral-900 text-white"
       >
-        <Icon className="text-xl sm:text-3xl md:text-4xl" />
+        <img src={image} alt="Client Logo" className="h-10 sm:h-14 lg:h-16 mx-auto" />
       </div>
     </a>
   );
 };
-
 const ScheduleItem = ({ title, date, location }) => {
   return (
     <motion.div

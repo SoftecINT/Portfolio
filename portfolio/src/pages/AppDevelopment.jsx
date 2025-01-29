@@ -233,7 +233,7 @@ const OverlayCopy = ({ subheading, heading }) => {
 };
 
 const ExampleContent = () => (
-  <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 px-4 pb-24 pt-12 md:grid-cols-12">
+  <div className="mx-auto grid max-w-5xl grid-cols-1 gap-12 px-4 pb-24 pt-12 md:grid-cols-12">
     <h2 className="col-span-1 text-3xl font-bold md:col-span-4">
       Additional content explaining the above card here
     </h2>
