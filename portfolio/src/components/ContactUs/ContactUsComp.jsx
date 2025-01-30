@@ -1,14 +1,49 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./Contactus.css";
-import placeholder50 from "../../assets/placeholder-50.png";
-import linkedinn from "../../assets/linkedinn.png";
-import twitter from "../../assets/twitter.png";
-import instagram from "../../assets/instagram.png";
 import instagram1 from "../../assets/insta1.png";
 import linkedinn1 from "../../assets/linkedinn1.png";
 import twitter1 from "../../assets/twitter1.png";
+import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+
 
 const ContactUsComp = () => {
+
+    const form = useRef();
+  
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs
+        .sendForm('service_kmjm31c', 'template_woq96g9', form.current, {
+          publicKey: 'lqz-V1LIw8Dp66-fg',
+        })
+        .then(
+          () => {
+            toast.success('Email sent successfully!');
+            form.current.reset();
+          },
+          (error) => {
+            toast.error(`Failed to send email: ${error.text}`);
+          },
+        );
+    };
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   return (
     <div>
       <div className="home-container">
@@ -28,7 +63,7 @@ const ContactUsComp = () => {
     {/* Left Section */}
     <div className="col-md-9 d-flex flex-column justify-content-center contact-form" id="left">
       <h1 className="mb-5 contact-heading">Contact Us</h1>
-      <form className="row">
+      <form className="row" ref={form} onSubmit={sendEmail}>
         {/* Left Section (Name, Phone, Company, Email) */}
         <div className="col-12 col-md-6 mb-4">
           <div className="mb-4">
@@ -40,6 +75,8 @@ const ContactUsComp = () => {
               className="form-control"
               id="name"
               placeholder="Your name"
+              name="user_name" 
+              required
             />
           </div>
           <div className="mb-4">
@@ -47,10 +84,12 @@ const ContactUsComp = () => {
               My phone number is
             </label>
             <input
-              type="text"
+              type="tel"
+              name="phone_number"
               className="form-control"
               id="phone"
               placeholder="Your phone number"
+              required
             />
           </div>
           <div className="mb-4">
@@ -62,6 +101,8 @@ const ContactUsComp = () => {
               className="form-control"
               id="company"
               placeholder="Your company"
+              name="company_name" 
+              required
             />
           </div>
           <div className="mb-5">
@@ -73,6 +114,8 @@ const ContactUsComp = () => {
               className="form-control"
               id="email"
               placeholder="Your@email.com"
+              name="user_email" 
+              required
             />
           </div>
         </div>
@@ -88,6 +131,8 @@ const ContactUsComp = () => {
               id="message"
               rows="7"
               placeholder="Start typing here..."
+              name="message" 
+              required
             ></textarea>
           </div>
         </div>
@@ -96,6 +141,7 @@ const ContactUsComp = () => {
           Submit
         </button>
       </form>
+      <ToastContainer/>
     </div>
 
     {/* Right Section for Contact Info and Team Info */}
