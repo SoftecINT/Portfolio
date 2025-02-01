@@ -9,6 +9,10 @@ import { Footer } from '../components/Footer/Footer'
 import wireframe from '../assets/wireframe.png'
 import mockup from '../assets/mockup.png'
 import figma from '../assets/figma.png'
+import workflow from '../assets/images/workflow.png'
+import workflow1 from '../assets/images/workflow1.jpg'
+import prototype from '../assets/images/prototype.webp'
+
 import linkedin from '../assets/linkedinn.png'
 import instagram from '../assets/instagram.png'
 import twitter from '../assets/twitter.png'
@@ -136,21 +140,21 @@ const UiUxDesign = () => {
         
         <div className="bg-white">
       <TextParallaxContent
-        imgUrl="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        imgUrl={workflow}
         subheading="Collaborate"
         heading="Built for all of us."
       >
         <ExampleContent />
       </TextParallaxContent>
       <TextParallaxContent
-        imgUrl="https://images.unsplash.com/photo-1530893609608-32a9af3aa95c?q=80&w=2564&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        imgUrl={workflow1}
         subheading="Quality"
         heading="Never compromise."
       >
         <ExampleContent />
       </TextParallaxContent>
       <TextParallaxContent
-        imgUrl="https://images.unsplash.com/photo-1504610926078-a1611febcad3?q=80&w=2416&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        imgUrl={prototype}
         subheading="Modern"
         heading="Dress for the best."
       >
