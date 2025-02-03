@@ -288,9 +288,9 @@ const LinkBox = ({ image, href }) => {
       <div
         ref={scope}
         style={{ clipPath: BOTTOM_RIGHT_CLIP }}
-        className="absolute inset-0 grid place-content-center bg-neutral-900 text-white"
+        className="absolute inset-0 grid place-content-center bg-neutral-900 text-white  transition-all duration-300 hover:bg-sky-300"
       >
-        <img src={image} alt="Client Logo" className="h-10 sm:h-14 lg:h-16 mx-auto" />
+        <img src={image} alt="Client Logo" className="h-10 sm:h-14 lg:h-16 mx-auto transition-all duration-300" />
       </div>
     </a>
   );

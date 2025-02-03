@@ -10,6 +10,9 @@ import { FiArrowUpRight } from "react-icons/fi";
 import campain from '../assets/campain.png'
 import ads from '../assets/ads.png'
 import goal from '../assets/goal.png'
+import image1 from '../assets/images/digitalmarketing1.jpg'
+import image2 from '../assets/digitalmarketing2.webp'
+import image3 from '../assets/digitalmarketing3.webp'
 
 import linkedin from '../assets/linkedinn.png'
 import instagram from '../assets/instagram.png'
@@ -121,21 +124,21 @@ const DigitalMarketing = () => {
         
          <div className="bg-white">
       <TextParallaxContent
-        imgUrl="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        imgUrl={image1}
         subheading="Collaborate"
         heading="Built for all of us."
       >
         <ExampleContent />
       </TextParallaxContent>
       <TextParallaxContent
-        imgUrl="https://images.unsplash.com/photo-1530893609608-32a9af3aa95c?q=80&w=2564&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        imgUrl={image2}
         subheading="Quality"
         heading="Never compromise."
       >
         <ExampleContent />
       </TextParallaxContent>
       <TextParallaxContent
-        imgUrl="https://images.unsplash.com/photo-1504610926078-a1611febcad3?q=80&w=2416&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        imgUrl={image3}
         subheading="Modern"
         heading="Dress for the best."
       >
@@ -183,7 +186,7 @@ const StickyImage = ({ imgUrl }) => {
   return (
     <motion.div
       style={{
-        backgroundImage: `url(${imgUrl})`,
+        backgroundImage: `url(${typeof imgUrl === "string" ? imgUrl : imgUrl.default})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         height: `calc(100vh - ${IMG_PADDING * 2}px)`,

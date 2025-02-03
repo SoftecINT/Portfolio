@@ -9,6 +9,7 @@ import { Footer } from '../components/Footer/Footer'
 import html from '../assets/html.png'
 import css from '../assets/css.png'
 import react11 from '../assets/react.png'
+import img1 from '../assets/html.webp'
 
 import linkedin from '../assets/linkedinn.png'
 import instagram from '../assets/instagram.png'
@@ -121,7 +122,7 @@ const WebDevelopment = () => {
         
         <div className="bg-white">
       <TextParallaxContent
-        imgUrl="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        imgUrl={img1}
         subheading="Collaborate"
         heading="Built for all of us."
       >
@@ -135,7 +136,7 @@ const WebDevelopment = () => {
         <ExampleContent />
       </TextParallaxContent>
       <TextParallaxContent
-        imgUrl="https://images.unsplash.com/photo-1504610926078-a1611febcad3?q=80&w=2416&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        imgUrl="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         subheading="Modern"
         heading="Dress for the best."
       >

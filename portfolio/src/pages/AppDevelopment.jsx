@@ -1,9 +1,9 @@
 import React, { useRef, useEffect } from "react";
 import Layout from "../components/Layout/Layout";
 import backgroundImage from "../assets/daniel-olahh.jpg";
-import thumbnail from "../assets/images/thumbnail.png"
-import android1 from "../assets/images/android.png"
-import ios1 from "../assets/images/ios.png"
+import thumbnail from "../assets/thumbnail.webp"
+import android1 from "../assets/android.webp"
+import ios1 from "../assets/ios.webp"
 import video from "../assets/graphicdesign.mp4";
 import "../css/UiUxdesign.css";
 import avatar from "../assets/avatar.jpg"

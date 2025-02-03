@@ -11,6 +11,7 @@ import mockup4 from '../../assets/webdesigning.jpg'
 import mockup1 from '../../assets/webdevelopment.jpg'
 import mockup5 from '../../assets/seo.jpg'
 
+
 const Services = () => {
   return (
     <div>
