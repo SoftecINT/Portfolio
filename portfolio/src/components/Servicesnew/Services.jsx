@@ -3,9 +3,13 @@ import './Services.css'
 import { useMotionValue, motion, useSpring, useTransform } from "framer-motion";
 import { FiArrowRight } from "react-icons/fi";
 import { div } from 'framer-motion/client';
-import mockup1 from '../../assets/mockup1.png'
-import mockup2 from '../../assets/mockup2.png'
-import mockup3 from '../../assets/mockup3.png'
+
+
+import mockup2 from '../../assets/graphicdesign.jpg'
+import mockup3 from '../../assets/appdevelopment.jpg'
+import mockup4 from '../../assets/webdesigning.jpg'
+import mockup1 from '../../assets/webdevelopment.jpg'
+import mockup5 from '../../assets/seo.jpg'
 
 const Services = () => {
   return (
@@ -25,7 +29,7 @@ const Services = () => {
         <Link
           heading="UI/UX &nbsp; Design"
           
-          imgSrc={mockup1}
+          imgSrc={mockup4}
           href="/uiuxdesign"
         />
         <Link
@@ -37,19 +41,19 @@ const Services = () => {
         <Link
           heading="Web &nbsp;Development"
                          
-          imgSrc={mockup3}
+          imgSrc={mockup1}
           href="/webdevelopment"
         />
         <Link
           heading="Application &nbsp; Development"
                     
-          imgSrc={mockup2}
+          imgSrc={mockup3}
           href="/appdevelopment"
         />
         <Link
           heading="Digital &nbsp; Marketing"
                     
-          imgSrc={mockup2}
+          imgSrc={mockup5}
           href="/digitalmarketing"
         />
         <br /><br /><br /><br /> <br />
