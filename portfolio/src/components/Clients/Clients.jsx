@@ -34,7 +34,11 @@ import funplex from '../../assets/funplex.png'
 import luxe from '../../assets/luxe.png'
 import parrot from '../../assets/parrot-party.gif'
 import gabriele from '../../assets/gabriele.png'
-
+import kimmy from '../../assets/kimmy.webp'
+import atomic from '../../assets/atomic.webp'
+import mazza from '../../assets/mazza.png'
+import weblogo from '../../assets/web-logo.png'
+import Empire from '../../assets/empire.png'
 const Clients = () => {
   return (
 <div>
@@ -200,9 +204,9 @@ const ClipPathLinks = () => {
       </div>
       <div className="grid grid-cols-4 divide-x divide-neutral-900">
         <LinkBox image={hms} href="#" />
-        <LinkBox image={infiniti} href="#" />
-        <LinkBox image={sheraton} href="#" />
-        <LinkBox image={luxe} href="#" />
+        <LinkBox image={mazza} href="#"/>
+        <LinkBox image={Empire} href="#" />
+        <LinkBox image={weblogo} href="#" />
       </div>
       <div className="grid grid-cols-3 divide-x divide-neutral-900">
         <LinkBox image={funplex} href="#" />
