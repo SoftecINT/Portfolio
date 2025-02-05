@@ -34,7 +34,7 @@ export const Footer = () => {
                     <div className="heading-style-h3">
                       Code{" "}
                       <span className="footer_text-span">
-                        that Connects&#x27; Solutions that
+                        that Connect&#x27;s Solutions that
                       </span>{" "}
                       Work.
                     </div>
