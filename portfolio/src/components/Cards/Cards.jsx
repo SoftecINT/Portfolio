@@ -1,6 +1,7 @@
 import React from 'react'
 import './Cards.css'
 import './Library.css'
+import video1 from '../../assets/video1.mp4'
 
 export const Cards = () => {
   return (
@@ -105,7 +106,7 @@ export const Cards = () => {
                                                                         muted autoplay=""  data-wf-ignore="true"
                                                                         data-object-fit="cover">
                                                                         <source
-                                                                            src="https://player.vimeo.com/progressive_redirect/playback/916630458/rendition/1080p/file.mp4?loc=external&amp;signature=b61420cf65556b5db3b4c3d1d7272388f2db11a2ac05637d2ec11e6e1619b85e"
+                                                                            src={video1}
                                                                             data-wf-ignore="true" />
                                                                     </video>
                                                                 </div>

@@ -144,21 +144,30 @@ const UiUxDesign = () => {
         subheading="Collaborate"
         heading="Built for all of us."
       >
-        <ExampleContent />
+        <ExampleContent 
+    title="Intuitive and User-Centered Design"
+    text="At the core of our UI/UX philosophy is a user-centered approach that prioritizes intuitive navigation and seamless interactions. We craft digital experiences that are not only visually appealing but also highly functional, ensuring users can effortlessly engage with your platform. Our design process involves in-depth research, wireframing, and usability testing to create interfaces that enhance user satisfaction and drive engagement."
+  />
       </TextParallaxContent>
       <TextParallaxContent
         imgUrl={workflow1}
         subheading="Quality"
         heading="Never compromise."
       >
-        <ExampleContent />
+        <ExampleContent 
+    title="Aesthetics Meets Functionality"
+    text="Great design goes beyond just looking good—it must serve a purpose. We blend creativity with usability, ensuring every element of the user interface is strategically placed to guide users toward their goals. Whether it’s a sleek website, a responsive mobile app, or an enterprise dashboard, our UI/UX solutions balance aesthetics with efficiency, providing an engaging experience that keeps users coming back."
+  />
       </TextParallaxContent>
       <TextParallaxContent
         imgUrl={prototype}
         subheading="Modern"
         heading="Dress for the best."
       >
-        <ExampleContent />
+         <ExampleContent 
+    title="Optimized for Performance and Accessibility"
+    text="A successful UI/UX design is one that is accessible to all users and optimized for performance across devices. We follow best practices for accessibility, ensuring inclusivity for users with diverse needs. Additionally, our designs are lightweight and responsive, providing fast load times and smooth interactions across desktops, tablets, and smartphones. By prioritizing performance and accessibility, we create digital products that deliver exceptional user experiences."
+  />
       </TextParallaxContent>
     </div>
 
@@ -259,27 +268,37 @@ const OverlayCopy = ({ subheading, heading }) => {
   );
 };
 
-const ExampleContent = () => (
-  <div className="mx-auto grid max-w-5xl grid-cols-1 gap-12 px-4 pb-24 pt-12 md:grid-cols-12">
-    <h2 className="col-span-1 text-3xl font-bold md:col-span-4">
-      Additional content explaining the above card here
-    </h2>
-    <div className="col-span-1 md:col-span-8">
-      <p className="mb-4 text-xl text-neutral-600 md:text-2xl">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
-        blanditiis soluta eius quam modi aliquam quaerat odit deleniti minima
-        maiores voluptate est ut saepe accusantium maxime doloremque nulla
-        consectetur possimus.
-      </p>
-      <p className="mb-8 text-xl text-neutral-600 md:text-2xl">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
-        reiciendis blanditiis aliquam aut fugit sint.
-      </p>
-      <button className="w-full rounded bg-neutral-900 px-9 py-4 text-xl text-white transition-colors hover:bg-neutral-700 md:w-fit">
-        Learn more <FiArrowUpRight className="inline" />
-      </button>
-    </div>
-  </div>
+const ExampleContent = ({title , text}) => (
+//   <div className="mx-auto grid max-w-5xl grid-cols-1 gap-12 px-4 pb-24 pt-12 md:grid-cols-12">
+//     <h2 className="col-span-1 text-3xl font-bold md:col-span-4">
+      
+// Intuitive and User-Centered Design
+//     </h2>
+//     <div className="col-span-1 md:col-span-8">
+//       <p className="mb-4 text-xl text-neutral-600 md:text-2xl">
+//       At the core of our UI/UX philosophy is a user-centered approach that prioritizes intuitive navigation and seamless interactions. We craft digital experiences that are not only visually appealing but also highly functional, ensuring users can effortlessly engage with your platform. Our design process involves in-depth research, wireframing, and usability testing to create interfaces that enhance user satisfaction and drive engagement.
+//       </p>
+//       {/* <p className="mb-8 text-xl text-neutral-600 md:text-2xl">
+//         Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+//         reiciendis blanditiis aliquam aut fugit sint.
+//       </p> */}
+//       {/* <button className="w-full rounded bg-neutral-900 px-9 py-4 text-xl text-white transition-colors hover:bg-neutral-700 md:w-fit">
+//         Learn more <FiArrowUpRight className="inline" />
+//       </button> */}
+//     </div>
+//   </div>
+  
+<div className="mx-auto grid max-w-5xl grid-cols-1 gap-12 px-4 pb-24 pt-12 md:grid-cols-12">
+<h2 className="col-span-1 text-3xl font-bold md:col-span-4">
+  {title}
+</h2>
+<div className="col-span-1 md:col-span-8">
+  <p className="mb-4 text-xl text-neutral-600 md:text-2xl">
+    {text}
+  </p>
+</div>
+</div>      
+
 );
 
 
