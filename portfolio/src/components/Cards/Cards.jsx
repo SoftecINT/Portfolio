@@ -21,7 +21,7 @@ export const Cards = () => {
                                     digital creations.</p>
                             </div>
                             <div className="home-work_shape-wrapper">
-                                <div className="home-work_shape1 w-embed mb-4">
+                                {/* <div className="home-work_shape1 w-embed mb-4">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"
                                         viewBox="0 0 159 193" fill="none"
@@ -32,7 +32,7 @@ export const Cards = () => {
                                         <circle cx="111.244" cy="8.29346" r="8.24414" fill="currentColor" />
                                         <circle cx="50.0137" cy="184.436" r="8.24414" fill="currentColor" />
                                     </svg>
-                                    </div>
+                                    </div> */}
                                 <div className="home-work_shape4 w-embed"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"
                                         viewBox="0 0 52 51" fill="none" preserveAspectRatio="xMidYMid meet"

@@ -72,4 +72,17 @@
     display: flex;
   }
 
+  @media (max-width: 768px) {
+    .nav_menu {
+      display: none;
+    }
   
+    .nav_button {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .nav_menu.open {
+      display: flex;
+    }
+  }
