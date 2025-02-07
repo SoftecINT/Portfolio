@@ -5,12 +5,12 @@ import logo from "../../assets/whitelogo.svg";
 
 export const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="footer_component">
+    <footer className="footer py-10 px-5 sm:px-10">
+      <div className="footer_component max-w-7xl mx-auto">
         <div className="padding-footer">
           <div className="container-large">
             <div className="footer_content">
-              <div className="footer_content-grid">
+              <div className="footer_content-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center md:text-left">
                 <div
                   id="w-node-_538f686c-038b-0f86-7d70-90950202eb2d-0202eb27"
                   className="footer_item"
@@ -19,7 +19,7 @@ export const Footer = () => {
                     aria-label="Logo"
                     href="/"
                     aria-current="page"
-                    className="footer_brand w-inline-block w--current"
+                    className="footer_brand w-inline-block w--current block mb-4 mx-auto md:mx-0"
                   >
                     <div className="footer_logo w-embed">
                       <img src={logo} alt="" />
@@ -31,7 +31,7 @@ export const Footer = () => {
                   className="footer_item"
                 >
                   <div className="footer_heading">
-                    <div className="heading-style-h3">
+                    <div className="heading-style-h3 mb-2">
                       Code{" "}
                       <span className="footer_text-span">
                         that Connect&#x27;s Solutions that
@@ -44,7 +44,7 @@ export const Footer = () => {
                   id="w-node-_538f686c-038b-0f86-7d70-90950202eb37-0202eb27"
                   className="footer_item"
                 >
-                  <ul role="list" className="footer_contact-list">
+                  <ul role="list" className="footer_contact-list space-y-2">
                     <li className="footer_contact-list-item">
                       <a
                         href="mailto:jobsoftec@gmail.com"
@@ -76,7 +76,7 @@ export const Footer = () => {
                         href="/get-quote"
                         className=" is-footer w-inline-block"
                       >
-                        <button className="btn">
+                        <button className="btn inline-block  py-2 px-4 rounded">
                           <span>BOOK A CALL</span>
                         </button>
                       </a>
@@ -86,7 +86,7 @@ export const Footer = () => {
                 <div className="footer_item">
                   <div className="location_item">
                     <div className="location_image-wrapper"></div>
-                    <div className="location_heading is-tilburg lochead">
+                    <div className="location_heading is-tilburg lochead mb-2">
                       Karachi (HQ)
                     </div>
                     <div className="location_separator"></div>
