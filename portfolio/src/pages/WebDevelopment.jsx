@@ -37,12 +37,12 @@ const WebDevelopment = () => {
             <h3 className="text-2xl font-poppins mb-6">
               We provide High Quality and scalable Web Development
             </h3>
-            <a
+            {/* <a
               className="px-6 py-3 bg-orange-500 hover:bg-orange-600 text-white rounded-lg shadow-lg transition duration-300"
               href="#"
             >
               Visit Website
-            </a>
+            </a> */}
           </div>
         </div>
 
@@ -124,21 +124,21 @@ const WebDevelopment = () => {
       <TextParallaxContent
         imgUrl={img1}
         subheading="Collaborate"
-        heading="Built for all of us."
+        heading="Built for all of us"
       >
         <ExampleContent />
       </TextParallaxContent>
       <TextParallaxContent
         imgUrl="https://images.unsplash.com/photo-1530893609608-32a9af3aa95c?q=80&w=2564&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         subheading="Quality"
-        heading="Never compromise."
+        heading="Never compromise"
       >
         <ExampleContent />
       </TextParallaxContent>
       <TextParallaxContent
         imgUrl="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         subheading="Modern"
-        heading="Dress for the best."
+        heading="Dress for the best"
       >
         <ExampleContent />
       </TextParallaxContent>
@@ -250,9 +250,9 @@ const ExampleContent = () => (
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
         reiciendis blanditiis aliquam aut fugit sint.
       </p>
-      <button className="w-full rounded bg-neutral-900 px-9 py-4 text-xl text-white transition-colors hover:bg-neutral-700 md:w-fit">
+      {/* <button className="w-full rounded bg-neutral-900 px-9 py-4 text-xl text-white transition-colors hover:bg-neutral-700 md:w-fit">
         Learn more <FiArrowUpRight className="inline" />
-      </button>
+      </button> */}
     </div>
   </div>
 );

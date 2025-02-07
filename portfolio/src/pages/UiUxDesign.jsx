@@ -45,16 +45,16 @@ const UiUxDesign = () => {
 
           {/* Overlay */}
           <div className="absolute inset-0 bg-black/50 flex flex-col justify-center items-center text-center text-white">
-            <h1 className="text-6xl font-bold mb-4">Ui / Ux Design</h1>
+            <h1 className="text-6xl font-bold mb-4">UI / UX Design</h1>
             <h3 className="text-2xl font-poppins mb-6">
               We Provide top-notch UI/UX design
             </h3>
-            <a
+            {/* <a
               className="px-6 py-3 bg-orange-500 hover:bg-orange-600 text-white rounded-lg shadow-lg transition duration-300"
               href="#"
             >
               Visit Website
-            </a>
+            </a> */}
           </div>
         </div>
 
@@ -65,7 +65,7 @@ const UiUxDesign = () => {
             {/* Header Section */}
             <div className="mb-12 max-w-2xl mx-auto">
               <h2 className="text-4xl font-bold text-gray-800 mb-4">
-                Ui / Ux Design
+                UI / UX Design
               </h2>
               <h5 className="text-lg text-gray-600 mb-6">
                 This is the paragraph where you can write more details about
@@ -74,12 +74,12 @@ const UiUxDesign = () => {
                 otherwise, they wouldn't scroll to get here. Add a button if you
                 want the user to see more.
               </h5>
-              <a
+              {/* <a
                 href="#"
                 className="inline-block px-8 py-3 bg-orange-500 text-white rounded-full shadow-md hover:bg-orange-600 transition"
               >
                 See Details
-              </a>
+              </a> */}
             </div>
 
             {/* header end  */}
@@ -142,7 +142,7 @@ const UiUxDesign = () => {
       <TextParallaxContent
         imgUrl={workflow}
         subheading="Collaborate"
-        heading="Built for all of us."
+        heading="Built for all of us"
       >
         <ExampleContent 
     title="Intuitive and User-Centered Design"
@@ -152,7 +152,7 @@ const UiUxDesign = () => {
       <TextParallaxContent
         imgUrl={workflow1}
         subheading="Quality"
-        heading="Never compromise."
+        heading="Never compromise"
       >
         <ExampleContent 
     title="Aesthetics Meets Functionality"
@@ -162,7 +162,7 @@ const UiUxDesign = () => {
       <TextParallaxContent
         imgUrl={prototype}
         subheading="Modern"
-        heading="Dress for the best."
+        heading="Dress for the best"
       >
          <ExampleContent 
     title="Optimized for Performance and Accessibility"

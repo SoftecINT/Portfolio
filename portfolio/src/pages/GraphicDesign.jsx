@@ -40,12 +40,12 @@ const GraphicDesign = () => {
             <h3 className="text-2xl font-poppins mb-6">
               We provide top-notch graphic designs
             </h3>
-            <a
+            {/* <a
               className="px-6 py-3 bg-orange-500 hover:bg-orange-600 text-white rounded-lg shadow-lg transition duration-300"
               href="#"
             >
               Visit Website
-            </a>
+            </a> */}
           </div>
         </div>
 
@@ -127,21 +127,21 @@ const GraphicDesign = () => {
       <TextParallaxContent
         imgUrl={graphicdesigning1}
         subheading="Collaborate"
-        heading="Built for all of us."
+        heading="Built for all of us"
       >
         <ExampleContent />
       </TextParallaxContent>
       <TextParallaxContent
         imgUrl={graphicdesigning2}
         subheading="Quality"
-        heading="Never compromise."
+        heading="Never compromise"
       >
         <ExampleContent />
       </TextParallaxContent>
       <TextParallaxContent
         imgUrl={graphicdesigning3}
         subheading="Modern"
-        heading="Dress for the best."
+        heading="Dress for the best"
       >
         <ExampleContent />
       </TextParallaxContent>
@@ -250,9 +250,9 @@ const ExampleContent = () => (
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
         reiciendis blanditiis aliquam aut fugit sint.
       </p>
-      <button className="w-full rounded bg-neutral-900 px-9 py-4 text-xl text-white transition-colors hover:bg-neutral-700 md:w-fit">
+      {/* <button className="w-full rounded bg-neutral-900 px-9 py-4 text-xl text-white transition-colors hover:bg-neutral-700 md:w-fit">
         Learn more <FiArrowUpRight className="inline" />
-      </button>
+      </button> */}
     </div>
   </div>
 );

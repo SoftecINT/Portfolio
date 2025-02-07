@@ -40,12 +40,12 @@ const AppDevelopment = () => {
             <h3 className="text-2xl font-poppins mb-6">
               We provide High Quality and scalable Application Solutions
             </h3>
-            <a
+            {/* <a
               className="px-6 py-3 bg-orange-500 hover:bg-orange-600 text-white rounded-lg shadow-lg transition duration-300"
               href="#"
             >
               Visit Website
-            </a>
+            </a> */}
           </div>
         </div>
   
@@ -251,9 +251,9 @@ const ExampleContent = () => (
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
         reiciendis blanditiis aliquam aut fugit sint.
       </p>
-      <button className="w-full rounded bg-neutral-900 px-9 py-4 text-xl text-white transition-colors hover:bg-neutral-700 md:w-fit">
+      {/* <button className="w-full rounded bg-neutral-900 px-9 py-4 text-xl text-white transition-colors hover:bg-neutral-700 md:w-fit">
         Learn more <FiArrowUpRight className="inline" />
-      </button>
+      </button> */}
     </div>
   </div>
 );

@@ -20,7 +20,7 @@ const Services = () => {
         <div className="shape triangle"></div>
         <div className="shape circle-small"></div>
         <h1>Our Services</h1>
-        <p>We are digital pioneers on the leading edge of low-code development. Helping ambitious brands to outperform in the next generation of digital experiences.</p>
+        {/* <p>We are digital pioneers on the leading edge of low-code development. Helping ambitious brands to outperform in the next generation of digital experiences.</p> */}
     </div>
 
 

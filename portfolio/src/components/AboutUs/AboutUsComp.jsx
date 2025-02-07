@@ -86,11 +86,11 @@ const AboutUsComp = () => {
         <div className="shape triangle"></div>
         <div className="shape circle-small"></div>
         <h1>About Us</h1>
-        <p>
+        {/* <p>
           We are digital pioneers on the leading edge of low-code development.
           Helping ambitious brands to outperform in the next generation of
           digital experiences.
-        </p>
+        </p> */}
       </div>
 
       {/* Header close here  */}
