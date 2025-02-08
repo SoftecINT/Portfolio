@@ -12,10 +12,10 @@
     word-break: normal;
     hyphens: auto;
     width: 50%; /* Half the viewport width */
-    text-align: center; /* Center text inside */
-    white-space: normal;
-  /* word-break: break-word; */
-  /* overflow-wrap: break-word; */
+    white-space: normal; /* Ensures proper wrapping */
+  word-break: normal;  /* Prevents breaking words awkwardly */
+  overflow-wrap: break-word; /* Ensures words wrap properly */
+  text-align: center; 
 
   line-height: 1.5;
   text-align: center;
