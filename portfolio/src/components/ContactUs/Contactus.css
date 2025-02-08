@@ -561,7 +561,7 @@ input:focus, textarea:focus {
 
   
   .btn-submit {
-    margin-top: -1.5rem;
+    margin-top: -3rem;
     width: 10rem;
     height: 2.5rem;
     background-color: #d9d9d9; /* Initial background color */

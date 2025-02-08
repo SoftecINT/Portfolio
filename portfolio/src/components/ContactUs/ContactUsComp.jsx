@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef,useState } from "react";
 import "./Contactus.css";
 import instagram1 from "../../assets/insta1.png";
 import linkedinn1 from "../../assets/linkedinn1.png";
@@ -10,10 +10,28 @@ import { ToastContainer, toast } from 'react-toastify';
 const ContactUsComp = () => {
 
     const form = useRef();
+    const [phone, setPhone] = useState("");
+    const [phoneError, setPhoneError] = useState("");
+    const validatePhone = (phoneNumber) => {
+      const phoneRegex = /^[0-9]{10,15}$/; // Allows 10-15 digits only
+      return phoneRegex.test(phoneNumber);
+  };
+  const handlePhoneChange = (e) => {
+    setPhone(e.target.value);
+    if (!validatePhone(e.target.value)) {
+        setPhoneError("Invalid phone number. Must be 10-15 digits.");
+    } else {
+        setPhoneError("");
+    }
+};
   
     const sendEmail = (e) => {
       e.preventDefault();
   
+      if (!validatePhone(phone)) {
+        toast.error("Please enter a valid phone number.");
+        return;
+      }
       emailjs
         .sendForm('service_kmjm31c', 'template_woq96g9', form.current, {
           publicKey: 'lqz-V1LIw8Dp66-fg',
@@ -22,6 +40,7 @@ const ContactUsComp = () => {
           () => {
             toast.success('Email sent successfully!');
             form.current.reset();
+            setPhone(""); // Reset phone state
           },
           (error) => {
             toast.error(`Failed to send email: ${error.text}`);
@@ -29,21 +48,6 @@ const ContactUsComp = () => {
         );
     };
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   return (
     <div>
       <div className="home-container">
@@ -51,11 +55,11 @@ const ContactUsComp = () => {
         <div className="shape triangle"></div>
         <div className="shape circle-small"></div>
         <h1>Contact Us</h1>
-        <p>
+        {/* <p>
           We are digital pioneers on the leading edge of low-code development.
           Helping ambitious brands to outperform in the next generation of
           digital experiences.
-        </p>
+        </p> */}
       </div>
 
       <div className="container-fluid">
@@ -84,13 +88,16 @@ const ContactUsComp = () => {
               My phone number is
             </label>
             <input
-              type="tel"
-              name="phone_number"
-              className="form-control"
-              id="phone"
-              placeholder="Your phone number"
+              type="tel" 
+              name="phone_number" 
+              className="form-control" 
+              id="phone" 
+              placeholder="Your phone number" 
+              value={phone} 
+              onChange={handlePhoneChange} 
               required
             />
+     {phoneError && <small className="text-danger">{phoneError}</small>}
           </div>
           <div className="mb-4">
             <label htmlFor="company" className="form-label">
@@ -184,14 +191,6 @@ const ContactUsComp = () => {
     </div>
   </div>
 </div>
-
-
-
-
-
-
-
-
     </div>
   );
 };
