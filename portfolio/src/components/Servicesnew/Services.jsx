@@ -3,6 +3,7 @@ import './Services.css'
 import { useMotionValue, motion, useSpring, useTransform } from "framer-motion";
 import { FiArrowRight } from "react-icons/fi";
 import { div } from 'framer-motion/client';
+import Horizontal from '../Horizontal/Horizontal'
 
 
 import mockup2 from '../../assets/graphicdesign.jpg'
@@ -23,7 +24,7 @@ const Services = () => {
         {/* <p>We are digital pioneers on the leading edge of low-code development. Helping ambitious brands to outperform in the next generation of digital experiences.</p> */}
     </div>
 
-
+<Horizontal/>
 
     <section className="bg-neutral-950 p-4 md:p-8">
       <div className="mx-auto max-w-5xl">

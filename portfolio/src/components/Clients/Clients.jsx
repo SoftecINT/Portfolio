@@ -24,7 +24,7 @@ import {
 
 import mockup1 from '../../assets/mockup1.png'
 import mockup2 from '../../assets/mockup2.png'
-import Horizontal from '../Horizontal/Horizontal';
+// import Horizontal from '../Horizontal/Horizontal';
 import difara from '../../assets/difara.png'
 import sheraton from '../../assets/sheraton.png'
 import youLearn from '../../assets/youlearn.png'
@@ -53,7 +53,7 @@ const Clients = () => {
       > */}
         {/* <Nav /> */}
         <Hero />
-        <Horizontal/>
+        {/* <Horizontal/> */}
         <ClipPathLinks />
         {/* <Schedule /> */}
       {/* </ReactLenis> */}
@@ -84,7 +84,7 @@ const Hero = () => {
 
       {/* <ParallaxImages /> */}
 
-      <div className="absolute bottom-0 left-0 right-0 h-96 bg-gradient-to-b from-zinc-950/0 to-zinc-950" />
+      {/* <div className="absolute bottom-0 left-0 right-0 h-96 bg-gradient-to-b from-zinc-950/0 to-zinc-950" /> */}
     </div>
   );
 };

@@ -108,11 +108,11 @@ const Horizontal = () => {
           aria-hidden="true"
           role="img"
         >
-          <path
+          {/* <path
             d="M19.5644 0.271441L0.0251465 33.1965L1.82809 34.2665L34.2509 37.531L40.7448 47.612L45.0113 40.4227L45.7904 39.1098L38.7856 28.2466L38.7732 28.2674L21.3674 1.3414L19.5644 0.271441Z"
             fill="url(#paint0_linear_606_98)"
-          />
-          <defs>
+          /> */}
+          {/* <defs>
             <linearGradient
               id="paint0_linear_606_98"
               x1="9.79479"
@@ -124,7 +124,7 @@ const Horizontal = () => {
               <stop stopColor="#72CEC9" />
               <stop offset="1" stopColor="#A0FF97" />
             </linearGradient>
-          </defs>
+          </defs> */}
         </svg>
       </div>
       <div className="horizontal-scrolling_landing-shape2 w-embed">
@@ -138,12 +138,12 @@ const Horizontal = () => {
           aria-hidden="true"
           role="img"
         >
-          <path
+          {/* <path
             d="M18.4273 51.0561L33.7049 51.0561L33.7049 33.3475L51.6697 33.3475L51.6697 18.3382L33.7049 18.3382L33.7049 11.6344L33.6143 0.718505L18.3367 0.718504L18.4273 11.6344L18.4273 18.3382L11.5131 18.3382L0.402095 18.4271L0.402094 33.4365L11.5433 33.3475L18.4273 33.3475L18.4273 51.0561Z"
             fill="url(#paint0_radial_606_96)"
-          />
+          /> */}
           <defs>
-            <radialGradient
+            {/* <radialGradient
               id="paint0_radial_606_96"
               cx="0"
               cy="0"
@@ -153,7 +153,7 @@ const Horizontal = () => {
             >
               <stop stopColor="#A0D7F6" />
               <stop offset="0.98" stopColor="#DB74FF" />
-            </radialGradient>
+            </radialGradient> */}
           </defs>
         </svg>
       </div>
@@ -168,14 +168,14 @@ const Horizontal = () => {
           aria-hidden="true"
           role="img"
         >
-          <circle
+          {/* <circle
             cx="19.5489"
             cy="19.7891"
             r="19.2113"
             fill="url(#paint0_radial_606_97)"
-          />
+          /> */}
           <defs>
-            <radialGradient
+            {/* <radialGradient
               id="paint0_radial_606_97"
               cx="0"
               cy="0"
@@ -185,7 +185,7 @@ const Horizontal = () => {
             >
               <stop offset="0.405" stopColor="#F6FF94" />
               <stop offset="1" stopColor="#3EC9B8" />
-            </radialGradient>
+            </radialGradient> */}
           </defs>
         </svg>
       </div>
@@ -299,7 +299,7 @@ const Horizontal = () => {
                   >
                     <div className="fs_accordion-1_body">
                       <p
-                        className="fs_accordion-1_paragraph"
+                        className="fs_accordion-1_paragraph mx-1"
                         style={{ color: "#fff" }}
                       >
                         A successful website is built on a robust digital
@@ -362,7 +362,7 @@ const Horizontal = () => {
             className="fs_accordion-1_content"
           >
             <div className="fs_accordion-1_body">
-              <p className="fs_accordion-1_paragraph" style={{ color: "#fff" }}>
+              <p className="fs_accordion-1_paragraph mx-2" style={{ color: "#fff" }}>
                 Every brand, from industry leaders to startups, has a unique
                 story to tell. We bring these stories to life using user
                 experience (UX) and user interface (UI) design, visually
@@ -427,7 +427,7 @@ const Horizontal = () => {
             className="fs_accordion-1_content"
           >
             <div className="fs_accordion-1_body">
-              <p className="fs_accordion-1_paragraph" style={{ color: "#fff" }}>
+              <p className="fs_accordion-1_paragraph mx-2" style={{ color: "#fff" }}>
                 You don’t need to be a developer to manage your website. Our
                 Webflow builds are built to last and built to give you complete
                 control of your content, including dynamic content like blogs,
