@@ -53,6 +53,13 @@ const teamMembers = [
       "Ali specializes in front-end development with a strong focus on modern UI/UX designs.",
   },
   {
+    name: "Shahid Saeed",
+    role: "Developer",
+    image: asset1, // Add image URL
+    details:
+      "Ali specializes in front-end development with a strong focus on modern UI/UX designs.",
+  },
+  {
     name: "Zain Tanoli",
     role: "Developer",
     image: asset1, // Add image URL
