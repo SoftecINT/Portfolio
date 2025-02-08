@@ -33,49 +33,49 @@ const teamlead = [
 const teamMembers = [
   {
     name: "Ali Naeem",
-    role: "Developer",
+    role: "Sofware Engineer",
     image: ali, // Add image URL
     details:
       "Ali specializes in front-end development with a strong focus on modern UI/UX designs.",
   },
   {
     name: "Momin Khan",
-    role: "Developer",
+    role: "Sofware Engineer",
     image: momin, // Add image URL
     details:
       "Ali specializes in front-end development with a strong focus on modern UI/UX designs.",
   },
   {
     name: "Danish Rizwan",
-    role: "Developer",
+    role: "Sofware Engineer",
     image: danish, // Add image URL
     details:
       "Ali specializes in front-end development with a strong focus on modern UI/UX designs.",
   },
   {
     name: "Shahid Saeed",
-    role: "Developer",
+    role: "Sofware Engineer",
     image: shahid, // Add image URL
     details:
       "Ali specializes in front-end development with a strong focus on modern UI/UX designs.",
   },
   {
     name: "Zain Tanoli",
-    role: "Developer",
+    role: "Front-End Developer",
     image: asset1, // Add image URL
     details:
       "Ali specializes in front-end development with a strong focus on modern UI/UX designs.",
   },
   {
     name: "Ali Hassan",
-    role: "Developer",
+    role: "Full-Stack Developer",
     image: alihassan, // Add image URL
     details:
       "Ali specializes in front-end development with a strong focus on modern UI/UX designs.",
   },
   {
     name: "Danish Qureshi",
-    role: "Developer",
+    role: "Full-Stack Developer",
     image: danishq, // Add image URL
     details:
       "Ali specializes in front-end development with a strong focus on modern UI/UX designs.",
