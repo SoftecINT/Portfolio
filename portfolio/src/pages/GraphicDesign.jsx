@@ -36,7 +36,7 @@ const GraphicDesign = () => {
 
           {/* Overlay */}
           <div className="absolute inset-0 bg-black/50 flex flex-col justify-center items-center text-center text-white">
-            <h1 className="text-6xl font-bold mb-4">Graphic Design</h1>
+            <h1 className="text-8xl font-bold mb-4">Graphic Design</h1>
             <h3 className="text-2xl font-poppins mb-6">
               We provide top-notch graphic designs
             </h3>
@@ -84,7 +84,7 @@ const GraphicDesign = () => {
                     <div className="back-content">
                       
                       {/* <img src={adobe} alt="" style={{ width: "50px" , height: "50px"}} /> */}
-                      <strong>Logo Designing</strong>
+                      <strong>LOGO DESIGNING</strong>
                     </div>
                   </div>
                 </div>
@@ -96,7 +96,7 @@ const GraphicDesign = () => {
                   <div className="back">
                     <div className="back-content">
                     {/* <img src={penpencil} alt="" style={{ width: "50px" , height: "50px"}} /> */}
-                      <strong>2D Animaton</strong>
+                      <strong>2D ANIMATION</strong>
                     </div>
                   </div>
                 </div>
@@ -108,7 +108,7 @@ const GraphicDesign = () => {
                   <div className="back">
                     <div className="back-content">
                     {/* <img src={photoshop} alt="" style={{ width: "50px" , height: "50px"}} /> */}
-                      <strong>3D Animation</strong>
+                      <strong>3D ANIMATION</strong>
                     </div>
                   </div>
                 </div>
@@ -127,7 +127,7 @@ const GraphicDesign = () => {
                     <div className="back-content">
                       
                       {/* <img src={adobe} alt="" style={{ width: "50px" , height: "50px"}} /> */}
-                      <strong>Video Editing</strong>
+                      <strong>VIDEO EDITING</strong>
                     </div>
                   </div>
                 </div>
@@ -139,7 +139,7 @@ const GraphicDesign = () => {
                   <div className="back">
                     <div className="back-content">
                     {/* <img src={penpencil} alt="" style={{ width: "50px" , height: "50px"}} /> */}
-                      <strong>3D Modeling</strong>
+                      <strong>3D MODELING</strong>
                     </div>
                   </div>
                 </div>
@@ -151,7 +151,7 @@ const GraphicDesign = () => {
                   <div className="back">
                     <div className="back-content">
                     {/* <img src={photoshop} alt="" style={{ width: "50px" , height: "50px"}} /> */}
-                      <strong>Packaging Design</strong>
+                      <strong>PACKAGING DESIGN</strong>
                     </div>
                   </div>
                 </div>

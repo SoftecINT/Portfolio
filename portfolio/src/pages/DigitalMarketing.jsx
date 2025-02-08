@@ -35,7 +35,7 @@ const DigitalMarketing = () => {
 
           {/* Overlay */}
           <div className="absolute inset-0 bg-black/50 flex flex-col justify-center items-center text-center text-white">
-            <h1 className="text-6xl font-bold mb-4">Digital Marketing</h1>
+            <h1 className="text-8xl font-bold mb-4">Digital Marketing</h1>
             <h3 className="text-2xl font-poppins mb-6">
               We provide digital marketing services
             </h3>

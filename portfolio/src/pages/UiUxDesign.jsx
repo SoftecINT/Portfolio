@@ -45,7 +45,7 @@ const UiUxDesign = () => {
 
           {/* Overlay */}
           <div className="absolute inset-0 bg-black/50 flex flex-col justify-center items-center text-center text-white">
-            <h1 className="text-6xl font-bold mb-4">UI / UX Design</h1>
+            <h1 className="text-8xl font-bold mb-4">UI / UX Design</h1>
             <h3 className="text-2xl font-poppins mb-6">
               We Provide top-notch UI/UX design
             </h3>
@@ -92,7 +92,7 @@ const UiUxDesign = () => {
                     <div className="back-content">
                       
                       {/* <img src={figma} alt="" style={{ width: "50px" , height: "50px"}} /> */}
-                      <strong>Prototyping</strong>
+                      <strong>PROTOTYPING</strong>
                     </div>
                   </div>
                 </div>
@@ -104,7 +104,7 @@ const UiUxDesign = () => {
                   <div className="back">
                     <div className="back-content">
                     {/* <img src={wireframe} alt="" style={{ width: "50px" , height: "50px"}} /> */}
-                      <strong>WireFrames</strong>
+                      <strong>WIREFRAMES</strong>
                     </div>
                   </div>
                 </div>
@@ -116,7 +116,7 @@ const UiUxDesign = () => {
                   <div className="back">
                     <div className="back-content">
                     {/* <img src={mockup} alt="" style={{ width: "50px" , height: "50px"}} /> */}
-                      <strong>Mockups</strong>
+                      <strong>MOCKUPS</strong>
                     </div>
                   </div>
                 </div>
