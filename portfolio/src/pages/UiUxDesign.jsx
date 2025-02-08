@@ -91,8 +91,8 @@ const UiUxDesign = () => {
                   <div className="back">
                     <div className="back-content">
                       
-                      <img src={figma} alt="" style={{ width: "50px" , height: "50px"}} />
-                      <strong>Figma</strong>
+                      {/* <img src={figma} alt="" style={{ width: "50px" , height: "50px"}} /> */}
+                      <strong>Prototyping</strong>
                     </div>
                   </div>
                 </div>
@@ -103,7 +103,7 @@ const UiUxDesign = () => {
                   {/* Back of the Card */}
                   <div className="back">
                     <div className="back-content">
-                    <img src={wireframe} alt="" style={{ width: "50px" , height: "50px"}} />
+                    {/* <img src={wireframe} alt="" style={{ width: "50px" , height: "50px"}} /> */}
                       <strong>WireFrames</strong>
                     </div>
                   </div>
@@ -115,7 +115,7 @@ const UiUxDesign = () => {
                   {/* Back of the Card */}
                   <div className="back">
                     <div className="back-content">
-                    <img src={mockup} alt="" style={{ width: "50px" , height: "50px"}} />
+                    {/* <img src={mockup} alt="" style={{ width: "50px" , height: "50px"}} /> */}
                       <strong>Mockups</strong>
                     </div>
                   </div>

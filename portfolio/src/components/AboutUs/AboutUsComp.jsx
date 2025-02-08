@@ -12,7 +12,7 @@ import nasir from '../../assets/nasir.png'
 import danishq from '../../assets/danishq.jpg'
 import alihassan from '../../assets/alihassan.jpg'
 import asad from '../../assets/asad1.jpg'
-
+import shahid from '../../assets/shahid.jpg'
 
 const teamlead = [
   {
@@ -55,7 +55,7 @@ const teamMembers = [
   {
     name: "Shahid Saeed",
     role: "Developer",
-    image: asset1, // Add image URL
+    image: shahid, // Add image URL
     details:
       "Ali specializes in front-end development with a strong focus on modern UI/UX designs.",
   },
@@ -164,7 +164,7 @@ const AboutUsComp = () => {
 
         <div className="Team-container">
         <h1>
-          The <span>Team Lead</span>
+          The <span>Director</span>
         </h1>
         <div className="team-cards">
           {teamlead.map((member, index) => (
