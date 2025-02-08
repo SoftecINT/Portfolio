@@ -16,6 +16,7 @@
   word-break: normal;  /* Prevents breaking words awkwardly */
   overflow-wrap: break-word; /* Ensures words wrap properly */
   text-align: center; 
+  font-family: 'Great Vibes', cursive;
 
   line-height: 1.5;
   text-align: center;
@@ -24,6 +25,10 @@
   align-items: center;
   padding: 20px;
   margin: auto;
+}
+.text-container:hover{
+    color: #f8591a;
+    cursor: pointer  ;
 }
 
 .img-container {
