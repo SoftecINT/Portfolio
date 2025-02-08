@@ -57,7 +57,7 @@ return (
   <p
     ref={ref}
     className={`split-parent ${className}`}
-    style={{ textAlign, display: 'inline', fontSize: '4rem' }}
+    style={{ textAlign, display: 'block', fontSize: '2rem' }}
   >
     {springs.map((props, index) => (
       <animated.span

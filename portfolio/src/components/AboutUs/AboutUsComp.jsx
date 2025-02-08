@@ -4,6 +4,7 @@ import "./AboutUs.css";
 import logo from "../../assets/whitelogo.svg";
 import xiomi from "../../assets/xiomi.jpg";
 import asset1 from '../../assets/images.jpg'
+import founder from '../../assets/founder.jpg'
 
 const teamMembers = [
   {
@@ -94,7 +95,7 @@ const AboutUsComp = () => {
       </div>
 
       {/* Header close here  */}
-    <div className="container1 bg-black text-white ">
+    <div className="container1 bg-black text-white">
       <div className="text-container">
         <SplitText
           text="Back in 2006 at the start of the digital era we founded our first agency crafting digital products. But it took a while when we witnessed the early indicators of a significant shift by upcoming tech called low-code"
@@ -116,21 +117,24 @@ const AboutUsComp = () => {
       <div className="ourtrusted-partners">
             <h1>Our Trusted  Partners</h1>
             <div className="partners">
+                {/* <div className="partner"><img src={xiomi} alt=""/></div>
                 <div className="partner"><img src={xiomi} alt=""/></div>
                 <div className="partner"><img src={xiomi} alt=""/></div>
                 <div className="partner"><img src={xiomi} alt=""/></div>
                 <div className="partner"><img src={xiomi} alt=""/></div>
                 <div className="partner"><img src={xiomi} alt=""/></div>
                 <div className="partner"><img src={xiomi} alt=""/></div>
-                <div className="partner"><img src={xiomi} alt=""/></div>
-                <div className="partner"><img src={xiomi} alt=""/></div>
+                <div className="partner"><img src={xiomi} alt=""/></div> */}
+                {[...Array(8)].map((_, i) => (
+            <div className="partner" key={i}><img src={xiomi} alt="" /></div>
+          ))}
             </div>
         </div>
 
         <div className="Founder-container">
             <h1>The <span>Founder</span> </h1>
-            <div className="card-founder">
-                <img style={{height: "350px", width: "350px"}} src={asset1} alt="" />
+            <div className="card-founder"  onClick={() => handleCardClick({ name: "Shakeel Ahmed", role: "Founder", image: founder, details: "Founder and visionary behind our company." })}>
+                <img style={{height: "400px", width: "350px"}} src={founder} alt="" />
                 <h3 className="text-2xl font-semibold">Shakeel Ahmed</h3>
                 <h4 className="text-black text-lg">Founder</h4>
             </div>
