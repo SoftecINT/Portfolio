@@ -83,8 +83,8 @@ const GraphicDesign = () => {
                   <div className="back">
                     <div className="back-content">
                       
-                      <img src={adobe} alt="" style={{ width: "50px" , height: "50px"}} />
-                      <strong>Adobe</strong>
+                      {/* <img src={adobe} alt="" style={{ width: "50px" , height: "50px"}} /> */}
+                      <strong>Logo Designing</strong>
                     </div>
                   </div>
                 </div>
@@ -95,8 +95,8 @@ const GraphicDesign = () => {
                   {/* Back of the Card */}
                   <div className="back">
                     <div className="back-content">
-                    <img src={penpencil} alt="" style={{ width: "50px" , height: "50px"}} />
-                      <strong>In Design</strong>
+                    {/* <img src={penpencil} alt="" style={{ width: "50px" , height: "50px"}} /> */}
+                      <strong>2D Animaton</strong>
                     </div>
                   </div>
                 </div>
@@ -107,13 +107,62 @@ const GraphicDesign = () => {
                   {/* Back of the Card */}
                   <div className="back">
                     <div className="back-content">
-                    <img src={photoshop} alt="" style={{ width: "50px" , height: "50px"}} />
-                      <strong>Photoshop</strong>
+                    {/* <img src={photoshop} alt="" style={{ width: "50px" , height: "50px"}} /> */}
+                      <strong>3D Animation</strong>
                     </div>
                   </div>
                 </div>
               </div>
+
+              
             </div>
+
+                  <br />
+
+            <div className="Cards-section1">
+              <div className="card1">
+                <div className="content">
+                  {/* Back of the Card */}
+                  <div className="back">
+                    <div className="back-content">
+                      
+                      {/* <img src={adobe} alt="" style={{ width: "50px" , height: "50px"}} /> */}
+                      <strong>Video Editing</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="card1">
+                <div className="content">
+                  {/* Back of the Card */}
+                  <div className="back">
+                    <div className="back-content">
+                    {/* <img src={penpencil} alt="" style={{ width: "50px" , height: "50px"}} /> */}
+                      <strong>3D Modeling</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="card1">
+                <div className="content">
+                  {/* Back of the Card */}
+                  <div className="back">
+                    <div className="back-content">
+                    {/* <img src={photoshop} alt="" style={{ width: "50px" , height: "50px"}} /> */}
+                      <strong>Packaging Design</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              
+            </div>
+
+
+
+
 
             {/* cards end  */}
           </div>

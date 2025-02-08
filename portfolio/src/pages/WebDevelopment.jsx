@@ -80,7 +80,7 @@ const WebDevelopment = () => {
                   <div className="back">
                     <div className="back-content">
                       
-                      <img src={html} alt="" style={{ width: "50px" , height: "50px"}} />
+                      {/* <img src={html} alt="" style={{ width: "50px" , height: "50px"}} /> */}
                       <strong>HTML</strong>
                     </div>
                   </div>
@@ -92,7 +92,7 @@ const WebDevelopment = () => {
                   {/* Back of the Card */}
                   <div className="back">
                     <div className="back-content">
-                    <img src={css} alt="" style={{ width: "50px" , height: "50px"}} />
+                    {/* <img src={css} alt="" style={{ width: "50px" , height: "50px"}} /> */}
                       <strong>CSS</strong>
                     </div>
                   </div>
@@ -104,13 +104,54 @@ const WebDevelopment = () => {
                   {/* Back of the Card */}
                   <div className="back">
                     <div className="back-content">
-                    <img src={react11} alt="" style={{ width: "50px" , height: "50px"}} />
+                    {/* <img src={react11} alt="" style={{ width: "50px" , height: "50px"}} /> */}
                       <strong>REACT</strong>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+                  
+                  <br />
+            <div className="Cards-section1">
+              <div className="card1">
+                <div className="content">
+                  {/* Back of the Card */}
+                  <div className="back">
+                    <div className="back-content">
+                      
+                      {/* <img src={html} alt="" style={{ width: "50px" , height: "50px"}} /> */}
+                      <strong>WORDPRESS</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="card1">
+                <div className="content">
+                  {/* Back of the Card */}
+                  <div className="back">
+                    <div className="back-content">
+                    {/* <img src={css} alt="" style={{ width: "50px" , height: "50px"}} /> */}
+                      <strong>SHOPIFY</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="card1">
+                <div className="content">
+                  {/* Back of the Card */}
+                  <div className="back">
+                    <div className="back-content">
+                    {/* <img src={react11} alt="" style={{ width: "50px" , height: "50px"}} /> */}
+                      <strong>LARAVEL</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
 
             {/* cards end  */}
           </div>

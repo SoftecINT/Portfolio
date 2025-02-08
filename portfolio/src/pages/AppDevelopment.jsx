@@ -84,7 +84,7 @@ const AppDevelopment = () => {
                   <div className="back">
                     <div className="back-content">
                       
-                      <img src={flutter} alt="" style={{ width: "50px" , height: "50px"}} />
+                      {/* <img src={flutter} alt="" style={{ width: "50px" , height: "50px"}} /> */}
                       <strong>FLUTTER</strong>
                     </div>
                   </div>
@@ -96,8 +96,8 @@ const AppDevelopment = () => {
                   {/* Back of the Card */}
                   <div className="back">
                     <div className="back-content">
-                    <img src={android} alt="" style={{ width: "50px" , height: "50px"}} />
-                      <strong>ANDROID</strong>
+                    {/* <img src={android} alt="" style={{ width: "50px" , height: "50px"}} /> */}
+                      <strong>REACT NATIVE</strong>
                     </div>
                   </div>
                 </div>
@@ -108,8 +108,8 @@ const AppDevelopment = () => {
                   {/* Back of the Card */}
                   <div className="back">
                     <div className="back-content">
-                    <img src={ios} alt="" style={{ width: "50px" , height: "50px"}} />
-                      <strong>IOS</strong>
+                    {/* <img src={ios} alt="" style={{ width: "50px" , height: "50px"}} /> */}
+                      <strong>DJANGO</strong>
                     </div>
                   </div>
                 </div>

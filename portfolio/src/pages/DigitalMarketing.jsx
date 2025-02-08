@@ -82,8 +82,8 @@ const DigitalMarketing = () => {
                   <div className="back">
                     <div className="back-content">
                       
-                      <img src={campain} alt="" style={{ width: "50px" , height: "50px"}} />
-                      <strong>CAMPAIN</strong>
+                      {/* <img src={campain} alt="" style={{ width: "50px" , height: "50px"}} /> */}
+                      <strong>SEO</strong>
                     </div>
                   </div>
                 </div>
@@ -94,8 +94,8 @@ const DigitalMarketing = () => {
                   {/* Back of the Card */}
                   <div className="back">
                     <div className="back-content">
-                    <img src={ads} alt="" style={{ width: "50px" , height: "50px"}} />
-                      <strong>ADS</strong>
+                    {/* <img src={ads} alt="" style={{ width: "50px" , height: "50px"}} /> */}
+                      <strong>SOCIAL MEDIA</strong>
                     </div>
                   </div>
                 </div>
@@ -106,8 +106,8 @@ const DigitalMarketing = () => {
                   {/* Back of the Card */}
                   <div className="back">
                     <div className="back-content">
-                    <img src={goal} alt="" style={{ width: "50px" , height: "50px"}} />
-                      <strong>GOAL</strong>
+                    {/* <img src={goal} alt="" style={{ width: "50px" , height: "50px"}} /> */}
+                      <strong>META ADS</strong>
                     </div>
                   </div>
                 </div>
