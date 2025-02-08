@@ -160,7 +160,7 @@ const AboutUsComp = () => {
 
 
 
-            
+              
 
         <div className="Team-container">
         <h1>

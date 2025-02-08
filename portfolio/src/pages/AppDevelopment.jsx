@@ -4,7 +4,7 @@ import backgroundImage from "../assets/daniel-olahh.jpg";
 import thumbnail from "../assets/thumbnail.webp"
 import android1 from "../assets/android.webp"
 import ios1 from "../assets/ios.webp"
-import video from "../assets/graphicdesign.mp4";
+import video from "../assets/mobileappportfolio.mp4";
 import "../css/UiUxdesign.css";
 import avatar from "../assets/avatar.jpg"
 import { Footer } from '../components/Footer/Footer'
