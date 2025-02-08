@@ -303,7 +303,8 @@ font-family: 'Great Vibes', cursive;
 
 /* Team container below  */
 .Team-container{
-    height: 180vh;
+    height: auto;
+    min-height: 100vh;
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -325,7 +326,7 @@ font-family: 'Great Vibes', cursive;
 
   .team-cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
     padding: 100px;

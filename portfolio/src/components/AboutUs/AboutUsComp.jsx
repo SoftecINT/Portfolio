@@ -5,33 +5,50 @@ import logo from "../../assets/whitelogo.svg";
 import xiomi from "../../assets/xiomi.jpg";
 import asset1 from '../../assets/images.jpg'
 import founder from '../../assets/founder.jpg'
+import momin from '../../assets/momin.jpg'
+import ali from '../../assets/ali.jpg'
+import danish from '../../assets/danish.jpg'
+import nasir from '../../assets/nasir.png'
+import danishq from '../../assets/danishq.jpg'
+import alihassan from '../../assets/alihassan.jpg'
+import asad from '../../assets/asad1.jpg'
 
-const teamMembers = [
+
+const teamlead = [
   {
     name: "Nasir Qureshi",
     role: "Team Lead",
-    image: asset1, 
+    image: nasir, 
     details:
-      "As the Editorial Manager at AFE, Noha Saadi’s motto, Every detail matters... every word counts, reflects her approach to her work. Noha’s creative vision, paired with her meticulous attention to detail, ensures that content not only meets strategic objectives but resonates with the audience. Her background as a writer gives her a deep understanding of the creative process, enabling her to guide the team in crafting impactful, high-quality content. When she’s not working, Noha enjoys reading, writing, and fishing. She also loves traveling and is drawn to destinations rich in history or beautiful beaches. Fun fact: Noha has a variety of fun facts, but they always seem to cancel each other out!",
+      "As the Editorial Manager at softec, Nasir’s motto, Every detail matters... every word counts, reflects her approach to her work. Noha’s creative vision, paired with her meticulous attention to detail, ensures that content not only meets strategic objectives but resonates with the audience. Her background as a writer gives her a deep understanding of the creative process, enabling her to guide the team in crafting impactful, high-quality content. When she’s not working, Noha enjoys reading, writing, and fishing. She also loves traveling and is drawn to destinations rich in history or beautiful beaches. Fun fact: Noha has a variety of fun facts, but they always seem to cancel each other out!",
   },
+  {
+    name: "Asad Hayat",
+    role: "Team Lead",
+    image: asad, // Add image URL
+    details:
+      "Ali specializes in front-end development with a strong focus on modern UI/UX designs.",
+  },];
+
+const teamMembers = [
   {
     name: "Ali Naeem",
     role: "Developer",
-    image: asset1, // Add image URL
+    image: ali, // Add image URL
     details:
       "Ali specializes in front-end development with a strong focus on modern UI/UX designs.",
   },
   {
     name: "Momin Khan",
     role: "Developer",
-    image: asset1, // Add image URL
+    image: momin, // Add image URL
     details:
       "Ali specializes in front-end development with a strong focus on modern UI/UX designs.",
   },
   {
     name: "Danish Rizwan",
     role: "Developer",
-    image: asset1, // Add image URL
+    image: danish, // Add image URL
     details:
       "Ali specializes in front-end development with a strong focus on modern UI/UX designs.",
   },
@@ -45,24 +62,18 @@ const teamMembers = [
   {
     name: "Ali Hassan",
     role: "Developer",
-    image: asset1, // Add image URL
+    image: alihassan, // Add image URL
     details:
       "Ali specializes in front-end development with a strong focus on modern UI/UX designs.",
   },
   {
-    name: "Shahid Saeed",
+    name: "Danish Qureshi",
     role: "Developer",
-    image: asset1, // Add image URL
+    image: danishq, // Add image URL
     details:
       "Ali specializes in front-end development with a strong focus on modern UI/UX designs.",
   },
-  {
-    name: "Asad Hayat",
-    role: "Developer",
-    image: asset1, // Add image URL
-    details:
-      "Ali specializes in front-end development with a strong focus on modern UI/UX designs.",
-  },];
+  ];
 const handleAnimationComplete = () => {
   console.log("All letters have animated!");
 };
@@ -141,6 +152,35 @@ const AboutUsComp = () => {
         </div>
 
 
+
+            
+
+        <div className="Team-container">
+        <h1>
+          The <span>Team Lead</span>
+        </h1>
+        <div className="team-cards">
+          {teamlead.map((member, index) => (
+            <div
+              key={index}
+              className="team-card"
+              onClick={() => handleCardClick(member)}
+            >
+              <img
+                style={{ height: "300px", width: "300px" }}
+                src={member.image}
+                alt={member.name}
+              />
+              <h3 className="text-2xl font-semibold">
+                {member.name}
+              </h3>
+              <h4 className="text-gray-600 text-lg">{member.role}</h4>
+            </div>
+          ))}
+        </div>
+
+      </div>
+
         <div className="Team-container">
         <h1>
           The <span>Team</span>
@@ -164,6 +204,7 @@ const AboutUsComp = () => {
             </div>
           ))}
         </div>
+
       </div>
 
       {selectedMember && (
