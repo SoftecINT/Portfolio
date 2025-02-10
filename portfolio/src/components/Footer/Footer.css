@@ -113,12 +113,9 @@
 }
 
 .footer_content-grid {
-  grid-column-gap: 4rem;
-  grid-row-gap: 4rem;
-  grid-template-rows: auto auto;
-  grid-template-columns: 1.5fr 1fr 1fr 1fr;
-  grid-auto-columns: 1fr;
   display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
 }
 
 .footer_text-span {
@@ -473,4 +470,169 @@ body {
 
 .lochead{
   width: 200px;
+}
+
+/* Updated responsive styles */
+.footer_content-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+@media (max-width: 1280px) {
+  .footer_content-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer_contact-link {
+    font-size: 1.8rem;
+  }
+
+  .padding-footer {
+    padding: 2.5rem 2rem 2rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer_content-grid {
+    gap: 3rem;
+  }
+
+  .footer_copyright {
+    margin-top: 2rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .footer_copyright-links {
+    justify-content: center;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer_content-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .footer_item {
+    text-align: center;
+  }
+
+  .footer_logo {
+    margin: 0 auto;
+  }
+
+  .footer_contact-list {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer_contact-list-item {
+    margin-bottom: 1rem;
+  }
+
+  .footer_contact-link {
+    font-size: 1.5rem;
+  }
+
+  .location_heading {
+    text-align: center;
+  }
+
+  .footer-map-container {
+    margin-top: 2rem;
+  }
+
+  .map-overlay {
+    font-size: 1.2rem;
+  }
+
+  .map-button {
+    padding: 8px 16px;
+    font-size: 0.8rem;
+  }
+
+  .padding-footer {
+    padding: 2rem 1rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer_contact-link {
+    font-size: 1.2rem;
+  }
+
+  .footer_logo {
+    width: 15rem;
+  }
+
+  .footer_copyright {
+    padding: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .footer_copyright-links {
+    gap: 1rem;
+    font-size: 0.8rem;
+  }
+
+  .map-overlay {
+    font-size: 1rem;
+  }
+
+  .map-button {
+    padding: 6px 12px;
+    font-size: 0.7rem;
+    bottom: 8px;
+    right: 8px;
+  }
+
+  .padding-footer {
+    padding: 1.5rem 0.75rem 1rem;
+  }
+
+  .footer_heading .heading-style-h3 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Additional utility classes for better spacing */
+.footer_item:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.footer_contact-list-item.is-cta {
+  margin-top: 1.5rem;
+}
+
+/* Ensure buttons remain clickable and visible */
+.btn {
+  white-space: nowrap;
+  min-width: 120px;
+}
+
+/* Improve map container responsiveness */
+.footer-map-container {
+  height: auto;
+  min-height: 250px;
+}
+
+.footer-map-container iframe {
+  aspect-ratio: 16/9;
+  height: 250px;
+}
+
+/* Ensure copyright section stays readable */
+.footer_copyright-webflow {
+  width: 100%;
+}
+
+.footer_copyright-links {
+  width: 100%;
+  flex-wrap: wrap;
 }
