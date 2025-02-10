@@ -390,3 +390,161 @@ font-family: 'Great Vibes', cursive;
   
 
   
+/* Add these responsive styles at the end of the file */
+@media screen and (max-width: 1200px) {
+    .team-card {
+        width: 30%; /* 3 cards per row */
+    }
+
+    .team-cards {
+        padding: 50px;
+    }
+
+    .card-founder {
+        height: 450px;
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container1 {
+        flex-direction: column;
+        height: auto;
+        padding: 2rem 0;
+    }
+
+    .text-container {
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+
+    .img-container {
+        width: 60vw;
+    }
+
+    .team-card {
+        width: 45%; /* 2 cards per row */
+    }
+
+    .partners {
+        width: 80%;
+    }
+
+    .partner {
+        width: 45%;
+    }
+
+    .ourtrusted-partners h1 {
+        font-size: 7vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .popup-container {
+        flex-direction: column;
+    }
+
+    .popup-image, .popup-details {
+        width: 100%;
+    }
+
+    .card-founder {
+        height: 400px;
+        width: 300px;
+    }
+
+    .Team-container h1, .Founder-container h1 {
+        font-size: 9vw;
+    }
+
+    .team-cards {
+        padding: 30px;
+    }
+
+    .team-card h3 {
+        font-size: 1.75rem;
+    }
+
+    .team-card h4 {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .text-container {
+        width: 90%;
+        font-size: 0.9rem;
+    }
+
+    .img-container {
+        width: 80vw;
+    }
+
+    .team-card {
+        width: 80%; /* 1 card per row */
+    }
+
+    .partners {
+        width: 90%;
+    }
+
+    .partner {
+        width: 100%;
+        height: 150px;
+    }
+
+    .card-founder {
+        height: 350px;
+        width: 280px;
+    }
+
+    .card-founder h3 {
+        font-size: 1.75rem;
+    }
+
+    .card-founder h4 {
+        font-size: 1.1rem;
+    }
+
+    .popup-name {
+        font-size: 1.75rem;
+    }
+
+    .popup-role {
+        font-size: 1.1rem;
+    }
+
+    .popup-description {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .card-founder {
+        height: 300px;
+        width: 250px;
+    }
+
+    .Team-container h1, .Founder-container h1 {
+        font-size: 11vw;
+    }
+
+    .team-cards {
+        padding: 20px;
+    }
+
+    .team-card {
+        width: 90%;
+    }
+
+    .popup-content {
+        padding: 15px;
+    }
+
+    .close-button {
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+    }
+}
+  
