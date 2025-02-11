@@ -72,4 +72,59 @@
     display: flex;
   }
 
+  @media (max-width: 768px) {
+    .nav_menu {
+      display: none;
+    }
   
+    .nav_button {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .nav_menu.open {
+      display: flex;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .nav {
+        width: 95%;
+        margin-bottom: 2rem;
+        padding: 0.5rem 0; /* Added padding for height */
+    }
+
+    .nav_content {
+        min-height: 3.8rem; /* Increased from 3.5rem */
+        padding-left: 1.2rem; /* Slightly more horizontal padding */
+        padding-right: 1.2rem;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .nav {
+        width: 65%;
+        margin-bottom: 5rem;
+        border-radius: 3rem;
+        padding: 0.4rem 0; 
+    }
+
+    .nav_content {
+        min-height: 3.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 360px) {
+    .nav {
+        width: 90%;
+        padding: 0.3rem 0;
+    }
+
+    .nav_content {
+        min-height: 3.2rem;
+        padding-left: 0.8rem;
+        padding-right: 0.8rem;
+    }
+  }

@@ -7,7 +7,7 @@ export const Footer = () => {
   return (
     <footer className="footer ">
       
-      <div className="footer_component  mx-auto">
+      <div className="footer_component mx-auto">
         <div className="padding-footer">
           <div className="container-large">
             <div className="footer_content">
@@ -89,7 +89,7 @@ export const Footer = () => {
                   <div className="footer-map-container">
                     <iframe
                       src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d452.07563688418196!2d67.059912!3d24.9795471!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb340e5164466c5%3A0xf2981717778daa85!2sPlot%20B%20452%2C%20Sector%2011-A%20Sector%2011%20A%20North%20Karachi%20Twp%2C%20Karachi%2C%20Karachi%20City%2C%20Sindh!5e0!3m2!1sen!2s!4v1737549818269!5m2!1sen!2s"
-                      className="w-full h-[250px]"
+                      className=" h-[250px]"
                       style={{ border: 0, borderRadius: "10px" }}
                       allowFullScreen
                       loading="lazy"
