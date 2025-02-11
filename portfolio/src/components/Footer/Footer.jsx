@@ -5,9 +5,9 @@ import logo from "../../assets/whitelogo.svg";
 
 export const Footer = () => {
   return (
-    <footer className="footer py-10 px-5 sm:px-10">
+    <footer className="footer ">
       
-      <div className="footer_component max-w-7xl mx-auto">
+      <div className="footer_component  mx-auto">
         <div className="padding-footer">
           <div className="container-large">
             <div className="footer_content">
@@ -52,29 +52,15 @@ export const Footer = () => {
                         className="footer_contact-link w-inline-block"
                       >
                         <div>admin@softecint.com</div>
-                        <div className="link-line"></div>
-                      </a>
-                    </li>
-                    <li className="footer_contact-list-item">
-                      <a
-                        href="tel:+31132084030"
-                        className="footer_contact-link w-inline-block"
-                      >
                         <div>(+92) 345 - 8855857</div>
+
                         <div className="link-line"></div>
                       </a>
                     </li>
+
                     <li className="footer_contact-list-item is-cta">
                       <a
-                        href="/blog"
-                        className="button is-secondary is-footer isblog w-inline-block"
-                      >
-                        <div className="button-outer"></div>
-                      </a>
-                    </li>
-                    <li className="footer_contact-list-item is-cta">
-                      <a
-                        href="/get-quote"
+                        href="/contactus"
                         className=" is-footer w-inline-block"
                       >
                         <button className="btn inline-block  py-2 px-4 rounded">
@@ -121,7 +107,7 @@ export const Footer = () => {
                   </div>
                 </div>
               </div>
-              <div className="footer_copyright flex flex-col md:flex-row gap-4 mt-8">
+              <div className="footer_copyright flex flex-col md:flex-row">
                 <div className="footer_copyright_webflow text-center md:text-left">
                   <div className="footer_copyright-copy">
                     <div>
@@ -136,7 +122,7 @@ export const Footer = () => {
                     </div>
                   </div>
                 </div>
-                <div className="footer_copyright-links flex flex-wrap justify-center md:justify-between gap-4">
+                <div className="footer_copyright-links flex flex-wrap justify-center md:justify-between">
                   <a href="/get-quote" className="footer_copyright-link">
                     Get a quote
                   </a>

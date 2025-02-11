@@ -106,11 +106,11 @@
         width: 65%;
         margin-bottom: 1.5rem;
         border-radius: 3rem;
-        padding: 0.4rem 0; /* Adjusted padding for smaller screens */
+        padding: 0.4rem 0; 
     }
 
     .nav_content {
-        min-height: 3.5rem; /* Adjusted height */
+        min-height: 3.5rem;
         padding-left: 1rem;
         padding-right: 1rem;
     }

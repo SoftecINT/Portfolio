@@ -190,11 +190,6 @@
   }
 }
 
-
-
-
-
-
 /* elements css */
 /* Initial state */
 .work_background{
@@ -222,7 +217,6 @@
   border-radius: 50%; /* Ensure it's a circle */
   background-color: transparent; /* Keep the background transparent to reveal the video */
 }
-
 
 .work_plus {
   position: relative;
@@ -263,5 +257,202 @@
 .work_plus:hover::after {
   opacity: 1; /* Make the plus sign visible */
   transform: scale(1.5); /* Enlarge the bars */
+}
+
+/* Add these responsive styles */
+@media screen and (min-width: 1400px) {
+    .home-work_heading {
+        max-width: 130vh;
+    }
+
+    .text-style-intro {
+        font-size: 1.5rem;
+    }
+
+    .home-work_list {
+        grid-column-gap: 4rem;
+        grid-row-gap: 6rem;
+    }
+
+    .work_image-wrapper {
+        aspect-ratio: 16/9;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .home-work_heading {
+        max-width: 90vh;
+    }
+
+    .text-style-intro {
+        font-size: 1.25rem;
+    }
+
+    .home-work_collection {
+        margin-top: 8rem;
+    }
+
+    .home-work_list {
+        grid-column-gap: 3rem;
+        grid-row-gap: 4rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .home-work_heading {
+        max-width: 80vh;
+    }
+
+    .home-work_list {
+        grid-template-columns: 1fr;
+        grid-row-gap: 3rem;
+    }
+
+    .home-work_item {
+        transform: none !important; /* Override the translateY for even items */
+    }
+
+    .work_image-wrapper {
+        aspect-ratio: 16/11;
+    }
+
+    .text-style-intro {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .heading-wrapper {
+        margin-bottom: 1.5rem;
+        margin-top: 30px;
+    }
+
+    .home-work_heading {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+
+    .text-style-intro {
+        font-size: 1.1rem;
+    }
+
+    .home-work_collection {
+        margin-top: 5rem;
+    }
+
+    .home-work_paragraph {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+
+    .work_background {
+        border-radius: 45px;
+    }
+
+    .work_circle {
+        border-radius: 45px;
+    }
+
+    .work_image-wrapper {
+        aspect-ratio: 16/12;
+    }
+
+    .work_enterprise {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .heading-wrapper {
+        margin-top: 20px;
+    }
+
+    .text-style-intro {
+        font-size: 1rem;
+    }
+
+    .home-work_collection {
+        margin-top: 3rem;
+    }
+
+    .home-work_list {
+        grid-row-gap: 2rem;
+        padding: 0 1rem;
+    }
+
+    .work_background {
+        border-radius: 30px;
+    }
+
+    .work_circle {
+        border-radius: 30px;
+    }
+
+    .work_image-wrapper {
+        aspect-ratio: 16/13;
+    }
+
+    .button-inner {
+        padding: 0.75rem 1.5rem;
+    }
+
+    .work_enterprise {
+        bottom: -1.5rem;
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    .work_enterprise-icon {
+        width: 1rem;
+        height: 1rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .text-style-intro {
+        font-size: 0.9rem;
+    }
+
+    .home-work_collection {
+        margin-top: 2rem;
+    }
+
+    .work_background {
+        border-radius: 20px;
+    }
+
+    .work_circle {
+        border-radius: 20px;
+    }
+
+    .work_image-wrapper {
+        aspect-ratio: 16/14;
+    }
+
+    .button-inner {
+        padding: 0.5rem 1rem;
+    }
+
+    .work_enterprise {
+        font-size: 0.75rem;
+    }
+}
+
+/* Hover effects adjustments for touch devices */
+@media (hover: none) {
+    .work_circle:hover svg {
+        transform: none;
+    }
+
+    .work_circle:hover {
+        border-radius: inherit;
+    }
+
+    .work_plus:hover::before,
+    .work_plus:hover::after {
+        opacity: 0;
+        transform: none;
+    }
 }
 
