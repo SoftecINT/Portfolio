@@ -3,7 +3,7 @@ import Layout from "../components/Layout/Layout";
 import backgroundImage from "../assets/daniel-olahh.jpg";
 import thumbnail from "../assets/thumbnail.webp"
 import android1 from "../assets/android.webp"
-import ios1 from "../assets/ios.webp"
+import ios1 from "../assets/ios.jpg"
 import video from "../assets/mobileappportfolio.mp4";
 import "../css/UiUxdesign.css";
 import avatar from "../assets/avatar.jpg"
@@ -241,13 +241,13 @@ const ExampleContent = () => (
       Additional content explaining the above card here
     </h2>
     <div className="col-span-1 md:col-span-8">
-      <p className="mb-4 text-xl text-neutral-600 md:text-2xl">
+      <p className="mb-4 text-xl text-neutral-600 md:text-2xl mx-0.5">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
         blanditiis soluta eius quam modi aliquam quaerat odit deleniti minima
         maiores voluptate est ut saepe accusantium maxime doloremque nulla
         consectetur possimus.
       </p>
-      <p className="mb-8 text-xl text-neutral-600 md:text-2xl">
+      <p className="mb-8 text-xl text-neutral-600 md:text-2xl mx-0.5">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
         reiciendis blanditiis aliquam aut fugit sint.
       </p>

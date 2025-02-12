@@ -3,11 +3,11 @@ import SplitText from "./Splittext";
 import "./AboutUs.css";
 import logo from "../../assets/whitelogo.svg";
 import xiomi from "../../assets/xiomi.jpg";
-import asset1 from '../../assets/images.jpg'
+import zain from '../../assets/zain.jpg'
 import founder from '../../assets/founder.jpg'
 import momin from '../../assets/momin.jpg'
 import ali from '../../assets/ali.jpg'
-import danish from '../../assets/danish.jpg'
+import danish from '../../assets/danish.png'
 import nasir from '../../assets/nasir.png'
 import danishq from '../../assets/danishq.jpg'
 import alihassan from '../../assets/alihassan.jpg'
@@ -62,7 +62,7 @@ const teamMembers = [
   {
     name: "Zain Tanoli",
     role: "Front-End Developer",
-    image: asset1, // Add image URL
+    image: zain , // Add image URL
     details:
       "Ali specializes in front-end development with a strong focus on modern UI/UX designs.",
   },
@@ -117,7 +117,7 @@ const AboutUsComp = () => {
       <div className="text-container">
         <SplitText
           text="Back in 2006 at the start of the digital era we founded our first agency crafting digital products. But it took a while when we witnessed the early indicators of a significant shift by upcoming tech called low-code"
-          className="text-2xl font-medium text-center"
+          className="text-2xl font-medium text-center "
           delay={15}
           animationFrom={{ opacity: 0, transform: "translate3d(0,50px,0)" }}
           animationTo={{ opacity: 1, transform: "translate3d(0,0,0)" }}

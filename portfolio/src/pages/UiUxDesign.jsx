@@ -263,7 +263,7 @@ const OverlayCopy = ({ subheading, heading }) => {
       <p className="mb-2 text-center text-xl md:mb-4 md:text-3xl">
         {subheading}
       </p>
-      <p className="text-center text-4xl font-bold md:text-7xl">{heading}</p>
+      <p className="text-center text-4xl font-bold md:text-7xl ">{heading}</p>
     </motion.div>
   );
 };
@@ -293,7 +293,7 @@ const ExampleContent = ({title , text}) => (
   {title}
 </h2>
 <div className="col-span-1 md:col-span-8">
-  <p className="mb-4 text-xl text-neutral-600 md:text-2xl">
+  <p className="mb-4 text-xl text-neutral-600 md:text-2xl mx-0.5">
     {text}
   </p>
 </div>

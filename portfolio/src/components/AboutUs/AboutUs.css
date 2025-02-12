@@ -16,7 +16,7 @@
   word-break: normal;  /* Prevents breaking words awkwardly */
   overflow-wrap: break-word; /* Ensures words wrap properly */
   text-align: center; 
-  font-family: 'Great Vibes', cursive;
+  /* font-family: 'Great Vibes', cursive; */
 
   line-height: 1.5;
   text-align: center;
@@ -37,31 +37,31 @@
 
 /* Popup Overlay */
 .popup-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 20px; /* Add padding for mobile */
 }
 
 /* Popup Content */
 .popup-content {
-  background: white;
-  border-radius: 20px;
-  padding: 20px;
-  width: 90%;
-  max-width: 800px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  animation: fadeIn 0.4s ease-out;
-
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+    animation: fadeIn 0.4s ease-out;
 }
 
 /* Close Button */
@@ -240,47 +240,51 @@ font-family: 'Great Vibes', cursive;
 
 
 .Founder-container{
-    height: 120vh;
+    height: auto;
+    min-height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column ;
-    /* background-color: #fff; */
+    flex-direction: column;
     gap: 2vw;
-  }
-  .Founder-container h1{
+    padding: 2rem 0;
+}
+.Founder-container h1{
     text-align: center;
     font-size: 7vw;
-  }
-  .Founder-container h1 span{
+}
+.Founder-container h1 span{
     border: .125rem solid #000;
     border-radius: 1rem;
     padding-bottom: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
     display: inline-block;
-  }
+}
 
-  .card-founder {
-    height: 500px;
-    width: 400px;
+.card-founder {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
     border: solid 1px #000;
     border-radius: 30px;
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Center horizontally */
-    justify-content: center; /* Center vertically */
-    text-align: center; /* Optionally, center the text inside h3 and h4 */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
 }
 
 .card-founder img {
-    height: 60%; /* Adjust based on how much space you want the image to take */
     width: 100%;
+    max-height: 400px;
+    height: auto;
     object-fit: cover;
     border-radius: 30px;
-    filter: grayscale(100%); /* Default grayscale */
-    transform: scale(1); /* Default size */
+    filter: grayscale(100%);
+    transform: scale(1);
     transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out;
     cursor: pointer;
 }
@@ -401,8 +405,7 @@ font-family: 'Great Vibes', cursive;
     }
 
     .card-founder {
-        height: 450px;
-        width: 350px;
+        max-width: 350px;
     }
 }
 
@@ -437,6 +440,19 @@ font-family: 'Great Vibes', cursive;
     .ourtrusted-partners h1 {
         font-size: 7vw;
     }
+
+    .card-founder {
+        max-width: 350px;
+    }
+    
+    .card-founder img {
+        max-height: 350px;
+    }
+
+    .popup-content {
+        width: 95%;
+        max-width: 700px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -449,8 +465,11 @@ font-family: 'Great Vibes', cursive;
     }
 
     .card-founder {
-        height: 400px;
-        width: 300px;
+        max-width: 300px;
+    }
+    
+    .card-founder img {
+        max-height: 300px;
     }
 
     .Team-container h1, .Founder-container h1 {
@@ -468,11 +487,44 @@ font-family: 'Great Vibes', cursive;
     .team-card h4 {
         font-size: 1.1rem;
     }
+
+    .popup-content {
+        padding: 15px;
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+
+    .popup-profile-img {
+        max-height: 300px;
+        object-fit: cover;
+    }
+
+    .popup-name {
+        font-size: 1.75rem;
+    }
+
+    .popup-role {
+        font-size: 1.1rem;
+    }
+
+    .popup-description {
+        font-size: 0.9rem;
+        max-height: none;
+    }
+
+    .close-button {
+        top: -15px;
+        right: -15px;
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+    }
 }
 
 @media screen and (max-width: 576px) {
     .text-container {
         width: 90%;
+        margin-left: 3rem;
         font-size: 0.9rem;
     }
 
@@ -493,13 +545,23 @@ font-family: 'Great Vibes', cursive;
         height: 150px;
     }
 
+    .Founder-container {
+        padding: 1rem;
+    }
+
     .card-founder {
-        height: 350px;
-        width: 280px;
+        width: 95%;
+        max-width: 280px;
+        margin: 1rem 0;
+    }
+    
+    .card-founder img {
+        max-height: 280px;
     }
 
     .card-founder h3 {
         font-size: 1.75rem;
+        margin: 0.5rem 0;
     }
 
     .card-founder h4 {
@@ -507,22 +569,57 @@ font-family: 'Great Vibes', cursive;
     }
 
     .popup-name {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
     }
 
     .popup-role {
-        font-size: 1.1rem;
+        font-size: 1rem;
+        margin-bottom: 10px;
     }
 
     .popup-description {
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+
+    .linkedin-button {
+        padding: 8px 16px;
         font-size: 0.9rem;
+    }
+
+    .close-button {
+        top: -1px;
+        right: -1px;
+        width: 35px;
+        /* height: 35px; */
+        font-size: 20px;
+    }
+
+    .popup-overlay {
+        padding: 10px;
+    }
+
+    .popup-content {
+        padding: 12px;
+        width: 100%;
+    }
+
+    .popup-profile-img {
+        max-height: 250px;
+    }
+
+    .popup-description {
+        font-size: 0.85rem;
     }
 }
 
 @media screen and (max-width: 375px) {
     .card-founder {
-        height: 300px;
-        width: 250px;
+        max-width: 250px;
+    }
+    
+    .card-founder img {
+        max-height: 250px;
     }
 
     .Team-container h1, .Founder-container h1 {
@@ -538,13 +635,41 @@ font-family: 'Great Vibes', cursive;
     }
 
     .popup-content {
-        padding: 15px;
+        padding: 10px;
+    }
+
+    .popup-profile-img {
+        max-height: 200px;
+    }
+
+    .popup-name {
+        font-size: 1.25rem;
+    }
+
+    .popup-role {
+        font-size: 0.9rem;
+    }
+
+    .popup-description {
+        font-size: 0.8rem;
+    }
+
+    .linkedin-button {
+        padding: 6px 12px;
+        font-size: 0.8rem;
     }
 
     .close-button {
-        width: 40px;
-        height: 40px;
-        font-size: 24px;
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+    }
+}
+
+/* Fix for iOS Safari 100vh issue */
+@supports (-webkit-touch-callout: none) {
+    .popup-overlay {
+        height: -webkit-fill-available;
     }
 }
   
